@@ -16,7 +16,7 @@ export interface TRMScreeningResponse {
 export const useAddressAllowed = (address: string): AddressAllowedResult => {
   const [isAllowed, setIsAllowed] = useState(true);
 
-  const TRM_URL = 'https://api.trmlabs.com/public/v1/sanctions/screening';
+  const TRM_URL = `${process.env.NEXT_PUBLIC_API_BASEURL}/public/v1/sanctions/screening`;
 
   const getIsAddressAllowed = async () => {
     if (TRM_URL && address) {

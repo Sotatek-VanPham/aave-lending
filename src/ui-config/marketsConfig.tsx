@@ -94,7 +94,7 @@ export const marketsData: {
       incentives: true,
     },
     // TODO: Need subgraph, currently not supported
-    // subgraphUrl: '',
+    subgraphUrl: '',
     addresses: {
       LENDING_POOL_ADDRESS_PROVIDER: BASE_ADDRESSES.LENDING_POOL_ADDRESS_PROVIDER,
       LENDING_POOL: BASE_ADDRESSES.LENDING_POOL,
