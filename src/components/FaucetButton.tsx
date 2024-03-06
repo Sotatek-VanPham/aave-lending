@@ -10,7 +10,7 @@ export const FaucetButton = () => {
   const { currentNetworkConfig } = useProtocolDataContext();
 
   return (
-    <DarkTooltip title="Get free assets to test the Seamless Protocol">
+    <DarkTooltip title="Get free assets to test the Colend Protocol">
       <Button
         startIcon={
           <img

@@ -23,7 +23,7 @@ export enum WalletType {
   READ_ONLY_MODE = 'read_only_mode',
 }
 
-const APP_NAME = 'Seamless';
+const APP_NAME = 'Colend';
 const APP_LOGO_URL = 'https://app.seamlessprotocol.com/favicon.ico';
 
 const mockProvider = {

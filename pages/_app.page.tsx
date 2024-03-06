@@ -71,7 +71,7 @@ export default function MyApp(props: MyAppProps) {
       <Meta
         title={'The First Native Base Lending & Borrowing Protocol'}
         description={
-          'Seamless lays the foundation for modern DeFi, focusing on lower-collateral borrowing and a better user experience to inspire the masses.'
+          'Colend lays the foundation for modern DeFi, focusing on lower-collateral borrowing and a better user experience to inspire the masses.'
         }
         imageUrl="/seamless.svg"
       />

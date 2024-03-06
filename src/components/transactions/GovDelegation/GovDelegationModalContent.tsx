@@ -75,7 +75,7 @@ export const GovDelegationModalContent: React.FC<GovDelegationModalContentProps>
     {
       address: governanceConfig.seamTokenAddress,
       symbol: 'SEAM',
-      name: 'Seamless',
+      name: 'Colend',
       amount: seam,
       votingDelegatee: powers?.seamVotingDelegatee,
       type: DelegationTokenType.SEAM,
