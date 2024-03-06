@@ -266,9 +266,13 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     // ratesHistoryApiUrl: 'https://aave-api-v2.aave.com/data/rates-history',
   },
   [84531 as ChainId /*ChainId.base_goerli*/]: {
-    name: 'Base Görli',
-    publicJsonRPCUrl: ['https://rpc.ankr.com/base_goerli', 'https://goerli.base.org'],
-    publicJsonRPCWSUrl: 'wss://base-goerli.gateway.tenderly.co/1SVyxsO1IHL8NHPgMyQmuF',
+    name: 'Ethereum Görli',
+    publicJsonRPCUrl: [
+      'https://eth-goerli.public.blastapi.io',
+      'https://rpc.ankr.com/eth_goerli',
+      'https://goerli.prylabs.net',
+    ],
+    publicJsonRPCWSUrl: 'wss://eth-goerli.public.blastapi.io',
     baseUniswapAdapter: '0x0',
     baseAssetSymbol: 'ETH',
     wrappedBaseAssetSymbol: 'WETH',
