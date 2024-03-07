@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="manifest" href="/manifest.json" />
           {Meta({
-            title: 'Seamless Protocol',
+            title: 'Colend Protocol',
             description:
               'A decentralized, non-custodial liquidity market that creates a more seamless experience for Suppliers and Borrowers.',
             imageUrl: '/seamless.png',

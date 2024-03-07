@@ -63,7 +63,7 @@ export const GovernanceTopPanel = () => {
 
           <Typography sx={{ color: '#F1F1F3', maxWidth: '824px' }}>
             <Trans>
-              Seamless is a fully decentralized, community governed protocol by the SEAM
+              Colend is a fully decentralized, community governed protocol by the SEAM
               token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades
               to the protocol. SEAM token-holders (Base network only) can either vote themselves on
               new proposals or delegate to an address of choice.

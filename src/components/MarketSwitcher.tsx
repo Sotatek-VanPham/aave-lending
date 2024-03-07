@@ -193,7 +193,7 @@ export const MarketSwitcher = () => {
       <Box>
         <Typography variant="subheader2" color="text.secondary" sx={{ px: 4, pt: 2 }}>
           <Trans>
-            {ENABLE_TESTNET || STAGING_ENV ? 'Seamless Testnet Market' : 'Seamless Market'}
+            {ENABLE_TESTNET || STAGING_ENV ? 'Colend Testnet Market' : 'Colend Market'}
           </Trans>
         </Typography>
       </Box>
