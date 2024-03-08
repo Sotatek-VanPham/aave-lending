@@ -1,4 +1,6 @@
 import '/public/fonts/inter/inter.css';
+import '/public/fonts/muli/muli.css';
+import '/public/fonts/work_sans/work_sans.css';
 import '/src/styles/variables.css';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
