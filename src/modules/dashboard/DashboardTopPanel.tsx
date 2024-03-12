@@ -244,7 +244,7 @@ export const DashboardTopPanel = () => {
                 onClick={() => openClaimRewards()}
                 sx={{
                   minWidth: 'unset',
-                  bgcolor: '#3AB0FF',
+                  bgcolor: '#A5A8B6',
                   color: 'white',
                   ml: { xs: 0, xsm: 2 },
                 }}
