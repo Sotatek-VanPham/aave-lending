@@ -56,6 +56,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
   const [anchorEl, setAnchorEl] = useState<Element | null>(null);
 
   const networkConfig = getNetworkConfig(chainId);
+  
   let networkColor = '';
   if (networkConfig?.isFork) {
     networkColor = '#ff4a8d';

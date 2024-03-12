@@ -161,7 +161,7 @@ const BorrowedPositionsListItemDesktop = ({
             variant="outlined"
             onClick={onDetbSwitchClick}
             data-cy={`swapButton`}
-            sx={{ bgcolor: '#3AB0FF' }}
+            sx={{ bgcolor: '#A5A8B6' }}
           >
             <Trans>Switch</Trans>
           </Button>
