@@ -77,7 +77,7 @@ export const BorrowAssetsListItem = ({
           onClick={() => {
             openBorrow(underlyingAsset, currentMarket, name, 'dashboard');
           }}
-          sx={{ bgcolor: '#3AB0FF' }}
+          sx={{ bgcolor: '#2a2e3d' }}
         >
           <Trans>Borrow</Trans>
         </Button>
