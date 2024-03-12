@@ -110,7 +110,7 @@ export const TokenLinkDropdown = ({
           <Box>
             <Box sx={{ px: 4, pt: 3, pb: 2 }}>
               <Typography variant="secondary12" color="text.secondary">
-                <Trans>Seamless sToken</Trans>
+                <Trans>Colend sToken</Trans>
               </Typography>
             </Box>
 
@@ -143,7 +143,7 @@ export const TokenLinkDropdown = ({
         {showDebtTokenHeader && (
           <Box sx={{ px: 4, pt: 3, pb: 2 }}>
             <Typography variant="secondary12" color="text.secondary">
-              <Trans>Seamless debt token</Trans>
+              <Trans>Colend debt token</Trans>
             </Typography>
           </Box>
         )}

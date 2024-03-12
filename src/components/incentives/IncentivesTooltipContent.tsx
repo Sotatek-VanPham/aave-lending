@@ -53,7 +53,7 @@ export const IncentivesTooltipContent = ({
       <Typography variant="caption" color="text.secondary" mb={3}>
         <Trans>
           Participating in this {symbol} reserve gives annualized rewards. APY refers solely to the
-          annualized rate of earning reward tokens for your participation in the Seamless ecosystem.
+          annualized rate of earning reward tokens for your participation in the Colend ecosystem.
         </Trans>
       </Typography>
 

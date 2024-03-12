@@ -11,6 +11,7 @@ import { getNetworkConfig } from 'src/utils/marketsAndNetworksConfig';
 import { LedgerHQFrameConnector } from 'web3-ledgerhq-frame-connector';
 
 import { WalletConnectConnector } from './WalletConnectConnector';
+import { CHAIN_SUPPORT } from 'src/ui-config/networksConfig';
 
 export enum WalletType {
   INJECTED = 'injected',
@@ -23,7 +24,7 @@ export enum WalletType {
   READ_ONLY_MODE = 'read_only_mode',
 }
 
-const APP_NAME = 'Seamless';
+const APP_NAME = 'Colend';
 const APP_LOGO_URL = 'https://app.seamlessprotocol.com/favicon.ico';
 
 const mockProvider = {
@@ -48,7 +49,7 @@ export class ReadOnlyModeConnector extends AbstractConnector {
 
     return Promise.resolve({
       provider: mockProvider,
-      chainId: ChainId.mainnet,
+      chainId: CHAIN_SUPPORT.core_mainnet,
       account: this.readAddress,
     });
   }
@@ -74,8 +75,8 @@ export class ReadOnlyModeConnector extends AbstractConnector {
 
 export const getWallet = (
   wallet: WalletType,
-  chainId: ChainId = ChainId.mainnet,
-  currentChainId: ChainId = ChainId.mainnet
+  chainId: any = CHAIN_SUPPORT.core_mainnet,
+  currentChainId: any = CHAIN_SUPPORT.core_mainnet
 ): AbstractConnector => {
   switch (wallet) {
     case WalletType.READ_ONLY_MODE:

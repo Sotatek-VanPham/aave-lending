@@ -1,5 +1,6 @@
 import { ChainId } from '@aave/contract-helpers';
 import { ReactNode } from 'react';
+import { CHAIN_SUPPORT } from './networksConfig';
 
 // Enable for premissioned market
 // import { PermissionView } from 'src/components/transactions/FlowCommons/PermissionView';
@@ -8,7 +9,7 @@ export type MarketDataType = {
   v3?: boolean;
   marketTitle: string;
   // the network the market operates on
-  chainId: ChainId;
+  chainId: any;
   enabledFeatures?: {
     liquiditySwap?: boolean;
     staking?: boolean;
@@ -53,10 +54,14 @@ export type MarketDataType = {
 };
 
 export enum CustomMarket {
+  // //testnet
+  // proto_base_goerli_v3 = 'proto_base_goerli_v3',
+  // //mainnet
+  // proto_base_v3 = 'proto_base_v3',
   //testnet
-  proto_base_goerli_v3 = 'proto_base_goerli_v3',
+  proto_core_testnet = 'proto_core_testnet',
   //mainnet
-  proto_base_v3 = 'proto_base_v3',
+  proto_core_mainnet = 'proto_core_mainnet',
 }
 
 const GOERLI_BASE_ADDRESSES = {
@@ -83,51 +88,121 @@ const BASE_ADDRESSES = {
   FAUCET: '',
 };
 
+const CORE_TESTNET_ADDRESS = {
+  LENDING_POOL_ADDRESS_PROVIDER: '',
+  LENDING_POOL: '',
+  WETH_GATEWAY: '',
+  WALLET_BALANCE_PROVIDER: '',
+  UI_POOL_DATA_PROVIDER: '',
+  UI_INCENTIVE_DATA_PROVIDER: '',
+  L2_ENCODER: '',
+  COLLECTOR: '',
+  FAUCET: '',
+};
+
+const CORE_MAINNET_ADDRESS = {
+  LENDING_POOL_ADDRESS_PROVIDER: '',
+  LENDING_POOL: '',
+  WETH_GATEWAY: '',
+  WALLET_BALANCE_PROVIDER: '',
+  UI_POOL_DATA_PROVIDER: '',
+  UI_INCENTIVE_DATA_PROVIDER: '',
+  L2_ENCODER: '',
+  COLLECTOR: '',
+  FAUCET: '',
+};
+
 export const marketsData: {
   [key in keyof typeof CustomMarket]: MarketDataType;
 } = {
-  [CustomMarket.proto_base_v3]: {
-    marketTitle: 'Base',
+  [CustomMarket.proto_core_testnet]: {
+    marketTitle: 'Core Testnet',
     v3: true,
-    chainId: ChainId.base,
+    chainId:  CHAIN_SUPPORT.core_testnet,
     enabledFeatures: {
       incentives: true,
     },
     // TODO: Need subgraph, currently not supported
     subgraphUrl: '',
     addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER: BASE_ADDRESSES.LENDING_POOL_ADDRESS_PROVIDER,
-      LENDING_POOL: BASE_ADDRESSES.LENDING_POOL,
-      WETH_GATEWAY: BASE_ADDRESSES.WETH_GATEWAY,
-      WALLET_BALANCE_PROVIDER: BASE_ADDRESSES.WALLET_BALANCE_PROVIDER,
-      UI_POOL_DATA_PROVIDER: BASE_ADDRESSES.UI_POOL_DATA_PROVIDER,
-      UI_INCENTIVE_DATA_PROVIDER: BASE_ADDRESSES.UI_INCENTIVE_DATA_PROVIDER,
-      L2_ENCODER: BASE_ADDRESSES.L2_ENCODER,
-      COLLECTOR: BASE_ADDRESSES.COLLECTOR,
+      LENDING_POOL_ADDRESS_PROVIDER: CORE_TESTNET_ADDRESS.LENDING_POOL_ADDRESS_PROVIDER,
+      LENDING_POOL: CORE_TESTNET_ADDRESS.LENDING_POOL,
+      WETH_GATEWAY: CORE_TESTNET_ADDRESS.WETH_GATEWAY,
+      WALLET_BALANCE_PROVIDER: CORE_TESTNET_ADDRESS.WALLET_BALANCE_PROVIDER,
+      UI_POOL_DATA_PROVIDER: CORE_TESTNET_ADDRESS.UI_POOL_DATA_PROVIDER,
+      UI_INCENTIVE_DATA_PROVIDER: CORE_TESTNET_ADDRESS.UI_INCENTIVE_DATA_PROVIDER,
+      L2_ENCODER: CORE_TESTNET_ADDRESS.L2_ENCODER,
+      COLLECTOR: CORE_TESTNET_ADDRESS.COLLECTOR,
       // SWAP_COLLATERAL_ADAPTER: AaveV3Base.SWAP_COLLATERAL_ADAPTER,
       // REPAY_WITH_COLLATERAL_ADAPTER: AaveV3Base.REPAY_WITH_COLLATERAL_ADAPTER,
       // DEBT_SWITCH_ADAPTER: AaveV3Base.DEBT_SWAP_ADAPTER,
     },
   },
-  [CustomMarket.proto_base_goerli_v3]: {
-    marketTitle: 'Base Görli',
+  [CustomMarket.proto_core_mainnet]: {
+    marketTitle: 'Core',
     v3: true,
-    chainId: 84531 as ChainId, //ChainId.base_goerli,
+    chainId:  CHAIN_SUPPORT.core_mainnet,
     enabledFeatures: {
-      faucet: true,
       incentives: true,
     },
+    // TODO: Need subgraph, currently not supported
+    subgraphUrl: '',
     addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER: GOERLI_BASE_ADDRESSES.LENDING_POOL_ADDRESS_PROVIDER,
-      LENDING_POOL: GOERLI_BASE_ADDRESSES.LENDING_POOL,
-      WETH_GATEWAY: GOERLI_BASE_ADDRESSES.WETH_GATEWAY,
-      WALLET_BALANCE_PROVIDER: GOERLI_BASE_ADDRESSES.WALLET_BALANCE_PROVIDER,
-      //WALLET_BALANCE_PROVIDER:
-      UI_POOL_DATA_PROVIDER: GOERLI_BASE_ADDRESSES.UI_POOL_DATA_PROVIDER,
-      UI_INCENTIVE_DATA_PROVIDER: GOERLI_BASE_ADDRESSES.UI_INCENTIVE_DATA_PROVIDER,
-      L2_ENCODER: GOERLI_BASE_ADDRESSES.L2_ENCODER,
-      COLLECTOR: GOERLI_BASE_ADDRESSES.COLLECTOR,
-      FAUCET: GOERLI_BASE_ADDRESSES.FAUCET,
+      LENDING_POOL_ADDRESS_PROVIDER: CORE_MAINNET_ADDRESS.LENDING_POOL_ADDRESS_PROVIDER,
+      LENDING_POOL: CORE_MAINNET_ADDRESS.LENDING_POOL,
+      WETH_GATEWAY: CORE_MAINNET_ADDRESS.WETH_GATEWAY,
+      WALLET_BALANCE_PROVIDER: CORE_MAINNET_ADDRESS.WALLET_BALANCE_PROVIDER,
+      UI_POOL_DATA_PROVIDER: CORE_MAINNET_ADDRESS.UI_POOL_DATA_PROVIDER,
+      UI_INCENTIVE_DATA_PROVIDER: CORE_MAINNET_ADDRESS.UI_INCENTIVE_DATA_PROVIDER,
+      L2_ENCODER: CORE_MAINNET_ADDRESS.L2_ENCODER,
+      COLLECTOR: CORE_MAINNET_ADDRESS.COLLECTOR,
+      // SWAP_COLLATERAL_ADAPTER: AaveV3Base.SWAP_COLLATERAL_ADAPTER,
+      // REPAY_WITH_COLLATERAL_ADAPTER: AaveV3Base.REPAY_WITH_COLLATERAL_ADAPTER,
+      // DEBT_SWITCH_ADAPTER: AaveV3Base.DEBT_SWAP_ADAPTER,
     },
   },
+  // [CustomMarket.proto_base_v3]: {
+  //   marketTitle: 'Base',
+  //   v3: true,
+  //   chainId: ChainId.base,
+  //   enabledFeatures: {
+  //     incentives: true,
+  //   },
+  //   // TODO: Need subgraph, currently not supported
+  //   subgraphUrl: '',
+  //   addresses: {
+  //     LENDING_POOL_ADDRESS_PROVIDER: BASE_ADDRESSES.LENDING_POOL_ADDRESS_PROVIDER,
+  //     LENDING_POOL: BASE_ADDRESSES.LENDING_POOL,
+  //     WETH_GATEWAY: BASE_ADDRESSES.WETH_GATEWAY,
+  //     WALLET_BALANCE_PROVIDER: BASE_ADDRESSES.WALLET_BALANCE_PROVIDER,
+  //     UI_POOL_DATA_PROVIDER: BASE_ADDRESSES.UI_POOL_DATA_PROVIDER,
+  //     UI_INCENTIVE_DATA_PROVIDER: BASE_ADDRESSES.UI_INCENTIVE_DATA_PROVIDER,
+  //     L2_ENCODER: BASE_ADDRESSES.L2_ENCODER,
+  //     COLLECTOR: BASE_ADDRESSES.COLLECTOR,
+  //     // SWAP_COLLATERAL_ADAPTER: AaveV3Base.SWAP_COLLATERAL_ADAPTER,
+  //     // REPAY_WITH_COLLATERAL_ADAPTER: AaveV3Base.REPAY_WITH_COLLATERAL_ADAPTER,
+  //     // DEBT_SWITCH_ADAPTER: AaveV3Base.DEBT_SWAP_ADAPTER,
+  //   },
+  // },
+  // [CustomMarket.proto_base_goerli_v3]: {
+  //   marketTitle: 'Base Görli',
+  //   v3: true,
+  //   chainId: 84531 as ChainId, //ChainId.base_goerli,
+  //   enabledFeatures: {
+  //     faucet: true,
+  //     incentives: true,
+  //   },
+  //   addresses: {
+  //     LENDING_POOL_ADDRESS_PROVIDER: GOERLI_BASE_ADDRESSES.LENDING_POOL_ADDRESS_PROVIDER,
+  //     LENDING_POOL: GOERLI_BASE_ADDRESSES.LENDING_POOL,
+  //     WETH_GATEWAY: GOERLI_BASE_ADDRESSES.WETH_GATEWAY,
+  //     WALLET_BALANCE_PROVIDER: GOERLI_BASE_ADDRESSES.WALLET_BALANCE_PROVIDER,
+  //     //WALLET_BALANCE_PROVIDER:
+  //     UI_POOL_DATA_PROVIDER: GOERLI_BASE_ADDRESSES.UI_POOL_DATA_PROVIDER,
+  //     UI_INCENTIVE_DATA_PROVIDER: GOERLI_BASE_ADDRESSES.UI_INCENTIVE_DATA_PROVIDER,
+  //     L2_ENCODER: GOERLI_BASE_ADDRESSES.L2_ENCODER,
+  //     COLLECTOR: GOERLI_BASE_ADDRESSES.COLLECTOR,
+  //     FAUCET: GOERLI_BASE_ADDRESSES.FAUCET,
+  //   },
+  // },
 } as const;
