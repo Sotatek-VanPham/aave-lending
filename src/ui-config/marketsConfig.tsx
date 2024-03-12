@@ -1,4 +1,3 @@
-import { ChainId } from '@aave/contract-helpers';
 import { ReactNode } from 'react';
 import { CHAIN_SUPPORT } from './networksConfig';
 
