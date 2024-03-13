@@ -598,6 +598,19 @@ msgstr "Claiming"
 msgid "Close"
 msgstr "Close"
 
+#: src/modules/reserve-overview/TokenLinkDropdown.tsx
+msgid "Colend debt token"
+msgstr "Colend debt token"
+
+#: src/modules/governance/GovernanceTopPanel.tsx
+msgid "Colend is a fully decentralized, community governed protocol by the SEAM token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades to the protocol. SEAM token-holders (Base network only) can either vote themselves on new proposals or delegate to an address of choice."
+msgstr "Colend is a fully decentralized, community governed protocol by the SEAM token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades to the protocol. SEAM token-holders (Base network only) can either vote themselves on new proposals or delegate to an address of choice."
+
+#: src/modules/reserve-overview/AddTokenDropdown.tsx
+#: src/modules/reserve-overview/TokenLinkDropdown.tsx
+msgid "Colend sToken"
+msgstr "Colend sToken"
+
 #: src/components/transactions/Repay/RepayTypeSelector.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsList.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsList.tsx
@@ -1416,8 +1429,8 @@ msgid "Page not found"
 msgstr "Page not found"
 
 #: src/components/incentives/IncentivesTooltipContent.tsx
-msgid "Participating in this {symbol} reserve gives annualized rewards. APY refers solely to the annualized rate of earning reward tokens for your participation in the Seamless ecosystem."
-msgstr "Participating in this {symbol} reserve gives annualized rewards. APY refers solely to the annualized rate of earning reward tokens for your participation in the Seamless ecosystem."
+msgid "Participating in this {symbol} reserve gives annualized rewards. APY refers solely to the annualized rate of earning reward tokens for your participation in the Colend ecosystem."
+msgstr "Participating in this {symbol} reserve gives annualized rewards. APY refers solely to the annualized rate of earning reward tokens for your participation in the Colend ecosystem."
 
 #: src/components/transactions/CollateralChange/CollateralChangeActions.tsx
 #: src/components/transactions/Faucet/FaucetActions.tsx
@@ -1534,8 +1547,8 @@ msgid "Read more here."
 msgstr "Read more here."
 
 #: src/components/infoTooltips/ReadOnlyModeTooltip.tsx
-msgid "Read-only mode allows to see address positions in Seamless, but you won't be able to perform transactions."
-msgstr "Read-only mode allows to see address positions in Seamless, but you won't be able to perform transactions."
+msgid "Read-only mode allows to see address positions in Colend, but you won't be able to perform transactions."
+msgstr "Read-only mode allows to see address positions in Colend, but you won't be able to perform transactions."
 
 #: src/layouts/WalletWidget.tsx
 msgid "Read-only mode."
@@ -1679,19 +1692,6 @@ msgstr "Safety of your deposited collateral against the borrowed assets and its 
 #: src/components/transactions/Borrow/GhoBorrowSuccessView.tsx
 msgid "Save and share"
 msgstr "Save and share"
-
-#: src/modules/reserve-overview/TokenLinkDropdown.tsx
-msgid "Seamless debt token"
-msgstr "Seamless debt token"
-
-#: src/modules/governance/GovernanceTopPanel.tsx
-msgid "Seamless is a fully decentralized, community governed protocol by the SEAM token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades to the protocol. SEAM token-holders (Base network only) can either vote themselves on new proposals or delegate to an address of choice."
-msgstr "Seamless is a fully decentralized, community governed protocol by the SEAM token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades to the protocol. SEAM token-holders (Base network only) can either vote themselves on new proposals or delegate to an address of choice."
-
-#: src/modules/reserve-overview/AddTokenDropdown.tsx
-#: src/modules/reserve-overview/TokenLinkDropdown.tsx
-msgid "Seamless sToken"
-msgstr "Seamless sToken"
 
 #: src/components/transactions/Warnings/ChangeNetworkWarning.tsx
 msgid "Seems like we can't switch the network automatically. Please check if you can change it from the wallet."
@@ -2009,13 +2009,13 @@ msgstr "Thank you for voting!!"
 msgid "The % of your total borrowing power used. This is based on the amount of your collateral supplied and the total amount that you can borrow."
 msgstr "The % of your total borrowing power used. This is based on the amount of your collateral supplied and the total amount that you can borrow."
 
+#: src/modules/reserve-overview/Gho/GhoReserveTopDetails.tsx
+msgid "The Colend Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
+msgstr "The Colend Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
+
 #: src/components/infoTooltips/MaxLTVTooltip.tsx
 msgid "The Maximum LTV ratio represents the maximum borrowing power of a specific collateral. For example, if a collateral has an LTV of 75%, the user can borrow up to 0.75 worth of ETH in the principal currency for every 1 ETH worth of collateral."
 msgstr "The Maximum LTV ratio represents the maximum borrowing power of a specific collateral. For example, if a collateral has an LTV of 75%, the user can borrow up to 0.75 worth of ETH in the principal currency for every 1 ETH worth of collateral."
-
-#: src/modules/reserve-overview/Gho/GhoReserveTopDetails.tsx
-msgid "The Seamless Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
-msgstr "The Seamless Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
 
 #: src/components/transactions/Borrow/BorrowModalContent.tsx
 #: src/components/transactions/Borrow/GhoBorrowModalContent.tsx
@@ -2139,20 +2139,20 @@ msgid "This asset has reached its supply cap. Nothing is available to be supplie
 msgstr "This asset has reached its supply cap. Nothing is available to be supplied from this market."
 
 #: src/components/infoTooltips/FrozenTooltip.tsx
-msgid "This asset is frozen due to an Seamless Protocol Governance decision. <0>More details</0>"
-msgstr "This asset is frozen due to an Seamless Protocol Governance decision. <0>More details</0>"
+msgid "This asset is frozen due to an Colend Protocol Governance decision. <0>More details</0>"
+msgstr "This asset is frozen due to an Colend Protocol Governance decision. <0>More details</0>"
 
 #: src/components/infoTooltips/RenFILToolTip.tsx
-msgid "This asset is frozen due to an Seamless Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
-msgstr "This asset is frozen due to an Seamless Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
+msgid "This asset is frozen due to an Colend Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
+msgstr "This asset is frozen due to an Colend Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
 
 #: src/modules/reserve-overview/ReserveConfiguration.tsx
 msgid "This asset is frozen due to an community decision. <0>More details</0>"
 msgstr "This asset is frozen due to an community decision. <0>More details</0>"
 
 #: src/components/Warnings/BUSDOffBoardingWarning.tsx
-msgid "This asset is planned to be offboarded due to an Seamless Protocol Governance decision. <0>More details</0>"
-msgstr "This asset is planned to be offboarded due to an Seamless Protocol Governance decision. <0>More details</0>"
+msgid "This asset is planned to be offboarded due to an Colend Protocol Governance decision. <0>More details</0>"
+msgstr "This asset is planned to be offboarded due to an Colend Protocol Governance decision. <0>More details</0>"
 
 #: src/components/infoTooltips/GasTooltip.tsx
 msgid "This gas calculation is only an estimation. Your wallet will set the price of the transaction. You can modify the gas settings directly from your wallet provider."
@@ -2188,8 +2188,8 @@ msgid "To borrow you need to supply any asset to be used as collateral."
 msgstr "To borrow you need to supply any asset to be used as collateral."
 
 #: src/components/infoTooltips/ApprovalTooltip.tsx
-msgid "To continue, you need to grant Seamless smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
-msgstr "To continue, you need to grant Seamless smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
+msgid "To continue, you need to grant Colend smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
+msgstr "To continue, you need to grant Colend smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
 
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 msgid "To enable E-mode for the {0} category, all borrow positions outside of this category must be closed."
@@ -2422,8 +2422,8 @@ msgid "When a liquidation occurs, liquidators repay up to 50% of the outstanding
 msgstr "When a liquidation occurs, liquidators repay up to 50% of the outstanding borrowed amount on behalf of the borrower. In return, they can buy the collateral at a discount and keep the difference (liquidation penalty) as a bonus."
 
 #: src/modules/faucet/FaucetTopPanel.tsx
-msgid "With testnet Faucet you can get free assets to test the Seamless Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value."
-msgstr "With testnet Faucet you can get free assets to test the Seamless Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value."
+msgid "With testnet Faucet you can get free assets to test the Colend Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value."
+msgstr "With testnet Faucet you can get free assets to test the Colend Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value."
 
 #: src/components/transactions/Withdraw/WithdrawModal.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsListItem.tsx
@@ -2449,6 +2449,10 @@ msgstr "Withdrawing {symbol}"
 #: src/components/transactions/TxActionsWrapper.tsx
 msgid "Wrong Network"
 msgstr "Wrong Network"
+
+#: src/layouts/WalletWidget.tsx
+msgid "Wrong network"
+msgstr "Wrong network"
 
 #: src/components/transactions/Warnings/IsolationModeWarning.tsx
 msgid "You are entering Isolation mode"

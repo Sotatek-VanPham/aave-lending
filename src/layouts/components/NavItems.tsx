@@ -58,9 +58,14 @@ export const NavItems = ({ setOpen }: NavItemsProps) => {
               <Typography
                 component={Link}
                 href={item.link}
-                variant="h2"
-                color="#F1F1F3"
-                sx={{ width: '100%', p: 4 }}
+                color="#FFF"
+                sx={{
+                  width: '100%',
+                  p: 4,
+                  fontWeight: 500,
+                  fontSize: '16px',
+                  fontFamily: 'Work Sans',
+                }}
                 onClick={() => handleClick(item.title, true)}
               >
                 {i18n._(item.title)}
@@ -76,9 +81,11 @@ export const NavItems = ({ setOpen }: NavItemsProps) => {
                 disabled={item.dataCy === 'swapBase' && isLifiWidgetOpen ? true : false}
                 href={item.link}
                 sx={(theme) => ({
-                  color: '#F1F1F3',
+                  color: '#FFF',
                   p: '6px 8px',
-                  position: 'relative',
+                  fontWeight: 500,
+                  fontSize: '16px',
+                  fontFamily: 'Work Sans',
                   '.active&:after, &:hover&:after': {
                     transform: 'scaleX(1)',
                     transformOrigin: 'bottom left',
@@ -88,9 +95,10 @@ export const NavItems = ({ setOpen }: NavItemsProps) => {
                     position: 'absolute',
                     width: '100%',
                     transform: 'scaleX(0)',
-                    height: '2px',
-                    bottom: '-6px',
+                    height: '4px',
+                    bottom: '-9px',
                     left: '0',
+                    borderRadius: '16px',
                     background: theme.palette.gradients.seamless,
                     transformOrigin: 'bottom right',
                     transition: 'transform 0.25s ease-out',

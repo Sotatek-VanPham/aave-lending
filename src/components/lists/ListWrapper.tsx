@@ -88,9 +88,12 @@ export const ListWrapper = ({
 
   return (
     <Paper
-      sx={(theme) => ({
+      sx={() => ({
         mt: withTopMargin ? 4 : 0,
-        border: `1px solid ${theme.palette.divider}`,
+        // border: `1px solid ${theme.palette.divider}`,
+        borderRadius: '16px',
+        background: 'rgba(27, 27, 29, 0.50)',
+        backdropFilter: 'blur(100px)'
       })}
     >
       <Box

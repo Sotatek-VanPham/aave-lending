@@ -2,7 +2,7 @@ import { ExclamationIcon } from '@heroicons/react/solid';
 import { SvgIcon, SvgIconProps } from '@mui/material';
 
 export enum BadgeSize {
-  SM = 15,
+  SM = 14,
   MD = 20,
 }
 

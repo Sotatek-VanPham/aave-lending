@@ -1,4 +1,6 @@
 import '/public/fonts/inter/inter.css';
+import '/public/fonts/muli/muli.css';
+import '/public/fonts/work_sans/work_sans.css';
 import '/src/styles/variables.css';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
@@ -69,7 +71,7 @@ export default function MyApp(props: MyAppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <Meta
-        title={'The First Native Base Lending & Borrowing Protocol'}
+        title={'The First Native Core Lending & Borrowing Protocol'}
         description={
           'Colend lays the foundation for modern DeFi, focusing on lower-collateral borrowing and a better user experience to inspire the masses.'
         }

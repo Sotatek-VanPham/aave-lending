@@ -9,7 +9,7 @@ import {
 import { StateCreator } from 'zustand';
 
 import { CustomMarket, MarketDataType } from '../ui-config/marketsConfig';
-import { NetworkConfig } from '../ui-config/networksConfig';
+import { CHAIN_SUPPORT, NetworkConfig } from '../ui-config/networksConfig';
 import { RootStore } from './root';
 import { setQueryParameter } from './utils/queryParams';
 
@@ -31,12 +31,13 @@ export const createProtocolDataSlice: StateCreator<
 > = (set, get) => {
   const initialMarket = availableMarkets[0];
   const initialMarketData = marketsData[initialMarket];
+
   return {
     currentMarket: initialMarket,
     currentMarketData: marketsData[initialMarket],
     currentChainId: initialMarketData.chainId,
     currentNetworkConfig: getNetworkConfig(initialMarketData.chainId),
-    jsonRpcProvider: () => getProvider(get().currentChainId),
+    jsonRpcProvider: () => getProvider(get().currentChainId || CHAIN_SUPPORT.core_mainnet),
     setCurrentMarket: (market, omitQueryParameterUpdate) => {
       if (!availableMarkets.includes(market as CustomMarket)) return;
       const nextMarketData = marketsData[market];

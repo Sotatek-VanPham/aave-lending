@@ -46,7 +46,7 @@ export const SearchInput = ({ onSearchTermChange, wrapperSx, placeholder }: Sear
       <InputBase
         autoFocus={sm}
         inputRef={inputEl}
-        sx={{ width: '100%', fontSize: { xs: 16, sm: 14 } }}
+        sx={{ width: '100%', fontSize: { xs: 16, sm: 14 }, color: '#fff' }}
         placeholder={placeholder}
         value={searchTerm}
         onChange={(e) => {

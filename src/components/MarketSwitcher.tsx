@@ -107,7 +107,7 @@ export const MarketSwitcher = () => {
   const [selectedMarketVersion] = useState<SelectedMarketVersion>(SelectedMarketVersion.V3);
   const theme = useTheme();
   const upToLG = useMediaQuery(theme.breakpoints.up('lg'));
-  const downToXSM = useMediaQuery(theme.breakpoints.down('xsm'));
+  // const downToXSM = useMediaQuery(theme.breakpoints.down('xsm'));
 
   // const isV3MarketsAvailable = availableMarkets
   //   .map((marketId: CustomMarket) => {
@@ -138,7 +138,7 @@ export const MarketSwitcher = () => {
         native: false,
         className: 'MarketSwitcher__select',
         IconComponent: (props) => (
-          <SvgIcon fontSize="medium" {...props}>
+          <SvgIcon fontSize="small" {...props}>
             <ChevronDownIcon />
           </SvgIcon>
         ),
@@ -147,15 +147,17 @@ export const MarketSwitcher = () => {
           return (
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <MarketLogo
-                size={upToLG ? 32 : 28}
+                size={28}
                 logo={network.networkLogoPath}
                 testChainName={getMarketHelpData(market.marketTitle).testChainName}
               />
               <Box sx={{ mr: 1, display: 'inline-flex', alignItems: 'flex-start' }}>
                 <Typography
-                  variant={upToLG ? 'display1' : 'h1'}
+                  // variant={upToLG ? 'display1' : 'h1'}
                   sx={{
-                    fontSize: downToXSM ? '1.55rem' : undefined,
+                    fontFamily: "Work Sans",
+                    fontWeight: 600,
+                    fontSize: '29px',
                     color: 'common.white',
                     mr: 1,
                   }}

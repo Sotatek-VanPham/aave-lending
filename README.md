@@ -1,11 +1,11 @@
-# Seamless protocol interface
+# Colend protocol interface
 
-An open source interface for the decentralized liquidity protocol Seamless
+An open source interface for the decentralized liquidity protocol Colend
 
 Enabling users to:
 
-- Manage and monitor their positions on the Seamless Protocol, and the overall status of it
-- Manage and monitor their positions on the Seamless Safety module
+- Manage and monitor their positions on the Colend Protocol, and the overall status of it
+- Manage and monitor their positions on the Colend Safety module
 - Participate in the Community Governance
 
 ## How to use

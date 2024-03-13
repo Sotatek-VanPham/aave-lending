@@ -49,7 +49,7 @@
        url("Inter-LightItalic.woff?v=3.19") format("woff");
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   font-style:  normal;
   font-weight: 400;
@@ -81,7 +81,7 @@
   font-display: swap;
   src: url("Inter-MediumItalic.woff2?v=3.19") format("woff2"),
        url("Inter-MediumItalic.woff?v=3.19") format("woff");
-}
+} */
 
 @font-face {
   font-family: 'Inter';

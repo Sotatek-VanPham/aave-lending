@@ -19,7 +19,7 @@ export const TopInfoPanelItem = ({
   titleIcon,
   children,
   hideIcon,
-  variant = 'dark',
+  // variant = 'dark',
   withLine,
   loading,
   withoutIconWrapper,
@@ -72,7 +72,7 @@ export const TopInfoPanelItem = ({
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
           <Typography
-            sx={{ color: variant === 'dark' ? '#A5A8B6' : '#62677B' }}
+            sx={{ color: '#fff', fontFamily: 'Mulish', fontSize: '12px', fontWeight: 400 }}
             variant={upToSM ? 'description' : 'caption'}
             component="div"
           >

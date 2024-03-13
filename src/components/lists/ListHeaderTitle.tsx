@@ -40,13 +40,15 @@ export const ListHeaderTitle = ({
     <Typography
       component="div"
       variant="subheader2"
-      color="text.secondary"
       noWrap
       onClick={() => (!!onClick ? onClick() : !!sortKey && handleSorting(sortKey))}
       sx={{
         cursor: !!onClick || !!sortKey ? 'pointer' : 'default',
         display: 'inline-flex',
         alignItems: 'center',
+        color: '#FFF',
+        fontFamily: 'Mulish',
+        fontWeight: 400
       }}
     >
       {children}

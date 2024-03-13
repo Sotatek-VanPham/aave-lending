@@ -19,7 +19,16 @@ export const ListLoader = ({ title, withTopMargin, head }: ListLoaderProps) => {
   return (
     <ListWrapper
       titleComponent={
-        <Typography component="div" variant="h3" sx={{ mr: 4 }}>
+        <Typography
+          component="div"
+          sx={{
+            mr: 4,
+            color: '#fff',
+            fontWeight: '500',
+            fontFamily: 'Work Sans',
+            fontSize: '24px',
+          }}
+        >
           {title}
         </Typography>
       }
