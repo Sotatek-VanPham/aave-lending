@@ -1,7 +1,8 @@
-import { ChainId } from '@aave/contract-helpers';
+// import { ChainId } from '@aave/contract-helpers';
+import { CHAIN_SUPPORT } from './networksConfig';
 
 export interface GovernanceConfig {
-  chainId: ChainId;
+  chainId: any;
   walletBalanceProvider: string;
   votingAssetName: string;
   seamTokenAddress: string;
@@ -18,7 +19,7 @@ export interface GovernanceConfig {
 }
 
 export const governanceConfig: GovernanceConfig = {
-  chainId: ChainId.base,
+  chainId: CHAIN_SUPPORT.core_mainnet,
   votingAssetName: 'SEAM + esSEAM',
   seamTokenAddress: '0x1C7a460413dD4e964f96D8dFC56E7223cE88CD85',
   esSEAMTokenAddress: '0x998e44232BEF4F8B033e5A5175BDC97F2B10d5e5',

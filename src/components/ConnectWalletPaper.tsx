@@ -2,7 +2,7 @@ import { Trans } from '@lingui/macro';
 import { CircularProgress, Paper, PaperProps, Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
-import Logo from '/public/black_logo_seamless.svg';
+import Logo from '/public/logo.svg';
 
 import { ConnectWalletButton } from './WalletConnection/ConnectWalletButton';
 
@@ -28,20 +28,22 @@ export const ConnectWalletPaper = ({
         textAlign: 'center',
         p: 4,
         flex: 1,
-        border: '1px solid white',
+        background: 'rgba(27, 27, 29, 0.50)',
+        backdropFilter: 'blur(100px)',
+        borderRadius: '16px',
         ...sx,
       }}
     >
-      <Logo style={{ innerHeight: '48', marginBottom: '16px', color: 'white' }} />
+      <Logo style={{ width: '48px', height: '48px', marginBottom: '16px', color: 'white',  }} />
       <>
         {loading ? (
           <CircularProgress />
         ) : (
           <>
-            <Typography variant="h2" sx={{ mb: 2 }}>
+            <Typography variant="h2" sx={{ mb: 2, color: "#fff", fontFamily: 'Work Sans' }}>
               <Trans>Please, connect your wallet</Trans>
             </Typography>
-            <Typography sx={{ mb: 6 }} color="text.secondary">
+            <Typography sx={{ mb: 6, color: "#fff", fontFamily: 'Work Sans' }}>
               {description || (
                 <Trans>
                   Please connect your wallet to see your supplies, borrowings, and open positions.

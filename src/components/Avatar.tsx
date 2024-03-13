@@ -27,7 +27,7 @@ export interface AvatarProps extends Omit<MaterialAvatarProps, 'src'> {
 export const Avatar: React.FC<AvatarProps> = ({
   image,
   fallbackImage = makeBlockie('default'),
-  size = AvatarSize.MD,
+  size = AvatarSize.SM,
   sx,
   loading = false,
   invisibleBadge = false,
@@ -51,7 +51,7 @@ export const Avatar: React.FC<AvatarProps> = ({
     >
       <MaterialAvatar
         src={useFallbackImage || !image ? fallbackImage : image}
-        sx={{ width: size, height: size, border: '1px solid #FAFBFC1F', ...sx }}
+        sx={{ width: 20, height: 20, ...sx }}
         alt="avatar"
         imgProps={{
           onError: () => setUseFallbackImage(true),

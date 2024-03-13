@@ -1,4 +1,4 @@
-import { ChainId, ChainIdToNetwork } from '@aave/contract-helpers';
+import { ChainIdToNetwork } from '@aave/contract-helpers';
 import { StaticJsonRpcProvider } from '@ethersproject/providers';
 import { providers as ethersProviders } from 'ethers';
 
@@ -9,6 +9,7 @@ import {
 } from '../ui-config/marketsConfig';
 import {
   BaseNetworkConfig,
+  CHAIN_SUPPORT,
   ExplorerLinkBuilderConfig,
   ExplorerLinkBuilderProps,
   NetworkConfig,
@@ -32,7 +33,7 @@ export const FORK_ENABLED =
 // specifies which network was forked
 const FORK_BASE_CHAIN_ID =
   Number(process.env.NEXT_PUBLIC_FORK_BASE_CHAIN_ID) ||
-  Number(global?.window?.localStorage.getItem('forkBaseChainId') || 1);
+  Number(global?.window?.localStorage.getItem('forkBaseChainId') || CHAIN_SUPPORT.core_mainnet);
 // specifies on which chainId the fork is running
 const FORK_CHAIN_ID =
   Number(process.env.NEXT_PUBLIC_FORK_CHAIN_ID) ||
@@ -132,8 +133,9 @@ const linkBuilder =
     return baseUrl;
   };
 
-export function getNetworkConfig(chainId: ChainId): NetworkConfig {
+export function getNetworkConfig(chainId: any): NetworkConfig {
   const config = networkConfigs[chainId];
+  
   if (!config) {
     // this case can only ever occure when a wallet is connected with a unknown chainId which will not allow interaction
     const name = ChainIdToNetwork[chainId];
@@ -164,7 +166,7 @@ const providers: { [network: string]: ethersProviders.Provider } = {};
  * @param chainId
  * @returns provider or fallbackprovider in case multiple rpcs are configured
  */
-export const getProvider = (chainId: ChainId): ethersProviders.Provider => {
+export const getProvider = (chainId: any): ethersProviders.Provider => {
   if (!providers[chainId]) {
     const config = getNetworkConfig(chainId);
     const chainProviders: string[] = [];
@@ -187,7 +189,7 @@ export const getProvider = (chainId: ChainId): ethersProviders.Provider => {
 };
 
 export const getENSProvider = () => {
-  const chainId = 1;
+  const chainId = CHAIN_SUPPORT.core_mainnet;
   const config = getNetworkConfig(chainId);
   return new StaticJsonRpcProvider(config.publicJsonRPCUrl[0], chainId);
 };

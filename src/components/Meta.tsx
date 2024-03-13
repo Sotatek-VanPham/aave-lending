@@ -35,8 +35,8 @@ export function Meta({ title, description, imageUrl, timestamp }: MetaProps) {
         key="keywords"
         content="Decentralized Finance, DeFi, lending, borrowing, stablecoins, Ethereum, assets, erc-20, smart contracts, open finance, trustless"
       />
-      <link rel="icon" href="/black_logo_seamless.svg" />
-      <link rel="apple-touch-icon" href="/black_logo_seamless.svg" />
+      <link rel="icon" href="/logo.png" />
+      <link rel="apple-touch-icon" href="/logo.png" />
       <meta name="apple-mobile-web-app-title" content={`Colend`} />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />

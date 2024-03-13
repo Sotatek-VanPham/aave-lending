@@ -34,6 +34,7 @@ import { Link, ROUTES } from '../components/primitives/Link';
 import { ENABLE_TESTNET, getNetworkConfig, STAGING_ENV } from '../utils/marketsAndNetworksConfig';
 import { DrawerWrapper } from './components/DrawerWrapper';
 import { MobileCloseButton } from './components/MobileCloseButton';
+import { CHAIN_SUPPORT } from 'src/ui-config/networksConfig';
 
 interface WalletWidgetProps {
   open: boolean;
@@ -56,6 +57,10 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
   const [anchorEl, setAnchorEl] = useState<Element | null>(null);
 
   const networkConfig = getNetworkConfig(chainId);
+  const isWrongNetwork = ![CHAIN_SUPPORT.core_testnet, CHAIN_SUPPORT.core_mainnet].includes(
+    chainId || 1115
+  );
+
   let networkColor = '';
   if (networkConfig?.isFork) {
     networkColor = '#ff4a8d';
@@ -326,7 +331,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
       {md && connected && open ? (
         <MobileCloseButton setOpen={setOpen} />
       ) : loading ? (
-        <Skeleton height={36} width={126} sx={{ background: '#383D51' }} />
+        <Skeleton height={28} width={126} sx={{ background: '#383D51' }} />
       ) : (
         <Button
           variant={connected ? 'surface' : 'surface'}
@@ -337,8 +342,12 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
           aria-haspopup="true"
           onClick={handleClick}
           sx={{
-            p: connected ? '5px 8px' : undefined,
+            p: connected ? '4px 8px' : undefined,
             minWidth: hideWalletAccountText ? 'unset' : undefined,
+            background: 'rgba(27, 27, 29, 0.69)',
+            borderRadius: '4px',
+            border: 'none',
+            height: '28px',
           }}
           endIcon={
             connected &&
@@ -355,13 +364,17 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
           }
         >
           {connected ? (
-            <UserDisplay
-              avatarProps={{ size: AvatarSize.SM }}
-              oneLiner={true}
-              titleProps={{ variant: 'buttonM' }}
-            />
+            isWrongNetwork ? (
+              <Trans> Wrong network </Trans>
+            ) : (
+              <UserDisplay
+                avatarProps={{ size: AvatarSize.SM }}
+                oneLiner={true}
+                titleProps={{ variant: 'buttonM' }}
+              />
+            )
           ) : (
-            <Trans>Connect wallet</Trans>
+            <Trans> Connect wallet </Trans>
           )}
         </Button>
       )}

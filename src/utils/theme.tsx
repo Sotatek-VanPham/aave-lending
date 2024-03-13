@@ -39,6 +39,7 @@ declare module '@mui/material/styles/createPalette' {
     header: string;
     footer: string;
     disabled: string;
+    menu: string
   }
 
   interface Palette {
@@ -191,7 +192,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         hover: `#FFF`,
       },
       background: {
-        default: getColor('#F8F0E5', '#F8F0E5'),
+        default: getColor('#121212', '#121212'),
         paper: getColor('#FFF', '#FFF'),
         surface: getColor('#77037B', '#77037B'),
         surface2: getColor('#3AB0FF', '#3AB0FF'),
@@ -200,6 +201,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         base: getColor('#0455ff', '#0455ff'),
         lifi: getColor('#F5B5FF', '#F5B5FF'),
         header: getColor('#0C356A', '#0C356A'),
+        menu: getColor('rgba(34, 34, 34, 0.40)', 'rgba(34, 34, 34, 0.40)'),
         footer: getColor('#0C356A', '#0C356A'),
         disabled: getColor('#EAEBEF', '#EBEBEF14'),
       },
@@ -216,7 +218,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         standardInputLine: getColor('#383D511F', '#EBEBEF6B'),
       },
       gradients: {
-        seamless: 'linear-gradient(248.86deg, #CDF3A2 5%, #21E1E1 15%, #D69BDF 40%, #506FF3 91%)',
+        seamless: '#FF4228',
         seamlessFooter:
           'linear-gradient(248.86deg, #506FF3 1%, #CDF3A2 15%, #21E1E1 30%, #D69BDF 50%, #506FF3 81%)',
       },

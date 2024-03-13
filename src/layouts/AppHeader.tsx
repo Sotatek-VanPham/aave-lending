@@ -63,7 +63,7 @@ export function AppHeader() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [md]);
 
-  const headerHeight = 48;
+  const headerHeight = 51;
 
   const toggleWalletWigit = (state: boolean) => {
     if (md) setMobileDrawerOpen(state);
@@ -124,7 +124,8 @@ export function AppHeader() {
           top: 0,
           transition: theme.transitions.create('top'),
           zIndex: theme.zIndex.appBar,
-          bgcolor: theme.palette.background.header,
+          bgcolor: theme.palette.background.menu,
+          backdropFilter: 'blur(60px)',
           padding: {
             xs: mobileMenuOpen || walletWidgetOpen ? '8px 20px' : '8px 8px 8px 20px',
             xsm: '8px 20px',
@@ -141,13 +142,13 @@ export function AppHeader() {
           aria-label="Go to homepage"
           sx={{
             lineHeight: 0,
-            mr: 3,
+            mr: '60px',
             transition: '0.3s ease all',
             '&:hover': { opacity: 0.7 },
           }}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <img src={uiConfig.appLogo} alt="An SVG of an eye" height={96} />
+          <img src={uiConfig.appLogo} alt="An SVG of an eye" height={30} />
         </Box>
         <Box sx={{ mr: sm ? 1 : 3 }}>
           {ENABLE_TESTNET && (

@@ -51,7 +51,7 @@ export const CompactableTypography = ({
   const selectedCompactMode = compactModeMap[compactMode];
 
   return (
-    <Typography {...rest}>
+    <Typography {...rest} sx={{ fontFamily: 'Mulish', fontSize: '12px', fontWeight: 700 }}>
       {loading ? (
         <Skeleton width={skeletonWidth} />
       ) : compact ? (

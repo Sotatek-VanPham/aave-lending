@@ -50,7 +50,11 @@ export const TitleWithSearchBar = <T extends React.ElementType>({
       }}
     >
       {showMarketTitle && (
-        <Typography component="div" variant="h2" sx={{ mr: 4 }} {...titleProps}>
+        <Typography
+          component="div"
+          sx={{ mr: 4, fontFamily: 'Work Sans', fontSize: '24px', fontWeight: 500, color: '#fff' }}
+          {...titleProps}
+        >
           {title}
         </Typography>
       )}
@@ -78,6 +82,7 @@ export const TitleWithSearchBar = <T extends React.ElementType>({
                 width: {
                   xs: '100%',
                   sm: '340px',
+                  color: '#fff'
                 },
               }}
               placeholder={searchPlaceholder}

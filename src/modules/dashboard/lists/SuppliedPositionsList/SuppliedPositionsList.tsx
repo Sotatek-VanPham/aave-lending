@@ -125,7 +125,7 @@ export const SuppliedPositionsList = () => {
     <ListWrapper
       tooltipOpen={tooltipOpen}
       titleComponent={
-        <Typography component="div" variant="h3" sx={{ mr: 4 }}>
+        <Typography component="div" variant="h3" sx={{ mr: 4, color: '#FFF' }}>
           <Trans>Your supplies</Trans>
         </Typography>
       }
