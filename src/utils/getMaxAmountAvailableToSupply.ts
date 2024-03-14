@@ -1,6 +1,6 @@
-import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { valueToBigNumber } from '@aave/math-utils';
 import BigNumber from 'bignumber.js';
+import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 
 import { roundToTokenDecimals } from './utils';
 

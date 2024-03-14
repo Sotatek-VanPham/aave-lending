@@ -41,7 +41,7 @@ export function MoreMenu() {
           minWidth: 'unset',
           p: '6px 8px',
           fontWeight: 500,
-          fontFamily: "Work Sans",
+          fontFamily: 'Work Sans',
           fontSize: '16px',
           '&:hover': {
             bgcolor: 'rgba(250, 251, 252, 0.08)',

@@ -48,7 +48,7 @@ export const ListHeaderTitle = ({
         alignItems: 'center',
         color: '#FFF',
         fontFamily: 'Mulish',
-        fontWeight: 400
+        fontWeight: 400,
       }}
     >
       {children}

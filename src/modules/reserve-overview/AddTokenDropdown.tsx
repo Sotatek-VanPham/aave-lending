@@ -195,7 +195,9 @@ export const AddTokenDropdown = ({
                   address: addRewardToken.address,
                   decimals: addRewardToken.decimals,
                   symbol: addRewardToken.symbol,
-                  image: !/_/.test(addRewardToken.symbol) ? rewardTokensBase64?.[addRewardToken.symbol] : undefined,
+                  image: !/_/.test(addRewardToken.symbol)
+                    ? rewardTokensBase64?.[addRewardToken.symbol]
+                    : undefined,
                 });
               }
               handleClose();

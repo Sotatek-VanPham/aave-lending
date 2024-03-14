@@ -48,7 +48,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
       <ListColumn isRow maxWidth={280}>
         <TokenIcon symbol={reserve.iconSymbol} fontSize="large" />
         <Box sx={{ pl: 3.5, overflow: 'hidden' }}>
-          <Typography variant="h4" noWrap sx={{ color: '#fff'}}>
+          <Typography variant="h4" noWrap sx={{ color: '#fff' }}>
             {reserve.name || 'Unknow'}
           </Typography>
           <Box
@@ -56,7 +56,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
               p: { xs: '0', xsm: '3.625px 0px' },
             }}
           >
-            <Typography variant="subheader2" noWrap sx={{ color: '#fff'}}>
+            <Typography variant="subheader2" noWrap sx={{ color: '#fff' }}>
               {reserve.symbol || 'Unknow'}
             </Typography>
           </Box>

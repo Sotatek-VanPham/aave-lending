@@ -28,13 +28,13 @@ import { WalletModal } from 'src/components/WalletConnection/WalletModal';
 import { useWalletModalContext } from 'src/hooks/useWalletModal';
 import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
 import { useRootStore } from 'src/store/root';
+import { CHAIN_SUPPORT } from 'src/ui-config/networksConfig';
 import { AUTH, GENERAL } from 'src/utils/mixPanelEvents';
 
 import { Link, ROUTES } from '../components/primitives/Link';
 import { ENABLE_TESTNET, getNetworkConfig, STAGING_ENV } from '../utils/marketsAndNetworksConfig';
 import { DrawerWrapper } from './components/DrawerWrapper';
 import { MobileCloseButton } from './components/MobileCloseButton';
-import { CHAIN_SUPPORT } from 'src/ui-config/networksConfig';
 
 interface WalletWidgetProps {
   open: boolean;

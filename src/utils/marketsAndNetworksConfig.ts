@@ -1,5 +1,5 @@
-import { ChainIdToNetwork } from 'colend-contract-helpers';
 import { StaticJsonRpcProvider } from '@ethersproject/providers';
+import { ChainIdToNetwork } from 'colend-contract-helpers';
 import { providers as ethersProviders } from 'ethers';
 
 import {
@@ -135,7 +135,7 @@ const linkBuilder =
 
 export function getNetworkConfig(chainId: any): NetworkConfig {
   const config = networkConfigs[chainId];
-  
+
   if (!config) {
     // this case can only ever occure when a wallet is connected with a unknown chainId which will not allow interaction
     const name = ChainIdToNetwork[chainId];

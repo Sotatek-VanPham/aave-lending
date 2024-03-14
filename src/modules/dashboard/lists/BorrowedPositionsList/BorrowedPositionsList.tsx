@@ -1,7 +1,7 @@
-import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Typography, useMediaQuery, useTheme } from '@mui/material';
+import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { useState } from 'react';
 import { ListColumn } from 'src/components/lists/ListColumn';
 import { ListHeaderTitle } from 'src/components/lists/ListHeaderTitle';

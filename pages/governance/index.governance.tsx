@@ -68,9 +68,16 @@ export default function Governance(/*props: GovernancePageProps*/) {
     query['proposalId'] === undefined || Array.isArray(query['proposalId'])
       ? ''
       : query['proposalId'];
-  
+
   useEffect(() => {
-    console.log("connected: ", connected, ", proposalIdQuery: ", proposalIdQuery, ", governorAddressQuery: ", governorAddressQuery);
+    console.log(
+      'connected: ',
+      connected,
+      ', proposalIdQuery: ',
+      proposalIdQuery,
+      ', governorAddressQuery: ',
+      governorAddressQuery
+    );
     if (
       connected &&
       proposalIdQuery &&

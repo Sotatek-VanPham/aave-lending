@@ -1,6 +1,6 @@
-import { ChainId } from 'colend-contract-helpers';
 import { JsonRpcProvider } from '@ethersproject/providers';
 import { Wallet } from '@ethersproject/wallet';
+import { ChainId } from 'colend-contract-helpers';
 
 import { CustomizedBridge } from '../tools/bridge';
 import { DEFAULT_TEST_ACCOUNT, TenderlyFork } from '../tools/tenderly';

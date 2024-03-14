@@ -1,6 +1,6 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
+import { InterestRate } from 'colend-contract-helpers';
 import { Warning } from 'src/components/primitives/Warning';
 import { useModalContext } from 'src/hooks/useModal';
 

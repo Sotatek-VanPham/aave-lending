@@ -1,13 +1,13 @@
+import { SignatureLike } from '@ethersproject/bytes';
+import { TransactionResponse } from '@ethersproject/providers';
+import { Trans } from '@lingui/macro';
+import { BoxProps } from '@mui/material';
 import {
   ApproveType,
   gasLimitRecommendations,
   MAX_UINT_AMOUNT,
   ProtocolAction,
 } from 'colend-contract-helpers';
-import { SignatureLike } from '@ethersproject/bytes';
-import { TransactionResponse } from '@ethersproject/providers';
-import { Trans } from '@lingui/macro';
-import { BoxProps } from '@mui/material';
 import { parseUnits } from 'ethers/lib/utils';
 import { queryClient } from 'pages/_app.page';
 import React, { useCallback, useEffect, useState } from 'react';

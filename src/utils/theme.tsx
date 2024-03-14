@@ -39,7 +39,7 @@ declare module '@mui/material/styles/createPalette' {
     header: string;
     footer: string;
     disabled: string;
-    menu: string
+    menu: string;
   }
 
   interface Palette {

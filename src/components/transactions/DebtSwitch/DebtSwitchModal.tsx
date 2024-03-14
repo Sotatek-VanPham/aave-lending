@@ -1,5 +1,5 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
+import { InterestRate } from 'colend-contract-helpers';
 import React from 'react';
 import { BasicModal } from 'src/components/primitives/BasicModal';
 import { ModalContextType, ModalType, useModalContext } from 'src/hooks/useModal';

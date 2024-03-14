@@ -1,6 +1,6 @@
-import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { nativeToUSD, normalize, USD_DECIMALS } from '@aave/math-utils';
 import { BigNumber } from 'bignumber.js';
+import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { useRootStore } from 'src/store/root';
 
 import { selectCurrentBaseCurrencyData, selectCurrentReserves } from '../../store/poolSelectors';

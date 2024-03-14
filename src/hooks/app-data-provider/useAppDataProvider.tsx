@@ -1,4 +1,3 @@
-import { ReserveDataHumanized } from 'colend-contract-helpers';
 import {
   ComputedUserReserve,
   formatGhoReserveData,
@@ -12,6 +11,7 @@ import {
   UserReserveData,
 } from '@aave/math-utils';
 import BigNumber from 'bignumber.js';
+import { ReserveDataHumanized } from 'colend-contract-helpers';
 import { formatUnits } from 'ethers/lib/utils';
 import React, { useContext } from 'react';
 import { EmodeCategory } from 'src/helpers/types';

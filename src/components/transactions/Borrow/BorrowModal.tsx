@@ -1,5 +1,5 @@
-import { PERMISSION } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
+import { PERMISSION } from 'colend-contract-helpers';
 import React, { useState } from 'react';
 import { ModalContextType, ModalType, useModalContext } from 'src/hooks/useModal';
 import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';

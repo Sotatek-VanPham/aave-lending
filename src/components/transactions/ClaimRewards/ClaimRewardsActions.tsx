@@ -1,5 +1,5 @@
-import { ProtocolAction } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
+import { ProtocolAction } from 'colend-contract-helpers';
 import { Reward } from 'src/helpers/types';
 import { useTransactionHandler } from 'src/helpers/useTransactionHandler';
 import { useRootStore } from 'src/store/root';
@@ -42,13 +42,7 @@ export const ClaimRewardsActions = ({
       preparingTransactions={loadingTxns}
       mainTxState={mainTxState}
       handleAction={action}
-      actionText={
-        isAll ? (
-          <Trans>Claim all</Trans>
-        ) : (
-          <Trans>Claim {selectedReward.symbol}</Trans>
-        )
-      }
+      actionText={isAll ? <Trans>Claim all</Trans> : <Trans>Claim {selectedReward.symbol}</Trans>}
       actionInProgressText={<Trans>Claiming</Trans>}
       isWrongNetwork={isWrongNetwork}
     />

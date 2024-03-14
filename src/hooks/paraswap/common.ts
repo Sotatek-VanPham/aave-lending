@@ -1,4 +1,3 @@
-import { ChainId, valueToWei } from 'colend-contract-helpers';
 import { BigNumberZeroDecimal, normalize, normalizeBN, valueToBigNumber } from '@aave/math-utils';
 import {
   constructBuildTx,
@@ -11,6 +10,7 @@ import {
   TransactionParams,
 } from '@paraswap/sdk';
 import { RateOptions } from '@paraswap/sdk/dist/methods/swap/rates';
+import { ChainId, valueToWei } from 'colend-contract-helpers';
 
 import { ComputedReserveData } from '../app-data-provider/useAppDataProvider';
 

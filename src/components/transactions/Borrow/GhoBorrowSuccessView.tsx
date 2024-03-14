@@ -1,4 +1,3 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { ExternalLinkIcon } from '@heroicons/react/outline';
 import { CheckIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
@@ -15,6 +14,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
+import { InterestRate } from 'colend-contract-helpers';
 import dynamic from 'next/dynamic.js';
 import { ReactNode, useRef, useState } from 'react';
 import { LensterIcon } from 'src/components/icons/LensterIcon';

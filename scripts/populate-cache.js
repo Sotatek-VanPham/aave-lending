@@ -3329,7 +3329,7 @@ var require_lib = __commonJS({
             if ("test".normalize(form) !== "test") {
               throw new Error("bad normalize");
             }
-            ;
+            
           } catch (error) {
             missing_1.push(form);
           }
@@ -7852,7 +7852,7 @@ var require_utf8 = __commonJS({
             res = null;
             break;
           }
-          ;
+          
           res = res << 6 | nextChar & 63;
           i++;
         }
@@ -18549,7 +18549,7 @@ var require_keystore = __commonJS({
         salt = (0, bytes_1.arrayify)(options2.salt);
       } else {
         salt = (0, random_1.randomBytes)(32);
-        ;
+        
       }
       var iv = null;
       if (options2.iv) {
@@ -20405,7 +20405,7 @@ var require_lib27 = __commonJS({
             return (0, strings_1.toUtf8String)(value);
           } catch (error) {
           }
-          ;
+          
         }
         return (0, bytes_1.hexlify)(value);
       }
@@ -66802,6 +66802,7 @@ var import_lodash = __toESM(require_lodash());
 
 // node_modules/steno/lib/index.js
 var import_fs = __toESM(require("fs"), 1);
+
 var __classPrivateFieldSet2 = function(receiver, state, value, kind, f) {
   if (kind === "m")
     throw new TypeError("Private method is not writable");
@@ -66874,6 +66875,7 @@ _JSONFile_adapter = /* @__PURE__ */ new WeakMap();
 // node_modules/lowdb/lib/adapters/TextFileSync.js
 var import_fs2 = __toESM(require("fs"), 1);
 var import_path = __toESM(require("path"), 1);
+
 var __classPrivateFieldSet3 = function(receiver, state, value, kind, f) {
   if (kind === "m")
     throw new TypeError("Private method is not writable");

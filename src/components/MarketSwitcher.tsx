@@ -155,7 +155,7 @@ export const MarketSwitcher = () => {
                 <Typography
                   // variant={upToLG ? 'display1' : 'h1'}
                   sx={{
-                    fontFamily: "Work Sans",
+                    fontFamily: 'Work Sans',
                     fontWeight: 600,
                     fontSize: '29px',
                     color: 'common.white',
@@ -194,9 +194,7 @@ export const MarketSwitcher = () => {
     >
       <Box>
         <Typography variant="subheader2" color="text.secondary" sx={{ px: 4, pt: 2 }}>
-          <Trans>
-            {ENABLE_TESTNET || STAGING_ENV ? 'Colend Testnet Market' : 'Colend Market'}
-          </Trans>
+          <Trans>{ENABLE_TESTNET || STAGING_ENV ? 'Colend Testnet Market' : 'Colend Market'}</Trans>
         </Typography>
       </Box>
       {/* {isV3MarketsAvailable && (

@@ -1,7 +1,7 @@
-import { ChainId } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
 import { Box, Theme } from '@mui/material';
 import { SxProps } from '@mui/system';
+import { ChainId } from 'colend-contract-helpers';
 import { Warning } from 'src/components/primitives/Warning';
 import { useRootStore } from 'src/store/root';
 import { NetworkConfig } from 'src/ui-config/networksConfig';

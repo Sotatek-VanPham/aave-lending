@@ -1,4 +1,3 @@
-import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import {
   calculateHealthFactorFromBalancesBigUnits,
   USD_DECIMALS,
@@ -6,6 +5,7 @@ import {
 } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
+import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import React, { useMemo, useState } from 'react';
 import { Warning } from 'src/components/primitives/Warning';
 import { AMPLWarning } from 'src/components/Warnings/AMPLWarning';

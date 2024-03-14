@@ -1,7 +1,7 @@
 import assets from '../../fixtures/assets.json';
 import { skipState } from '../../support/steps/common';
 import { configEnvWithTenderlyMainnetFork } from '../../support/steps/configuration.steps';
-import { activateCooldown, stake, reCallCooldown } from '../../support/steps/stake.steps';
+import { activateCooldown, reCallCooldown, stake } from '../../support/steps/stake.steps';
 
 const testCases = [
   {

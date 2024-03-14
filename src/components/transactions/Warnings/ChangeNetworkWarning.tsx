@@ -1,6 +1,6 @@
-import { ChainId } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
 import { Button, Typography } from '@mui/material';
+import { ChainId } from 'colend-contract-helpers';
 import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
 import { TrackEventProps } from 'src/store/analyticsSlice';
 import { useRootStore } from 'src/store/root';

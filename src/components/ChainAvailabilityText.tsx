@@ -1,6 +1,6 @@
-import { ChainId } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
 import { Box, BoxProps, Typography } from '@mui/material';
+import { ChainId } from 'colend-contract-helpers';
 import { BaseNetworkConfig, networkConfigs } from 'src/ui-config/networksConfig';
 
 type ChainAvailabilityTextProps = {

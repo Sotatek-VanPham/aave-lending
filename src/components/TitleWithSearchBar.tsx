@@ -82,7 +82,7 @@ export const TitleWithSearchBar = <T extends React.ElementType>({
                 width: {
                   xs: '100%',
                   sm: '340px',
-                  color: '#fff'
+                  color: '#fff',
                 },
               }}
               placeholder={searchPlaceholder}

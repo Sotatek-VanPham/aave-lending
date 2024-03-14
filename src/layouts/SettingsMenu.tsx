@@ -69,7 +69,7 @@ export function SettingsMenu() {
         </SvgIcon>
       </Button> */}
 
-      <Button onClick={handleSettingsClick}  sx={{ minWidth: '34px' }}>
+      <Button onClick={handleSettingsClick} sx={{ minWidth: '34px' }}>
         <img src="/icons/setting.svg" />
       </Button>
 

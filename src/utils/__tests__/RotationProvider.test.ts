@@ -1,5 +1,5 @@
-import { ChainId } from 'colend-contract-helpers';
 import { Network, StaticJsonRpcProvider } from '@ethersproject/providers/src.ts';
+import { ChainId } from 'colend-contract-helpers';
 
 import { getNetworkConfig } from '../marketsAndNetworksConfig';
 import { checkNetworks, RotationProvider } from '../rotationProvider';

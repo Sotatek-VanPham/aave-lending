@@ -114,11 +114,11 @@ export function VotingPowerInfoPanel() {
                 />
               </Grid>
               <Grid item md={3}>
-              {powers?.votingPower && powers?.votingPower !== '0' && (
-                <Button size="large" variant="contained" onClick={() => openGovVote()}>
-                  <Trans>Cast Vote</Trans>
-                </Button>
-              )}
+                {powers?.votingPower && powers?.votingPower !== '0' && (
+                  <Button size="large" variant="contained" onClick={() => openGovVote()}>
+                    <Trans>Cast Vote</Trans>
+                  </Button>
+                )}
               </Grid>
             </Grid>
             <Divider />

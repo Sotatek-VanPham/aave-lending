@@ -1,5 +1,6 @@
 // import { ChainId } from 'colend-contract-helpers';
 import { ReactNode } from 'react';
+
 import { CHAIN_SUPPORT } from './networksConfig';
 
 // Enable for premissioned market
@@ -118,7 +119,7 @@ export const marketsData: {
   [CustomMarket.proto_core_testnet]: {
     marketTitle: 'Core Testnet',
     v3: true,
-    chainId:  CHAIN_SUPPORT.core_testnet,
+    chainId: CHAIN_SUPPORT.core_testnet,
     enabledFeatures: {
       incentives: true,
     },
@@ -141,7 +142,7 @@ export const marketsData: {
   [CustomMarket.proto_core_mainnet]: {
     marketTitle: 'Core',
     v3: true,
-    chainId:  CHAIN_SUPPORT.core_mainnet,
+    chainId: CHAIN_SUPPORT.core_mainnet,
     enabledFeatures: {
       incentives: true,
     },

@@ -1,4 +1,3 @@
-import { ChainId } from 'colend-contract-helpers';
 import { SafeAppConnector } from '@gnosis.pm/safe-apps-web3-react';
 import { AbstractConnector } from '@web3-react/abstract-connector';
 import { UnsupportedChainIdError } from '@web3-react/core';
@@ -7,11 +6,12 @@ import { InjectedConnector } from '@web3-react/injected-connector';
 import { TorusConnector } from '@web3-react/torus-connector';
 import { ConnectorUpdate } from '@web3-react/types';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
+import { ChainId } from 'colend-contract-helpers';
+import { CHAIN_SUPPORT } from 'src/ui-config/networksConfig';
 import { getNetworkConfig } from 'src/utils/marketsAndNetworksConfig';
 import { LedgerHQFrameConnector } from 'web3-ledgerhq-frame-connector';
 
 import { WalletConnectConnector } from './WalletConnectConnector';
-import { CHAIN_SUPPORT } from 'src/ui-config/networksConfig';
 
 export enum WalletType {
   INJECTED = 'injected',

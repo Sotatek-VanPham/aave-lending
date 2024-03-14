@@ -27,7 +27,7 @@ export const ListItemCanBeCollateral = ({
         </SvgIcon>
       );
     } else {
-      return <NoData variant="main14" sx={{ color: '#fff'}} />;
+      return <NoData variant="main14" sx={{ color: '#fff' }} />;
     }
   };
 

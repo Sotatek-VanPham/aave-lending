@@ -1,10 +1,10 @@
+import { SignatureLike } from '@ethersproject/bytes';
+import { TransactionResponse } from '@ethersproject/providers';
 import {
   EthereumTransactionTypeExtended,
   gasLimitRecommendations,
   ProtocolAction,
 } from 'colend-contract-helpers';
-import { SignatureLike } from '@ethersproject/bytes';
-import { TransactionResponse } from '@ethersproject/providers';
 import { utils } from 'ethers';
 import { useEffect, useState } from 'react';
 import { DelegationTokenType } from 'src/components/transactions/GovDelegation/DelegationTokenSelector';

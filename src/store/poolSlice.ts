@@ -1,3 +1,4 @@
+import { SignatureLike } from '@ethersproject/bytes';
 import {
   ApproveDelegationType,
   ApproveType,
@@ -37,7 +38,6 @@ import {
   LPSupplyParamsType,
   LPSupplyWithPermitType,
 } from 'colend-contract-helpers/dist/esm/v3-pool-contract/lendingPoolTypes';
-import { SignatureLike } from '@ethersproject/bytes';
 import dayjs from 'dayjs';
 import { BigNumber, PopulatedTransaction, Signature, utils } from 'ethers';
 import { splitSignature } from 'ethers/lib/utils';

@@ -35,7 +35,7 @@ export const IncentivesCard = ({
         alignItems: align || { xs: 'flex-end', xsm: 'center' },
         justifyContent: 'center',
         textAlign: 'center',
-        fontFamily: 'Mulish'
+        fontFamily: 'Mulish',
       }}
     >
       {value.toString() !== '-1' ? (

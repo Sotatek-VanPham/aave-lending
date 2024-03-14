@@ -1,6 +1,6 @@
-import { WalletBalanceProvider } from 'colend-contract-helpers';
 import { normalize } from '@aave/math-utils';
 import { Provider } from '@ethersproject/providers';
+import { WalletBalanceProvider } from 'colend-contract-helpers';
 import { governanceConfig } from 'src/ui-config/governanceConfig';
 import { Hashable } from 'src/utils/types';
 

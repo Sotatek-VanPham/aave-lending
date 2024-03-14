@@ -1,4 +1,3 @@
-import { InterestRate } from 'colend-contract-helpers';
 import {
   CheckIcon,
   ChevronDownIcon,
@@ -17,6 +16,7 @@ import {
   SvgIcon,
   Typography,
 } from '@mui/material';
+import { InterestRate } from 'colend-contract-helpers';
 import * as React from 'react';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
 import { Link, ROUTES } from 'src/components/primitives/Link';

@@ -1,8 +1,8 @@
-import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import BigNumber from 'bignumber.js';
+import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { Fragment, useState } from 'react';
 import { ListColumn } from 'src/components/lists/ListColumn';
 import { ListHeaderTitle } from 'src/components/lists/ListHeaderTitle';

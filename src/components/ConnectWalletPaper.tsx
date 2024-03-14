@@ -34,16 +34,16 @@ export const ConnectWalletPaper = ({
         ...sx,
       }}
     >
-      <Logo style={{ width: '48px', height: '48px', marginBottom: '16px', color: 'white',  }} />
+      <Logo style={{ width: '48px', height: '48px', marginBottom: '16px', color: 'white' }} />
       <>
         {loading ? (
           <CircularProgress />
         ) : (
           <>
-            <Typography variant="h2" sx={{ mb: 2, color: "#fff", fontFamily: 'Work Sans' }}>
+            <Typography variant="h2" sx={{ mb: 2, color: '#fff', fontFamily: 'Work Sans' }}>
               <Trans>Please, connect your wallet</Trans>
             </Typography>
-            <Typography sx={{ mb: 6, color: "#fff", fontFamily: 'Work Sans' }}>
+            <Typography sx={{ mb: 6, color: '#fff', fontFamily: 'Work Sans' }}>
               {description || (
                 <Trans>
                   Please connect your wallet to see your supplies, borrowings, and open positions.

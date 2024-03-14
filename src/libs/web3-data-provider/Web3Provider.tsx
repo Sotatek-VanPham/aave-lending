@@ -1,4 +1,3 @@
-import { API_ETH_MOCK_ADDRESS, transactionType } from 'colend-contract-helpers';
 import { SignatureLike } from '@ethersproject/bytes';
 import {
   JsonRpcProvider,
@@ -9,6 +8,7 @@ import { AbstractConnector } from '@web3-react/abstract-connector';
 import { useWeb3React } from '@web3-react/core';
 import { TorusConnector } from '@web3-react/torus-connector';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
+import { API_ETH_MOCK_ADDRESS, transactionType } from 'colend-contract-helpers';
 import { BigNumber, PopulatedTransaction, providers } from 'ethers';
 import React, { ReactElement, useCallback, useEffect, useState } from 'react';
 import { useRootStore } from 'src/store/root';

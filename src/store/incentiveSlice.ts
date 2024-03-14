@@ -1,12 +1,12 @@
 import {
+  IncentiveDataHumanized,
   ReservesIncentiveDataHumanized,
   UiIncentiveDataProvider,
-  UserReservesIncentivesDataHumanized,
-  IncentiveDataHumanized,
   UserIncentiveDataHumanized,
+  UserReservesIncentivesDataHumanized,
 } from 'colend-contract-helpers';
-import { StateCreator } from 'zustand';
 import { parseUnits } from 'ethers/lib/utils';
+import { StateCreator } from 'zustand';
 
 import { RootStore } from './root';
 
@@ -51,16 +51,14 @@ const incentiveDataInjectSEAMPriceUSD = (
   ...incentiveData,
   rewardsTokenInformation: incentiveData.rewardsTokenInformation.map((incentive) => ({
     ...incentive,
-    rewardPriceFeed:
-      SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
-        ? seamPriceUSD
-        : incentive.rewardTokenSymbol === OG_POINTS_SYMBOL
-        ? '0'
-        : incentive.rewardPriceFeed,
-    priceFeedDecimals:
-      SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
-        ? PRICE_FEED_DECIMALS
-        : incentive.priceFeedDecimals,
+    rewardPriceFeed: SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
+      ? seamPriceUSD
+      : incentive.rewardTokenSymbol === OG_POINTS_SYMBOL
+      ? '0'
+      : incentive.rewardPriceFeed,
+    priceFeedDecimals: SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
+      ? PRICE_FEED_DECIMALS
+      : incentive.priceFeedDecimals,
   })),
 });
 
@@ -82,16 +80,14 @@ const userIncentiveDataInjectSEAMPriceUSD = (
   ...incentiveData,
   userRewardsInformation: incentiveData.userRewardsInformation.map((incentive) => ({
     ...incentive,
-    rewardPriceFeed:
-      SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
-        ? seamPriceUSD
-        : incentive.rewardTokenSymbol === OG_POINTS_SYMBOL
-        ? '0'
-        : incentive.rewardPriceFeed,
-    priceFeedDecimals:
-      SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
-        ? PRICE_FEED_DECIMALS
-        : incentive.priceFeedDecimals,
+    rewardPriceFeed: SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
+      ? seamPriceUSD
+      : incentive.rewardTokenSymbol === OG_POINTS_SYMBOL
+      ? '0'
+      : incentive.rewardPriceFeed,
+    priceFeedDecimals: SEAM_SYMBOLS.includes(incentive.rewardTokenSymbol)
+      ? PRICE_FEED_DECIMALS
+      : incentive.priceFeedDecimals,
   })),
 });
 

@@ -1,9 +1,9 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { valueToBigNumber } from '@aave/math-utils';
 import { ArrowDownIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';
 import { Box, SvgIcon, Typography } from '@mui/material';
 import BigNumber from 'bignumber.js';
+import { InterestRate } from 'colend-contract-helpers';
 import { useRef, useState } from 'react';
 import { PriceImpactTooltip } from 'src/components/infoTooltips/PriceImpactTooltip';
 import {

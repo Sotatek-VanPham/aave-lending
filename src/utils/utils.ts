@@ -1,5 +1,5 @@
-import { ChainId } from 'colend-contract-helpers';
 import { BigNumberValue, USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
+import { ChainId } from 'colend-contract-helpers';
 
 export function hexToAscii(_hex: string): string {
   const hex = _hex.toString();
@@ -35,8 +35,7 @@ export const makeCancelable = <T>(promise: Promise<T>) => {
 
 export const optimizedPath = (currentChainId: ChainId) => {
   return (
-    currentChainId === ChainId.arbitrum_one ||
-    currentChainId === ChainId.optimism
+    currentChainId === ChainId.arbitrum_one || currentChainId === ChainId.optimism
     // ||
     // currentChainId === ChainId.optimism_kovan
   );

@@ -1,7 +1,7 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { InformationCircleIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';
 import { Box, Button, SvgIcon, useMediaQuery, useTheme } from '@mui/material';
+import { InterestRate } from 'colend-contract-helpers';
 import { ContentWithTooltip } from 'src/components/ContentWithTooltip';
 import { GhoIncentivesCard } from 'src/components/incentives/GhoIncentivesCard';
 import { FixedAPYTooltipText } from 'src/components/infoTooltips/FixedAPYTooltip';

@@ -1,6 +1,6 @@
-import { canBeEnsAddress } from 'colend-contract-helpers';
 import { t, Trans } from '@lingui/macro';
 import { FormControl, TextField, Typography } from '@mui/material';
+import { canBeEnsAddress } from 'colend-contract-helpers';
 import { constants, utils } from 'ethers';
 import { parseUnits } from 'ethers/lib/utils';
 import { useEffect, useState } from 'react';

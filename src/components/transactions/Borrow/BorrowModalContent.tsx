@@ -1,4 +1,3 @@
-import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import {
   calculateHealthFactorFromBalancesBigUnits,
   USD_DECIMALS,
@@ -6,6 +5,7 @@ import {
 } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Typography } from '@mui/material';
+import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { useState } from 'react';
 import { APYTypeTooltip } from 'src/components/infoTooltips/APYTypeTooltip';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';

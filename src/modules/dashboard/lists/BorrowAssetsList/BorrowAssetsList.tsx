@@ -1,7 +1,7 @@
-import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { Fragment, useState } from 'react';
 import { StableAPYTooltip } from 'src/components/infoTooltips/StableAPYTooltip';
 import { VariableAPYTooltip } from 'src/components/infoTooltips/VariableAPYTooltip';

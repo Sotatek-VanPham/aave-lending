@@ -1,3 +1,5 @@
+import { Trans } from '@lingui/macro';
+import { BoxProps } from '@mui/material';
 import {
   API_ETH_MOCK_ADDRESS,
   ApproveDelegationType,
@@ -6,8 +8,6 @@ import {
   MAX_UINT_AMOUNT,
   ProtocolAction,
 } from 'colend-contract-helpers';
-import { Trans } from '@lingui/macro';
-import { BoxProps } from '@mui/material';
 import { parseUnits } from 'ethers/lib/utils';
 import { queryClient } from 'pages/_app.page';
 import React, { useCallback, useEffect, useState } from 'react';

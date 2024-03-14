@@ -1,8 +1,8 @@
 import {
   BookOpenIcon,
   CreditCardIcon,
-  QuestionMarkCircleIcon,
   GiftIcon,
+  QuestionMarkCircleIcon,
 } from '@heroicons/react/outline';
 import { t } from '@lingui/macro';
 import { ReactNode } from 'react';

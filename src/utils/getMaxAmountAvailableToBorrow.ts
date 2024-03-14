@@ -1,6 +1,6 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { FormatUserSummaryAndIncentivesResponse, valueToBigNumber } from '@aave/math-utils';
 import BigNumber from 'bignumber.js';
+import { InterestRate } from 'colend-contract-helpers';
 import { ethers } from 'ethers';
 
 import {

@@ -1,3 +1,5 @@
+import { normalize, valueToBigNumber } from '@aave/math-utils';
+import { Provider } from '@ethersproject/providers';
 import {
   DEFAULT_NULL_VALUE_ON_TX,
   eEthereumTxType,
@@ -12,8 +14,6 @@ import {
   transactionType,
 } from 'colend-contract-helpers';
 import { estimateGasByNetwork } from 'colend-contract-helpers/dist/cjs/commons/gasStation';
-import { normalize, valueToBigNumber } from '@aave/math-utils';
-import { Provider } from '@ethersproject/providers';
 import { BigNumber, PopulatedTransaction } from 'ethers';
 import {
   EscrowSEAM,

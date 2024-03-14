@@ -1,4 +1,3 @@
-import { InterestRate } from 'colend-contract-helpers';
 import {
   calculateHealthFactorFromBalancesBigUnits,
   USD_DECIMALS,
@@ -7,6 +6,7 @@ import {
 import { ArrowNarrowRightIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
 import { Box, SvgIcon, Typography } from '@mui/material';
+import { InterestRate } from 'colend-contract-helpers';
 import React, { useState } from 'react';
 import {
   GhoIncentivesCard,

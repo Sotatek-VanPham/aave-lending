@@ -1,9 +1,9 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { ExclamationCircleIcon } from '@heroicons/react/outline';
 import { ArrowNarrowRightIcon, CheckIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 import { Box, Button, SvgIcon, Typography, useTheme } from '@mui/material';
+import { InterestRate } from 'colend-contract-helpers';
 import { IncentivesCard } from 'src/components/incentives/IncentivesCard';
 import { MigrationDisabledTooltip } from 'src/components/infoTooltips/MigrationDisabledTooltip';
 import { IsolatedEnabledBadge } from 'src/components/isolationMode/IsolatedBadge';

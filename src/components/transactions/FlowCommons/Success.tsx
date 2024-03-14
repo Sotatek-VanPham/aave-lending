@@ -1,8 +1,8 @@
-import { InterestRate } from 'colend-contract-helpers';
 import { ExternalLinkIcon } from '@heroicons/react/outline';
 import { CheckIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
 import { Box, Button, Link, SvgIcon, Typography, useTheme } from '@mui/material';
+import { InterestRate } from 'colend-contract-helpers';
 import { ReactNode, useState } from 'react';
 import { WalletIcon } from 'src/components/icons/WalletIcon';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';

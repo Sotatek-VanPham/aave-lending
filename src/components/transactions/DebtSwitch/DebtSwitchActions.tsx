@@ -1,11 +1,11 @@
+import { SignatureLike } from '@ethersproject/bytes';
+import { Trans } from '@lingui/macro';
+import { BoxProps } from '@mui/material';
 import {
   ApproveDelegationType,
   gasLimitRecommendations,
   ProtocolAction,
 } from 'colend-contract-helpers';
-import { SignatureLike } from '@ethersproject/bytes';
-import { Trans } from '@lingui/macro';
-import { BoxProps } from '@mui/material';
 import { parseUnits } from 'ethers/lib/utils';
 import { queryClient } from 'pages/_app.page';
 import { useCallback, useEffect, useState } from 'react';

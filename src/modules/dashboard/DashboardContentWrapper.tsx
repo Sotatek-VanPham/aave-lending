@@ -1,5 +1,5 @@
-import { ChainId } from 'colend-contract-helpers';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { ChainId } from 'colend-contract-helpers';
 import { useRootStore } from 'src/store/root';
 
 import { BorrowAssetsList } from './lists/BorrowAssetsList/BorrowAssetsList';

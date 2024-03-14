@@ -52,15 +52,13 @@ export type BaseNetworkConfig = Omit<NetworkConfig, 'explorerLinkBuilder'>;
 
 export enum CHAIN_SUPPORT {
   core_testnet = 1115,
-  core_mainnet = 1116
+  core_mainnet = 1116,
 }
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
   [CHAIN_SUPPORT.core_testnet]: {
     name: 'Core Chain TestNet',
-    publicJsonRPCUrl: [
-      'https://rpc.test.btcs.network',
-    ],
+    publicJsonRPCUrl: ['https://rpc.test.btcs.network'],
     publicJsonRPCWSUrl: '',
     // protocolDataUrl: '',
     baseUniswapAdapter: '0x0',
@@ -74,9 +72,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
   },
   [CHAIN_SUPPORT.core_mainnet]: {
     name: 'Core Chain MainNet',
-    publicJsonRPCUrl: [
-      'https://rpc.coredao.org',
-    ],
+    publicJsonRPCUrl: ['https://rpc.coredao.org'],
     publicJsonRPCWSUrl: '',
     // protocolDataUrl: '',
     baseUniswapAdapter: '0x0',

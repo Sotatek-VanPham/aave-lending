@@ -1,4 +1,3 @@
-import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { BigNumberValue, USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import {
@@ -12,6 +11,7 @@ import {
   Typography,
 } from '@mui/material';
 import BigNumber from 'bignumber.js';
+import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import React, { ReactNode, useState } from 'react';
 import { WalletIcon } from 'src/components/icons/WalletIcon';
 // import { getMarketInfoById } from 'src/components/MarketSwitcher';
