@@ -197,8 +197,6 @@ export const createPoolSlice: StateCreator<
             .then((reservesResponse) =>
               set((state) =>
                 produce(state, (draft) => {
-                  console.log('reservesResponse', reservesResponse);
-                  
                   if (!draft.data.get(currentChainId)) draft.data.set(currentChainId, new Map());
                   if (!draft.data.get(currentChainId)?.get(lendingPoolAddressProvider)) {
                     draft.data.get(currentChainId)!.set(lendingPoolAddressProvider, {
@@ -545,6 +543,7 @@ export const createPoolSlice: StateCreator<
         repayAll: isMaxSelected,
         txCalldata,
         augustus,
+        // @ts-ignore
         deadline: signatureDeconstruct.deadline,
         sigV: signatureDeconstruct.v,
         sigR: signatureDeconstruct.r,

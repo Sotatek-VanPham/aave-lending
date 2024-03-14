@@ -1,4 +1,4 @@
-import { UiStakeDataProvider } from 'colend-contract-helpers';
+import { UiStakeDataProvider } from '@aave/contract-helpers';
 import { Provider } from '@ethersproject/providers';
 import { Hashable } from 'src/utils/types';
 
