@@ -37,7 +37,7 @@ export const DashboardListTopPanel = ({
       }}
     >
       <FormControlLabel
-        sx={{ mt: { xs: bridge ? 2 : 0, xsm: 0 } }}
+        sx={{ mt: { xs: bridge ? 2 : 0, xsm: 0 }, color: '#fff' }}
         control={<Checkbox sx={{ p: '6px' }} />}
         checked={value}
         onChange={() => {

@@ -1,4 +1,4 @@
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from 'colend-contract-helpers';
 
 export const permitByChainAndToken: {
   [chainId: number]: Record<string, boolean>;

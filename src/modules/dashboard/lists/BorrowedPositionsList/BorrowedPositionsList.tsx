@@ -1,4 +1,4 @@
-import { API_ETH_MOCK_ADDRESS, InterestRate } from '@aave/contract-helpers';
+import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Typography, useMediaQuery, useTheme } from '@mui/material';
@@ -164,7 +164,17 @@ export const BorrowedPositionsList = () => {
     <ListWrapper
       tooltipOpen={tooltipOpen}
       titleComponent={
-        <Typography component="div" variant="h3" sx={{ mr: 4 }}>
+        <Typography
+          component="div"
+          variant="h3"
+          sx={{
+            mr: 4,
+            color: '#fff',
+            fontWeight: '500',
+            fontFamily: 'Work Sans',
+            fontSize: '24px',
+          }}
+        >
           <Trans>Your borrows</Trans>
         </Typography>
       }

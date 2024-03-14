@@ -1,4 +1,4 @@
-import { canBeEnsAddress } from '@aave/contract-helpers';
+import { canBeEnsAddress } from 'colend-contract-helpers';
 import { t, Trans } from '@lingui/macro';
 import { FormControl, TextField, Typography } from '@mui/material';
 import { constants, utils } from 'ethers';

@@ -18,7 +18,7 @@ export const FaucetTopPanel = () => {
         <Box>
           <PageTitle pageTitle={<Trans>{currentMarketData.marketTitle} Faucet</Trans>} />
           <Box sx={{ width: md ? (xsm ? '320px' : '540px') : '860px' }}>
-            <Typography variant="description" color="#A5A8B6">
+            <Typography variant="description" color="#fff">
               <Trans>
                 With testnet Faucet you can get free assets to test the Colend Protocol. Make sure
                 to switch your wallet provider to the appropriate testnet network, select desired

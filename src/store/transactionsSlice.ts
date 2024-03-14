@@ -1,4 +1,4 @@
-import { ProtocolAction } from '@aave/contract-helpers';
+import { ProtocolAction } from 'colend-contract-helpers';
 import { produce } from 'immer';
 import { StateCreator } from 'zustand';
 

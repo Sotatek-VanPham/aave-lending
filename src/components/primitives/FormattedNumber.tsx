@@ -1,5 +1,5 @@
 import { normalizeBN, valueToBigNumber } from '@aave/math-utils';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { Variant } from '@mui/material/styles/createTypography';
 import type {
   TypographyProps,
@@ -52,10 +52,10 @@ function CompactNumber({ value, visibleDecimals, roundDown }: CompactNumberProps
   const { prefix, postfix } = compactNumber({ value, visibleDecimals, roundDown });
 
   return (
-    <>
+    <Box sx={{ color: '#fff' }}>
       {prefix}
       {postfix}
-    </>
+    </Box>
   );
 }
 
@@ -121,9 +121,9 @@ export function FormattedNumber({
       {isSmallerThanMin && (
         <Typography
           component="span"
-          sx={{ mr: 0.5 }}
+          sx={{ mr: 0.5, fontWeight: '400', fontFamily: 'Mulish' }}
           variant={symbolsVariant || rest.variant}
-          color={symbolsColor || 'text.secondary'}
+          color={symbolsColor || '#fff'}
         >
           {'<'}
         </Typography>
@@ -131,9 +131,9 @@ export function FormattedNumber({
       {symbol?.toLowerCase() === 'usd' && !percent && (
         <Typography
           component="span"
-          sx={{ mr: 0.5 }}
+          sx={{ mr: 0.5, fontWeight: '400', fontFamily: 'Mulish' }}
           variant={symbolsVariant || rest.variant}
-          color={symbolsColor || 'text.secondary'}
+          color={symbolsColor || '#fff'}
         >
           $
         </Typography>
@@ -156,9 +156,9 @@ export function FormattedNumber({
       {percent && (
         <Typography
           component="span"
-          sx={{ ml: 0.5 }}
+          sx={{ ml: 0.5, fontWeight: '400', fontFamily: 'Mulish' }}
           variant={symbolsVariant || rest.variant}
-          color={symbolsColor || 'text.secondary'}
+          color={symbolsColor || '#fff'}
         >
           %
         </Typography>
@@ -166,9 +166,9 @@ export function FormattedNumber({
       {symbol?.toLowerCase() !== 'usd' && typeof symbol !== 'undefined' && (
         <Typography
           component="span"
-          sx={{ ml: 0.5 }}
+          sx={{ ml: 0.5, fontWeight: '400', fontFamily: 'Mulish' }}
           variant={symbolsVariant || rest.variant}
-          color={symbolsColor || 'text.secondary'}
+          color={symbolsColor || '#fff'}
         >
           {symbol}
         </Typography>

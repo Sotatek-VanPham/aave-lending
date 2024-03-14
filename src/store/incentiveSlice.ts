@@ -4,7 +4,7 @@ import {
   UserReservesIncentivesDataHumanized,
   IncentiveDataHumanized,
   UserIncentiveDataHumanized,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import { StateCreator } from 'zustand';
 import { parseUnits } from 'ethers/lib/utils';
 

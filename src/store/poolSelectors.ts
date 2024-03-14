@@ -1,4 +1,4 @@
-import { ReserveDataHumanized } from '@aave/contract-helpers';
+import { ReserveDataHumanized } from 'colend-contract-helpers';
 import { formatReservesAndIncentives, formatUserSummaryAndIncentives } from '@aave/math-utils';
 import { EmodeCategory } from 'src/helpers/types';
 import { fetchIconSymbolAndName } from 'src/ui-config/reservePatches';

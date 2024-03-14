@@ -1,7 +1,7 @@
 import {
   GeneralStakeUIDataHumanized,
   GetUserStakeUIDataHumanized,
-} from '@aave/contract-helpers/dist/esm/uiStakeDataProvider-contract/types';
+} from 'colend-contract-helpers/dist/esm/uiStakeDataProvider-contract/types';
 import { valueToBigNumber } from '@aave/math-utils';
 import { RefreshIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';

@@ -43,8 +43,15 @@ interface WalletWidgetProps {
 }
 
 export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidgetProps) {
-  const { disconnectWallet, currentAccount, connected, chainId, loading, readOnlyModeAddress } =
-    useWeb3Context();
+  const {
+    disconnectWallet,
+    currentAccount,
+    connected,
+    chainId,
+    loading,
+    readOnlyModeAddress,
+    switchNetwork,
+  } = useWeb3Context();
 
   const router = useRouter();
   const { setWalletModalOpen } = useWalletModalContext();
@@ -79,8 +86,16 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
       trackEvent(GENERAL.OPEN_MODAL, { modal: 'Connect Waller' });
       setWalletModalOpen(true);
     } else {
-      setOpen(true);
-      setAnchorEl(event.currentTarget);
+      if (isWrongNetwork) {
+        const chainID =
+          process.env.NEXT_PUBLIC_ENV === 'prod'
+            ? CHAIN_SUPPORT.core_mainnet
+            : CHAIN_SUPPORT.core_testnet;
+        switchNetwork(chainID);
+      } else {
+        setOpen(true);
+        setAnchorEl(event.currentTarget);
+      }
     }
   };
 
@@ -117,7 +132,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
         variant="subheader2"
         sx={{
           display: { xs: 'block', md: 'none' },
-          color: '#A5A8B6',
+          color: '#fff',
           px: 4,
           py: 2,
         }}
@@ -334,7 +349,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
         <Skeleton height={28} width={126} sx={{ background: '#383D51' }} />
       ) : (
         <Button
-          variant={connected ? 'surface' : 'surface'}
+          variant="surface"
           aria-label="wallet"
           id="wallet-button"
           aria-controls={open ? 'wallet-button' : undefined}
@@ -351,6 +366,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
           }}
           endIcon={
             connected &&
+            !isWrongNetwork &&
             !hideWalletAccountText &&
             !md && (
               <SvgIcon

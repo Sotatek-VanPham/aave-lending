@@ -1,4 +1,4 @@
-import { API_ETH_MOCK_ADDRESS, InterestRate } from '@aave/contract-helpers';
+import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
@@ -204,7 +204,17 @@ export const BorrowAssetsList = () => {
   return (
     <ListWrapper
       titleComponent={
-        <Typography component="div" variant="h3" sx={{ mr: 4 }}>
+        <Typography
+          component="div"
+          variant="h3"
+          sx={{
+            mr: 4,
+            color: '#fff',
+            fontWeight: '500',
+            fontFamily: 'Work Sans',
+            fontSize: '24px',
+          }}
+        >
           <Trans>Assets to borrow</Trans>
         </Typography>
       }
@@ -237,22 +247,58 @@ export const BorrowAssetsList = () => {
             {!borrowDisabled && (
               <>
                 {user?.isInIsolationMode && (
-                  <Warning severity="warning">
+                  <Box
+                    sx={{
+                      background: 'transparent',
+                      border: ' 2px solid rgba(255, 66, 40, 0.30)',
+                      borderRadius: '6px',
+                      color: '#FF4228',
+                      fontFamily: 'Mulish',
+                      padding: '10px 16px',
+                      display: 'flex',
+                      gap: '13px',
+                    }}
+                  >
+                    <img src="/icons/warning.svg" />
                     <Trans>Borrowing power and assets are limited due to Isolation mode. </Trans>
-                  </Warning>
+                  </Box>
                 )}
                 {user?.isInEmode && (
-                  <Warning severity="warning">
+                  <Box
+                    sx={{
+                      background: 'transparent',
+                      border: ' 2px solid rgba(255, 66, 40, 0.30)',
+                      borderRadius: '6px',
+                      color: '#FF4228',
+                      fontFamily: 'Mulish',
+                      padding: '10px 16px',
+                      display: 'flex',
+                      gap: '13px',
+                    }}
+                  >
+                    <img src="/icons/warning.svg" />
                     <Trans>
                       In E-Mode some assets are not borrowable. Exit E-Mode to get access to all
                       assets
                     </Trans>
-                  </Warning>
+                  </Box>
                 )}
                 {user?.totalCollateralMarketReferenceCurrency === '0' && (
-                  <Warning severity="info">
+                  <Box
+                    sx={{
+                      background: 'transparent',
+                      border: ' 2px solid rgba(255, 66, 40, 0.30)',
+                      borderRadius: '6px',
+                      color: '#FF4228',
+                      fontFamily: 'Mulish',
+                      padding: '10px 16px',
+                      display: 'flex',
+                      gap: '13px',
+                    }}
+                  >
+                    <img src="/icons/warning.svg" />
                     <Trans>To borrow you need to supply any asset to be used as collateral.</Trans>
-                  </Warning>
+                  </Box>
                 )}
               </>
             )}

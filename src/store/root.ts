@@ -1,4 +1,4 @@
-import { V3FaucetService } from '@aave/contract-helpers';
+import { V3FaucetService } from 'colend-contract-helpers';
 import { enableMapSet } from 'immer';
 import { CustomMarket } from 'src/ui-config/marketsConfig';
 import { ENABLE_TESTNET, STAGING_ENV } from 'src/utils/marketsAndNetworksConfig';

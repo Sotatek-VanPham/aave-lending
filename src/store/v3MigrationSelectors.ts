@@ -5,13 +5,13 @@ import {
   ReservesIncentiveDataHumanized,
   UserReserveDataHumanized,
   valueToWei,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import {
   MigrationRepayAsset,
   MigrationSupplyAsset,
   V3MigrationHelperSignedCreditDelegationPermit,
   V3MigrationHelperSignedPermit,
-} from '@aave/contract-helpers/dist/esm/v3-migration-contract/v3MigrationTypes';
+} from 'colend-contract-helpers/dist/esm/v3-migration-contract/v3MigrationTypes';
 import {
   ComputedUserReserve,
   formatReservesAndIncentives,

@@ -154,7 +154,7 @@ function SingleTokenIcon({ symbol, aToken, ...rest }: TokenIconProps) {
       ) : (
         // eslint-disable-next-line
         <img
-          src={`/icons/tokens/${symbol.toLowerCase()}.svg`}
+          src={symbol ? `/icons/tokens/${symbol.toLowerCase()}.svg` : '/icons/tokens/unknow.svg'}
           width="100%"
           height="100%"
           alt={`${symbol} icon`}

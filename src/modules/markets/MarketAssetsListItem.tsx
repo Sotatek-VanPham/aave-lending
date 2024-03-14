@@ -48,16 +48,16 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
       <ListColumn isRow maxWidth={280}>
         <TokenIcon symbol={reserve.iconSymbol} fontSize="large" />
         <Box sx={{ pl: 3.5, overflow: 'hidden' }}>
-          <Typography variant="h4" noWrap>
-            {reserve.name}
+          <Typography variant="h4" noWrap sx={{ color: '#fff'}}>
+            {reserve.name || 'Unknow'}
           </Typography>
           <Box
             sx={{
               p: { xs: '0', xsm: '3.625px 0px' },
             }}
           >
-            <Typography variant="subheader2" noWrap>
-              {reserve.symbol}
+            <Typography variant="subheader2" noWrap sx={{ color: '#fff'}}>
+              {reserve.symbol || 'Unknow'}
             </Typography>
           </Box>
         </Box>
@@ -88,7 +88,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
             <ReserveSubheader value={reserve.totalDebtUSD} />
           </>
         ) : (
-          <NoData variant={'secondary14'} color="text.secondary" />
+          <NoData variant={'secondary14'} color="#fff" />
         )}
       </ListColumn>
 
@@ -131,12 +131,20 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
               market: currentMarket,
             })
           }
-          sx={(theme) => ({
-            backgroundColor: theme.palette.background.surface,
-            color: theme.palette.text.links,
+          sx={() => ({
+            backgroundColor: '#DA3E3E',
+            color: '#1A1A1C',
+            border: 'none',
+            borderRadius: '4px',
+            fontFamily: 'Mulish',
+            fontSize: '12px',
+            fontWeight: 700,
+            height: '32px',
+            width: '65px',
+
             '&:hover': {
-              backgroundColor: theme.palette.background.surface,
-              color: theme.palette.text.links,
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
             },
           })}
         >

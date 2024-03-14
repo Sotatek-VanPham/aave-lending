@@ -1,4 +1,4 @@
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
 import { Box, Theme } from '@mui/material';
 import { SxProps } from '@mui/system';

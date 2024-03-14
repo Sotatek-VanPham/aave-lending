@@ -25,18 +25,18 @@ import {
   UiPoolDataProvider,
   UserReserveDataHumanized,
   V3FaucetService,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import {
   LPBorrowParamsType,
   LPSetUsageAsCollateral,
   LPSwapBorrowRateMode,
   LPWithdrawParamsType,
-} from '@aave/contract-helpers/dist/esm/lendingPool-contract/lendingPoolTypes';
+} from 'colend-contract-helpers/dist/esm/lendingPool-contract/lendingPoolTypes';
 import {
   LPSignERC20ApprovalType,
   LPSupplyParamsType,
   LPSupplyWithPermitType,
-} from '@aave/contract-helpers/dist/esm/v3-pool-contract/lendingPoolTypes';
+} from 'colend-contract-helpers/dist/esm/v3-pool-contract/lendingPoolTypes';
 import { SignatureLike } from '@ethersproject/bytes';
 import dayjs from 'dayjs';
 import { BigNumber, PopulatedTransaction, Signature, utils } from 'ethers';
@@ -197,6 +197,8 @@ export const createPoolSlice: StateCreator<
             .then((reservesResponse) =>
               set((state) =>
                 produce(state, (draft) => {
+                  console.log('reservesResponse', reservesResponse);
+                  
                   if (!draft.data.get(currentChainId)) draft.data.set(currentChainId, new Map());
                   if (!draft.data.get(currentChainId)?.get(lendingPoolAddressProvider)) {
                     draft.data.get(currentChainId)!.set(lendingPoolAddressProvider, {

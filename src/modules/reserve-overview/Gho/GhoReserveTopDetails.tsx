@@ -23,7 +23,7 @@ export const GhoReserveTopDetails = () => {
           symbol="USD"
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
-          symbolsColor="#A5A8B6"
+          symbolsColor="#fff"
         />
       </TopInfoPanelItem>
 
@@ -33,7 +33,7 @@ export const GhoReserveTopDetails = () => {
           symbol="USD"
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
-          symbolsColor="#A5A8B6"
+          symbolsColor="#fff"
         />
       </TopInfoPanelItem>
 
@@ -56,7 +56,7 @@ export const GhoReserveTopDetails = () => {
             symbol="USD"
             variant={valueTypographyVariant}
             symbolsVariant={symbolsTypographyVariant}
-            symbolsColor="#A5A8B6"
+            symbolsColor="#fff"
           />
         </Box>
       </TopInfoPanelItem>

@@ -522,10 +522,6 @@ msgid "Borrowing {symbol}"
 msgstr "Borrowing {symbol}"
 
 #: src/ui-config/menu-items/index.tsx
-msgid "Bridge to Base"
-msgstr "Bridge to Base"
-
-#: src/ui-config/menu-items/index.tsx
 msgid "Buy Crypto With Fiat"
 msgstr "Buy Crypto With Fiat"
 
@@ -1829,10 +1825,6 @@ msgstr "Stable interest rate will <0>stay the same</0> for the duration of your 
 #: src/utils/eMode.ts
 msgid "Stablecoin"
 msgstr "Stablecoin"
-
-#: src/ui-config/menu-items/index.tsx
-msgid "Stake"
-msgstr "Stake"
 
 #: src/ui-config/menu-items/index.tsx
 msgid "Staking Farms"

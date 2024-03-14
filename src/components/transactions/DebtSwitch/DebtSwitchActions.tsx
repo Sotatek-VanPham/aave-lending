@@ -2,7 +2,7 @@ import {
   ApproveDelegationType,
   gasLimitRecommendations,
   ProtocolAction,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import { SignatureLike } from '@ethersproject/bytes';
 import { Trans } from '@lingui/macro';
 import { BoxProps } from '@mui/material';

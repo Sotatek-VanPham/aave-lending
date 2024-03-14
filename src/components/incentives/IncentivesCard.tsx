@@ -10,7 +10,7 @@ interface IncentivesCardProps {
   symbol: string;
   value: string | number;
   incentives?: ReserveIncentiveResponse[];
-  variant?: 'main14' | 'main16' | 'secondary14';
+  variant?: 'main14' | 'main16' | 'secondary14' | 'secondary12';
   symbolsVariant?: 'secondary14' | 'secondary16';
   align?: 'center' | 'flex-end';
   color?: string;
@@ -21,7 +21,7 @@ export const IncentivesCard = ({
   symbol,
   value,
   incentives,
-  variant = 'secondary14',
+  variant = 'secondary12',
   symbolsVariant,
   align,
   color,
@@ -35,6 +35,7 @@ export const IncentivesCard = ({
         alignItems: align || { xs: 'flex-end', xsm: 'center' },
         justifyContent: 'center',
         textAlign: 'center',
+        fontFamily: 'Mulish'
       }}
     >
       {value.toString() !== '-1' ? (
@@ -45,13 +46,13 @@ export const IncentivesCard = ({
             percent
             variant={variant}
             symbolsVariant={symbolsVariant}
-            color={color}
+            color={'#fff'}
             symbolsColor={color}
           />
           {tooltip}
         </Box>
       ) : (
-        <NoData variant={variant} color={color || 'text.secondary'} />
+        <NoData variant={variant} color={color || '#fff'} />
       )}
 
       <IncentivesButton incentives={incentives} symbol={symbol} />

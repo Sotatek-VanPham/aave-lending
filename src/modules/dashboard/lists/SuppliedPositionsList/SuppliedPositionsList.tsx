@@ -1,4 +1,4 @@
-import { API_ETH_MOCK_ADDRESS } from '@aave/contract-helpers';
+import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
 import { Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Fragment, useState } from 'react';
@@ -125,7 +125,17 @@ export const SuppliedPositionsList = () => {
     <ListWrapper
       tooltipOpen={tooltipOpen}
       titleComponent={
-        <Typography component="div" variant="h3" sx={{ mr: 4, color: '#FFF' }}>
+        <Typography
+          component="div"
+          variant="h3"
+          sx={{
+            mr: 4,
+            color: '#fff',
+            fontWeight: '500',
+            fontFamily: 'Work Sans',
+            fontSize: '24px',
+          }}
+        >
           <Trans>Your supplies</Trans>
         </Typography>
       }

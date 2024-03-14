@@ -1,4 +1,4 @@
-import { GhoService } from '@aave/contract-helpers';
+import { GhoService } from 'colend-contract-helpers';
 import { GhoReserveData, GhoUserData, normalize } from '@aave/math-utils';
 import { GHO_SUPPORTED_MARKETS } from 'src/utils/ghoUtilities';
 import { getProvider } from 'src/utils/marketsAndNetworksConfig';

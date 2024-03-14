@@ -1,4 +1,4 @@
-import { mintAmountsPerToken, valueToWei } from '@aave/contract-helpers';
+import { mintAmountsPerToken, valueToWei } from 'colend-contract-helpers';
 import { normalize } from '@aave/math-utils';
 
 export const getNormalizedMintAmount = (reserveSymbol: string, reserveDecimals: number) => {

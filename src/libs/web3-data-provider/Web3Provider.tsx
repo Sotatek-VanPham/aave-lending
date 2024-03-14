@@ -1,4 +1,4 @@
-import { API_ETH_MOCK_ADDRESS, transactionType } from '@aave/contract-helpers';
+import { API_ETH_MOCK_ADDRESS, transactionType } from 'colend-contract-helpers';
 import { SignatureLike } from '@ethersproject/bytes';
 import {
   JsonRpcProvider,

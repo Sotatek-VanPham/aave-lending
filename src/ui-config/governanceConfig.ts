@@ -1,4 +1,4 @@
-// import { ChainId } from '@aave/contract-helpers';
+// import { ChainId } from 'colend-contract-helpers';
 import { CHAIN_SUPPORT } from './networksConfig';
 
 export interface GovernanceConfig {

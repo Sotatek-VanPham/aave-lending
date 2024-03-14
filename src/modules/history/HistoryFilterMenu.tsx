@@ -180,7 +180,7 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
               }}
               onClick={handleClearFilter}
             >
-              <XCircleIcon color="#A5A8B6" width={18} height={18} />
+              <XCircleIcon color="#fff" width={18} height={18} />
             </Box>
           </DarkTooltip>
         )}

@@ -10,8 +10,8 @@ import {
   ProtocolAction,
   TransactionGenerationMethod,
   transactionType,
-} from '@aave/contract-helpers';
-import { estimateGasByNetwork } from '@aave/contract-helpers/dist/cjs/commons/gasStation';
+} from 'colend-contract-helpers';
+import { estimateGasByNetwork } from 'colend-contract-helpers/dist/cjs/commons/gasStation';
 import { normalize, valueToBigNumber } from '@aave/math-utils';
 import { Provider } from '@ethersproject/providers';
 import { BigNumber, PopulatedTransaction } from 'ethers';

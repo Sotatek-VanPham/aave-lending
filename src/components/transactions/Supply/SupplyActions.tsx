@@ -3,7 +3,7 @@ import {
   gasLimitRecommendations,
   MAX_UINT_AMOUNT,
   ProtocolAction,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import { SignatureLike } from '@ethersproject/bytes';
 import { TransactionResponse } from '@ethersproject/providers';
 import { Trans } from '@lingui/macro';

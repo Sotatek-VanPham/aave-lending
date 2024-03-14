@@ -36,7 +36,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
   const iconStyling = {
     display: 'inline-flex',
     alignItems: 'center',
-    color: '#A5A8B6',
+    color: '#fff',
     '&:hover': { color: '#F1F1F3' },
     cursor: 'pointer',
   };
@@ -49,7 +49,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           symbol="USD"
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
-          symbolsColor="#A5A8B6"
+          symbolsColor="#fff"
         />
       </TopInfoPanelItem>
 
@@ -59,7 +59,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           symbol="USD"
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
-          symbolsColor="#A5A8B6"
+          symbolsColor="#fff"
         />
       </TopInfoPanelItem>
 
@@ -69,7 +69,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           percent
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
-          symbolsColor="#A5A8B6"
+          symbolsColor="#fff"
         />
       </TopInfoPanelItem>
 
@@ -80,7 +80,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
             symbol="USD"
             variant={valueTypographyVariant}
             symbolsVariant={symbolsTypographyVariant}
-            symbolsColor="#A5A8B6"
+            symbolsColor="#fff"
           />
           {loading ? (
             <Skeleton width={16} height={16} sx={{ ml: 1, background: '#383D51' }} />
@@ -90,13 +90,13 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
                 onClick={() =>
                   trackEvent(GENERAL.EXTERNAL_LINK, {
                     Link: 'Oracle Price',
-                    oracle: poolReserve?.priceOracle,
+                    oracle: poolReserve?.priceId,
                     assetName: poolReserve.name,
                     asset: poolReserve.underlyingAsset,
                   })
                 }
                 href={currentNetworkConfig.explorerLinkBuilder({
-                  address: poolReserve?.priceOracle,
+                  address: poolReserve?.priceId,
                 })}
                 sx={iconStyling}
               >

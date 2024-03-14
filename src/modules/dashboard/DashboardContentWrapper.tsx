@@ -1,4 +1,4 @@
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from 'colend-contract-helpers';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import { useRootStore } from 'src/store/root';
 

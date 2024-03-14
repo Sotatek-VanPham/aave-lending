@@ -26,9 +26,9 @@ const Content = ({
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <FormattedNumber
           value={value}
-          variant="secondary14"
+          variant="secondary12"
           sx={{ mb: !withTooltip && !!subValue ? '2px' : 0 }}
-          color={disabled ? 'text.disabled' : 'text.main'}
+          color={disabled ? 'text.disabled' : '#fff'}
           data-cy={`nativeAmount`}
         />
         {capsComponent}
@@ -39,7 +39,7 @@ const Content = ({
           value={subValue}
           symbol="USD"
           variant="secondary12"
-          color="text.secondary"
+          color="#fff"
         />
       )}
     </>
@@ -71,7 +71,7 @@ export const ListValueColumn = ({
               <FormattedNumber
                 value={subValue || 0}
                 symbol="USD"
-                variant="secondary14"
+                variant="secondary12"
                 sx={{ mb: '2px' }}
                 symbolsColor="common.white"
                 compact={false}

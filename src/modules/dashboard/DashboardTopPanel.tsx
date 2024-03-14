@@ -1,4 +1,4 @@
-import { ChainId } from '@aave/contract-helpers';
+import { ChainId } from 'colend-contract-helpers';
 import { normalize, UserIncentiveData, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Box, Button, Typography, useMediaQuery, useTheme } from '@mui/material';
@@ -151,7 +151,7 @@ export const DashboardTopPanel = () => {
               variant={valueTypographyVariant}
               visibleDecimals={2}
               compact
-              symbolsColor="#A5A8B6"
+              symbolsColor="#fff"
               symbolsVariant={noDataTypographyVariant}
             />
           ) : (
@@ -180,7 +180,7 @@ export const DashboardTopPanel = () => {
               variant={valueTypographyVariant}
               visibleDecimals={2}
               percent
-              symbolsColor="#A5A8B6"
+              symbolsColor="#fff"
               symbolsVariant={noDataTypographyVariant}
             />
           ) : (
@@ -233,7 +233,7 @@ export const DashboardTopPanel = () => {
                   visibleDecimals={2}
                   compact
                   symbol="USD"
-                  symbolsColor="#A5A8B6"
+                  symbolsColor="#fff"
                   symbolsVariant={noDataTypographyVariant}
                   data-cy={'Claim_Value'}
                 />

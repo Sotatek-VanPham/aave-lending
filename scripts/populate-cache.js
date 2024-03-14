@@ -22374,9 +22374,9 @@ var require_lib28 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/permissions-manager/typechain/PermissionManagerFactory.js
+// node_modules/colend-contract-helpers/dist/cjs/permissions-manager/typechain/PermissionManagerFactory.js
 var require_PermissionManagerFactory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/permissions-manager/typechain/PermissionManagerFactory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/permissions-manager/typechain/PermissionManagerFactory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PermissionManagerFactory = void 0;
@@ -22661,9 +22661,9 @@ var require_PermissionManagerFactory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/permissions-manager/types/PermissionManagerTypes.js
+// node_modules/colend-contract-helpers/dist/cjs/permissions-manager/types/PermissionManagerTypes.js
 var require_PermissionManagerTypes = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/permissions-manager/types/PermissionManagerTypes.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/permissions-manager/types/PermissionManagerTypes.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PERMISSION_MAP = exports2.PERMISSION = void 0;
@@ -22683,9 +22683,9 @@ var require_PermissionManagerTypes = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/permissions-manager/index.js
+// node_modules/colend-contract-helpers/dist/cjs/permissions-manager/index.js
 var require_permissions_manager = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/permissions-manager/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/permissions-manager/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PermissionManager = void 0;
@@ -33456,9 +33456,9 @@ var require_lib31 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/cl-feed-registry/typechain/FeedRegistryInterface__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/cl-feed-registry/typechain/FeedRegistryInterface__factory.js
 var require_FeedRegistryInterface_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/cl-feed-registry/typechain/FeedRegistryInterface__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/cl-feed-registry/typechain/FeedRegistryInterface__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.FeedRegistryInterface__factory = void 0;
@@ -33566,9 +33566,9 @@ var require_FeedRegistryInterface_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/cl-feed-registry/types/ChainlinkFeedsRegistryTypes.js
+// node_modules/colend-contract-helpers/dist/cjs/cl-feed-registry/types/ChainlinkFeedsRegistryTypes.js
 var require_ChainlinkFeedsRegistryTypes = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/cl-feed-registry/types/ChainlinkFeedsRegistryTypes.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/cl-feed-registry/types/ChainlinkFeedsRegistryTypes.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.DenominationAddresses = exports2.Denominations = void 0;
@@ -33585,9 +33585,9 @@ var require_ChainlinkFeedsRegistryTypes = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/cl-feed-registry/index.js
+// node_modules/colend-contract-helpers/dist/cjs/cl-feed-registry/index.js
 var require_cl_feed_registry = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/cl-feed-registry/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/cl-feed-registry/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ChainlinkFeedsRegistry = void 0;
@@ -33629,9 +33629,9 @@ var require_cl_feed_registry = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/types.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/types.js
 var require_types2 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/types.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/types.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.DEFAULT_DEADLINE = exports2.Stake = exports2.GovernanceVote = exports2.ProtocolAction = exports2.eEthereumTxType = exports2.ChainId = exports2.ChainIdToNetwork = exports2.InterestRate = void 0;
@@ -33754,9 +33754,9 @@ var require_types2 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/gasStation.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/gasStation.js
 var require_gasStation = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/gasStation.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/gasStation.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.estimateGasByNetwork = exports2.estimateGas = void 0;
@@ -35265,9 +35265,9 @@ var require_bignumber2 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/utils.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/utils.js
 var require_utils6 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/utils.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/utils.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.convertPopulatedTx = exports2.augustusToAmountOffsetFromCalldata = exports2.mintAmountsPerToken = exports2.gasLimitRecommendations = exports2.SURPLUS = exports2.uniswapEthAmount = exports2.API_ETH_MOCK_ADDRESS = exports2.SUPER_BIG_ALLOWANCE_NUMBER = exports2.MAX_UINT_AMOUNT = exports2.DEFAULT_APPROVE_AMOUNT = exports2.DEFAULT_NULL_VALUE_ON_TX = exports2.getTxValue = exports2.decimalsToCurrencyUnits = exports2.canBeEnsAddress = exports2.valueToWei = void 0;
@@ -35455,9 +35455,9 @@ var require_utils6 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/BaseService.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/BaseService.js
 var require_BaseService = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/BaseService.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/BaseService.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     var ethers_1 = require_lib31();
@@ -36327,9 +36327,9 @@ var require_Reflect = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/validators/paramValidators.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/validators/paramValidators.js
 var require_paramValidators = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/validators/paramValidators.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/validators/paramValidators.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.isPositiveOrMinusOneAmount = exports2.is0OrPositiveAmount = exports2.isPositiveAmount = exports2.isEthAddressOrENS = exports2.isEthAddressArray = exports2.isEthAddress = exports2.isDeadline32Bytes = exports2.isEthAddressArrayMetadataKeyNotEmpty = exports2.optionalMetadataKey = exports2.is0OrPositiveMetadataKey = exports2.isPositiveOrMinusOneMetadataKey = exports2.isPositiveMetadataKey = exports2.isEthAddressOrENSMetadataKey = exports2.isEthAddressArrayMetadataKey = exports2.isPermitDeadline32Bytes = exports2.isEthAddressMetadataKey = void 0;
@@ -36414,9 +36414,9 @@ var require_paramValidators = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/validators/validations.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/validators/validations.js
 var require_validations = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/validators/validations.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/validators/validations.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.amountGtThan0OrMinus1 = exports2.amount0OrPositiveValidator = exports2.amountGtThan0Validator = exports2.isEthAddressOrEnsValidator = exports2.isEthAddressArrayValidatorNotEmpty = exports2.isEthAddressArrayValidator = exports2.isEthAddressValidator = exports2.isDeadline32BytesValidator = void 0;
@@ -36606,9 +36606,9 @@ var require_validations = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/validators/methodValidators.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/validators/methodValidators.js
 var require_methodValidators = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/validators/methodValidators.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/validators/methodValidators.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.V3MigratorValidator = exports2.StakeUiDataProviderValidator = exports2.GovDelegationValidator = exports2.GovValidator = exports2.GovHelperValidator = exports2.WETHValidator = exports2.FaucetValidator = exports2.SignStakingValidator = exports2.StakingValidator = exports2.RepayWithCollateralValidator = exports2.LiquiditySwapValidator = exports2.ERC20Validator = exports2.SynthetixValidator = exports2.DebtTokenValidator = exports2.IncentivesValidator = exports2.UiIncentiveDataProviderValidator = exports2.LPValidatorV3 = exports2.L2PValidator = exports2.LPValidator = exports2.LPSwapCollateralValidatorV3 = exports2.LPRepayWithCollateralValidatorV3 = exports2.LPSwapCollateralValidator = exports2.LPRepayWithCollateralValidator = exports2.LPFlashLiquidationValidatorV3 = exports2.LPFlashLiquidationValidator = void 0;
@@ -36972,9 +36972,9 @@ var require_methodValidators = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/typechain/IUiIncentiveDataProviderV3__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/typechain/IUiIncentiveDataProviderV3__factory.js
 var require_IUiIncentiveDataProviderV3_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/typechain/IUiIncentiveDataProviderV3__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/typechain/IUiIncentiveDataProviderV3__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IUiIncentiveDataProviderV3__factory = void 0;
@@ -37952,17 +37952,17 @@ var require_IUiIncentiveDataProviderV3_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/types.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/types.js
 var require_types3 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/types.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/types.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/index.js
 var require_v3_UiIncentiveDataProvider_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-UiIncentiveDataProvider-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UiIncentiveDataProvider = void 0;
@@ -38179,9 +38179,9 @@ var require_v3_UiIncentiveDataProvider_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/typechain/IUiPoolDataProviderV3__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/typechain/IUiPoolDataProviderV3__factory.js
 var require_IUiPoolDataProviderV3_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/typechain/IUiPoolDataProviderV3__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/typechain/IUiPoolDataProviderV3__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IUiPoolDataProviderV3__factory = void 0;
@@ -38346,7 +38346,7 @@ var require_IUiPoolDataProviderV3_factory = __commonJS({
               },
               {
                 internalType: "address",
-                name: "priceOracle",
+                name: "priceId",
                 type: "address"
               },
               {
@@ -38604,17 +38604,17 @@ var require_IUiPoolDataProviderV3_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/types.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/types.js
 var require_types4 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/types.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/types.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/index.js
 var require_v3_UiPoolDataProvider_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-UiPoolDataProvider-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UiPoolDataProvider = void 0;
@@ -38722,7 +38722,7 @@ var require_v3_UiPoolDataProvider_contract = __commonJS({
             stableDebtLastUpdateTimestamp: reserveRaw.stableDebtLastUpdateTimestamp.toNumber(),
             totalScaledVariableDebt: reserveRaw.totalScaledVariableDebt.toString(),
             priceInMarketReferenceCurrency: reserveRaw.priceInMarketReferenceCurrency.toString(),
-            priceOracle: reserveRaw.priceOracle,
+            priceId: reserveRaw.priceId,
             variableRateSlope1: reserveRaw.variableRateSlope1.toString(),
             variableRateSlope2: reserveRaw.variableRateSlope2.toString(),
             stableRateSlope1: reserveRaw.stableRateSlope1.toString(),
@@ -38785,9 +38785,9 @@ var require_v3_UiPoolDataProvider_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/wallet-balance-provider/typechain/WalletBalanceProviderFactory.js
+// node_modules/colend-contract-helpers/dist/cjs/wallet-balance-provider/typechain/WalletBalanceProviderFactory.js
 var require_WalletBalanceProviderFactory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/wallet-balance-provider/typechain/WalletBalanceProviderFactory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/wallet-balance-provider/typechain/WalletBalanceProviderFactory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.WalletBalanceProviderFactory = void 0;
@@ -38888,17 +38888,17 @@ var require_WalletBalanceProviderFactory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/wallet-balance-provider/types/WalletBalanceProviderTypes.js
+// node_modules/colend-contract-helpers/dist/cjs/wallet-balance-provider/types/WalletBalanceProviderTypes.js
 var require_WalletBalanceProviderTypes = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/wallet-balance-provider/types/WalletBalanceProviderTypes.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/wallet-balance-provider/types/WalletBalanceProviderTypes.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/wallet-balance-provider/index.js
+// node_modules/colend-contract-helpers/dist/cjs/wallet-balance-provider/index.js
 var require_wallet_balance_provider = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/wallet-balance-provider/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/wallet-balance-provider/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.WalletBalanceProvider = void 0;
@@ -38967,9 +38967,9 @@ var require_wallet_balance_provider = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/uiStakeDataProvider-contract/typechain/StakedTokenDataProviderFactory.js
+// node_modules/colend-contract-helpers/dist/cjs/uiStakeDataProvider-contract/typechain/StakedTokenDataProviderFactory.js
 var require_StakedTokenDataProviderFactory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/uiStakeDataProvider-contract/typechain/StakedTokenDataProviderFactory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/uiStakeDataProvider-contract/typechain/StakedTokenDataProviderFactory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.StakedTokenDataProvider__factory = void 0;
@@ -39773,9 +39773,9 @@ var require_StakedTokenDataProviderFactory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/uiStakeDataProvider-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/uiStakeDataProvider-contract/index.js
 var require_uiStakeDataProvider_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/uiStakeDataProvider-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/uiStakeDataProvider-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.UiStakeDataProvider = void 0;
@@ -39880,9 +39880,9 @@ var require_uiStakeDataProvider_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/incentive-controller/typechain/IAaveIncentivesController__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/incentive-controller/typechain/IAaveIncentivesController__factory.js
 var require_IAaveIncentivesController_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/incentive-controller/typechain/IAaveIncentivesController__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/incentive-controller/typechain/IAaveIncentivesController__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IAaveIncentivesController__factory = void 0;
@@ -39927,9 +39927,9 @@ var require_IAaveIncentivesController_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/incentive-controller/index.js
+// node_modules/colend-contract-helpers/dist/cjs/incentive-controller/index.js
 var require_incentive_controller = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/incentive-controller/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/incentive-controller/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IncentivesController = void 0;
@@ -39975,9 +39975,9 @@ var require_incentive_controller = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/incentive-controller-v2/typechain/IAaveIncentivesControllerV2__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/incentive-controller-v2/typechain/IAaveIncentivesControllerV2__factory.js
 var require_IAaveIncentivesControllerV2_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/incentive-controller-v2/typechain/IAaveIncentivesControllerV2__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/incentive-controller-v2/typechain/IAaveIncentivesControllerV2__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IAaveIncentivesControllerV2__factory = void 0;
@@ -40828,9 +40828,9 @@ var require_IAaveIncentivesControllerV2_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/incentive-controller-v2/index.js
+// node_modules/colend-contract-helpers/dist/cjs/incentive-controller-v2/index.js
 var require_incentive_controller_v2 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/incentive-controller-v2/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/incentive-controller-v2/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IncentivesControllerV2 = void 0;
@@ -40903,9 +40903,9 @@ var require_incentive_controller_v2 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/erc20-contract/typechain/IERC20Detailed__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/erc20-contract/typechain/IERC20Detailed__factory.js
 var require_IERC20Detailed_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/erc20-contract/typechain/IERC20Detailed__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/erc20-contract/typechain/IERC20Detailed__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IERC20Detailed__factory = void 0;
@@ -41011,9 +41011,9 @@ var require_IERC20Detailed_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/erc20-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/erc20-contract/index.js
 var require_erc20_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/erc20-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/erc20-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ERC20Service = void 0;
@@ -41233,9 +41233,9 @@ var require_erc20_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/typechain/IParaSwapLiquiditySwapAdapter__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/typechain/IParaSwapLiquiditySwapAdapter__factory.js
 var require_IParaSwapLiquiditySwapAdapter_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/typechain/IParaSwapLiquiditySwapAdapter__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/typechain/IParaSwapLiquiditySwapAdapter__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IParaSwapLiquiditySwapAdapter__factory = void 0;
@@ -41326,9 +41326,9 @@ var require_IParaSwapLiquiditySwapAdapter_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/index.js
 var require_paraswap_liquiditySwapAdapter_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/paraswap-liquiditySwapAdapter-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.LiquiditySwapAdapterService = exports2.augustusFromAmountOffsetFromCalldata = void 0;
@@ -41414,9 +41414,9 @@ var require_paraswap_liquiditySwapAdapter_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/typechain/ParaSwapRepayAdapter__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/typechain/ParaSwapRepayAdapter__factory.js
 var require_ParaSwapRepayAdapter_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/typechain/ParaSwapRepayAdapter__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/typechain/ParaSwapRepayAdapter__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ParaSwapRepayAdapter__factory = void 0;
@@ -41563,7 +41563,7 @@ var require_ParaSwapRepayAdapter_factory = __commonJS({
         name: "ORACLE",
         outputs: [
           {
-            internalType: "contract IPriceOracleGetter",
+            internalType: "contract IpriceIdGetter",
             name: "",
             type: "address"
           }
@@ -41775,9 +41775,9 @@ var require_ParaSwapRepayAdapter_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/index.js
 var require_paraswap_repayWithCollateralAdapter_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/paraswap-repayWithCollateralAdapter-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ParaswapRepayWithCollateral = void 0;
@@ -41828,9 +41828,9 @@ var require_paraswap_repayWithCollateralAdapter_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/typechain/IRepayWithCollateral__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/typechain/IRepayWithCollateral__factory.js
 var require_IRepayWithCollateral_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/typechain/IRepayWithCollateral__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/typechain/IRepayWithCollateral__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IRepayWithCollateral__factory = void 0;
@@ -41916,9 +41916,9 @@ var require_IRepayWithCollateral_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/index.js
 var require_repayWithCollateralAdapter_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/repayWithCollateralAdapter-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.RepayWithCollateralAdapterService = void 0;
@@ -41965,9 +41965,9 @@ var require_repayWithCollateralAdapter_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/synthetix-contract/typechain/ISynthetix__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/synthetix-contract/typechain/ISynthetix__factory.js
 var require_ISynthetix_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/synthetix-contract/typechain/ISynthetix__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/synthetix-contract/typechain/ISynthetix__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ISynthetix__factory = void 0;
@@ -42002,9 +42002,9 @@ var require_ISynthetix_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/synthetix-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/synthetix-contract/index.js
 var require_synthetix_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/synthetix-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/synthetix-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.SynthetixService = exports2.synthetixProxyByChainId = void 0;
@@ -42053,9 +42053,9 @@ var require_synthetix_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/baseDebtToken-contract/typechain/IDebtTokenBase__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/baseDebtToken-contract/typechain/IDebtTokenBase__factory.js
 var require_IDebtTokenBase_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/baseDebtToken-contract/typechain/IDebtTokenBase__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/baseDebtToken-contract/typechain/IDebtTokenBase__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IDebtTokenBase__factory = void 0;
@@ -42116,9 +42116,9 @@ var require_IDebtTokenBase_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/baseDebtToken-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/baseDebtToken-contract/index.js
 var require_baseDebtToken_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/baseDebtToken-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/baseDebtToken-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.BaseDebtToken = void 0;
@@ -42221,9 +42221,9 @@ var require_baseDebtToken_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/wethgateway-contract/typechain/IWETHGateway__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/wethgateway-contract/typechain/IWETHGateway__factory.js
 var require_IWETHGateway_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/wethgateway-contract/typechain/IWETHGateway__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/wethgateway-contract/typechain/IWETHGateway__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IWETHGateway__factory = void 0;
@@ -42344,9 +42344,9 @@ var require_IWETHGateway_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/wethgateway-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/wethgateway-contract/index.js
 var require_wethgateway_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/wethgateway-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/wethgateway-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.WETHGatewayService = void 0;
@@ -42563,9 +42563,9 @@ var require_wethgateway_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/lendingPool-contract/typechain/ILendingPool__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/lendingPool-contract/typechain/ILendingPool__factory.js
 var require_ILendingPool_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/lendingPool-contract/typechain/ILendingPool__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/lendingPool-contract/typechain/ILendingPool__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ILendingPool__factory = void 0;
@@ -42821,9 +42821,9 @@ var require_ILendingPool_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/lendingPool-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/lendingPool-contract/index.js
 var require_lendingPool_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/lendingPool-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/lendingPool-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.LendingPool = void 0;
@@ -43549,9 +43549,9 @@ var require_lendingPool_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/lendingPool-contract-bundle/index.js
+// node_modules/colend-contract-helpers/dist/cjs/lendingPool-contract-bundle/index.js
 var require_lendingPool_contract_bundle = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/lendingPool-contract-bundle/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/lendingPool-contract-bundle/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.LendingPoolBundle = void 0;
@@ -43645,9 +43645,9 @@ var require_lendingPool_contract_bundle = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/faucet-contract/typechain/IFaucet__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/faucet-contract/typechain/IFaucet__factory.js
 var require_IFaucet_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/faucet-contract/typechain/IFaucet__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/faucet-contract/typechain/IFaucet__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IFaucet__factory = void 0;
@@ -43706,9 +43706,9 @@ var require_IFaucet_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/faucet-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/faucet-contract/index.js
 var require_faucet_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/faucet-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/faucet-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.FaucetService = void 0;
@@ -43756,9 +43756,9 @@ var require_faucet_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-faucet-contract/typechain/IERC20FaucetOwnable__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-faucet-contract/typechain/IERC20FaucetOwnable__factory.js
 var require_IERC20FaucetOwnable_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-faucet-contract/typechain/IERC20FaucetOwnable__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-faucet-contract/typechain/IERC20FaucetOwnable__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IERC20FaucetOwnable__factory = void 0;
@@ -43830,9 +43830,9 @@ var require_IERC20FaucetOwnable_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-faucet-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-faucet-contract/index.js
 var require_v3_faucet_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-faucet-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-faucet-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.V3FaucetService = void 0;
@@ -43890,9 +43890,9 @@ var require_v3_faucet_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/erc20-2612/typechain/IERC202612__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/erc20-2612/typechain/IERC202612__factory.js
 var require_IERC202612_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/erc20-2612/typechain/IERC202612__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/erc20-2612/typechain/IERC202612__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IERC202612__factory = void 0;
@@ -43950,9 +43950,9 @@ var require_IERC202612_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/erc20-2612/index.js
+// node_modules/colend-contract-helpers/dist/cjs/erc20-2612/index.js
 var require_erc20_2612 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/erc20-2612/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/erc20-2612/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ERC20_2612Service = void 0;
@@ -43997,9 +43997,9 @@ var require_erc20_2612 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/staking-contract/typechain/IStakedAaveV3__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/staking-contract/typechain/IStakedAaveV3__factory.js
 var require_IStakedAaveV3_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/staking-contract/typechain/IStakedAaveV3__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/staking-contract/typechain/IStakedAaveV3__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IStakedAaveV3__factory = void 0;
@@ -44816,9 +44816,9 @@ var require_IStakedAaveV3_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/staking-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/staking-contract/index.js
 var require_staking_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/staking-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/staking-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.StakingService = void 0;
@@ -45112,9 +45112,9 @@ var require_staking_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-contract/typechain/IAaveGovernanceV2__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-contract/typechain/IAaveGovernanceV2__factory.js
 var require_IAaveGovernanceV2_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-contract/typechain/IAaveGovernanceV2__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-contract/typechain/IAaveGovernanceV2__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IAaveGovernanceV2__factory = void 0;
@@ -45791,9 +45791,9 @@ var require_IAaveGovernanceV2_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceStrategy__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceStrategy__factory.js
 var require_IGovernanceStrategy_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceStrategy__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceStrategy__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IGovernanceStrategy__factory = void 0;
@@ -45921,9 +45921,9 @@ var require_IGovernanceStrategy_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceV2Helper__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceV2Helper__factory.js
 var require_IGovernanceV2Helper_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceV2Helper__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-contract/typechain/IGovernanceV2Helper__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IGovernanceV2Helper__factory = void 0;
@@ -46394,9 +46394,9 @@ var require_IGovernanceV2Helper_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-contract/types.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-contract/types.js
 var require_types5 = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-contract/types.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-contract/types.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ProposalState = exports2.ExecutorType = void 0;
@@ -46419,9 +46419,9 @@ var require_types5 = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-contract/index.js
 var require_governance_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.AaveGovernanceService = exports2.humanizeProposal = void 0;
@@ -46633,9 +46633,9 @@ var require_governance_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-power-delegation-contract/typechain/IGovernancePowerDelegationToken__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-power-delegation-contract/typechain/IGovernancePowerDelegationToken__factory.js
 var require_IGovernancePowerDelegationToken_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-power-delegation-contract/typechain/IGovernancePowerDelegationToken__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-power-delegation-contract/typechain/IGovernancePowerDelegationToken__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IGovernancePowerDelegationToken__factory = void 0;
@@ -46928,9 +46928,9 @@ var require_IGovernancePowerDelegationToken_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/governance-power-delegation-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/governance-power-delegation-contract/index.js
 var require_governance_power_delegation_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/governance-power-delegation-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/governance-power-delegation-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.GovernancePowerDelegationTokenService = void 0;
@@ -47223,9 +47223,9 @@ var require_governance_power_delegation_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-pool-contract/typechain/IPool__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-pool-contract/typechain/IPool__factory.js
 var require_IPool_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-pool-contract/typechain/IPool__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-pool-contract/typechain/IPool__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IPool__factory = void 0;
@@ -48859,9 +48859,9 @@ var require_IPool_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-pool-rollups/typechain/IL2Pool__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-pool-rollups/typechain/IL2Pool__factory.js
 var require_IL2Pool_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-pool-rollups/typechain/IL2Pool__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-pool-rollups/typechain/IL2Pool__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IL2Pool__factory = void 0;
@@ -49067,9 +49067,9 @@ var require_IL2Pool_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-pool-rollups/typechain/L2Encoder__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-pool-rollups/typechain/L2Encoder__factory.js
 var require_L2Encoder_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-pool-rollups/typechain/L2Encoder__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-pool-rollups/typechain/L2Encoder__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.L2Encoder__factory = void 0;
@@ -49513,9 +49513,9 @@ var require_L2Encoder_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-pool-rollups/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-pool-rollups/index.js
 var require_v3_pool_rollups = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-pool-rollups/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-pool-rollups/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.L2Pool = void 0;
@@ -49890,9 +49890,9 @@ var require_v3_pool_rollups = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-pool-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-pool-contract/index.js
 var require_v3_pool_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-pool-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-pool-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.Pool = void 0;
@@ -50912,9 +50912,9 @@ var require_v3_pool_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-pool-contract-bundle/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-pool-contract-bundle/index.js
 var require_v3_pool_contract_bundle = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-pool-contract-bundle/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-pool-contract-bundle/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PoolBundle = void 0;
@@ -51098,9 +51098,9 @@ var require_v3_pool_contract_bundle = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/gho/typechain/IUiGhoDataProvider__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/gho/typechain/IUiGhoDataProvider__factory.js
 var require_IUiGhoDataProvider_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/gho/typechain/IUiGhoDataProvider__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/gho/typechain/IUiGhoDataProvider__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IUiGhoDataProvider__factory = void 0;
@@ -51221,9 +51221,9 @@ var require_IUiGhoDataProvider_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/gho/GhoService.js
+// node_modules/colend-contract-helpers/dist/cjs/gho/GhoService.js
 var require_GhoService = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/gho/GhoService.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/gho/GhoService.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.GhoService = void 0;
@@ -51280,9 +51280,9 @@ var require_GhoService = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/gho/index.js
+// node_modules/colend-contract-helpers/dist/cjs/gho/index.js
 var require_gho = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/gho/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/gho/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.GhoService = void 0;
@@ -51293,9 +51293,9 @@ var require_gho = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-migration-contract/typechain/IMigrationHelper__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-migration-contract/typechain/IMigrationHelper__factory.js
 var require_IMigrationHelper_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-migration-contract/typechain/IMigrationHelper__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-migration-contract/typechain/IMigrationHelper__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.IMigrationHelper__factory = void 0;
@@ -51563,9 +51563,9 @@ var require_IMigrationHelper_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/v3-migration-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/v3-migration-contract/index.js
 var require_v3_migration_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/v3-migration-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/v3-migration-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.V3MigrationHelperService = void 0;
@@ -51731,9 +51731,9 @@ var require_v3_migration_contract = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/paraswap-debtSwitch-contract/typechain/ParaSwapDebtSwitchAdapter__factory.js
+// node_modules/colend-contract-helpers/dist/cjs/paraswap-debtSwitch-contract/typechain/ParaSwapDebtSwitchAdapter__factory.js
 var require_ParaSwapDebtSwitchAdapter_factory = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/paraswap-debtSwitch-contract/typechain/ParaSwapDebtSwitchAdapter__factory.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/paraswap-debtSwitch-contract/typechain/ParaSwapDebtSwitchAdapter__factory.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.ParaSwapDebtSwapAdapter__factory = void 0;
@@ -51890,7 +51890,7 @@ var require_ParaSwapDebtSwitchAdapter_factory = __commonJS({
         name: "ORACLE",
         outputs: [
           {
-            internalType: "contract IPriceOracleGetter",
+            internalType: "contract IpriceIdGetter",
             name: "",
             type: "address"
           }
@@ -52152,9 +52152,9 @@ var require_ParaSwapDebtSwitchAdapter_factory = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/paraswap-debtSwitch-contract/index.js
+// node_modules/colend-contract-helpers/dist/cjs/paraswap-debtSwitch-contract/index.js
 var require_paraswap_debtSwitch_contract = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/paraswap-debtSwitch-contract/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/paraswap-debtSwitch-contract/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.DebtSwitchAdapterService = void 0;
@@ -55215,9 +55215,9 @@ var require_isomorphic_unfetch = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/commons/ipfs.js
+// node_modules/colend-contract-helpers/dist/cjs/commons/ipfs.js
 var require_ipfs = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/commons/ipfs.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/commons/ipfs.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.getProposalMetadata = exports2.getLink = void 0;
@@ -55252,7 +55252,7 @@ var require_ipfs = __commonJS({
           MEMORIZE2[ipfsHash] = Object.assign(Object.assign({}, data), { ipfsHash });
           return MEMORIZE2[ipfsHash];
         } catch (e) {
-          console.error(`@aave/contract-helpers: IPFS fetch Error: ${e}`);
+          console.error(`colend-contract-helpers: IPFS fetch Error: ${e}`);
           return {
             ipfsHash,
             title: `Proposal - ${ipfsHash}`,
@@ -55269,9 +55269,9 @@ var require_ipfs = __commonJS({
   }
 });
 
-// node_modules/@aave/contract-helpers/dist/cjs/index.js
+// node_modules/colend-contract-helpers/dist/cjs/index.js
 var require_cjs = __commonJS({
-  "node_modules/@aave/contract-helpers/dist/cjs/index.js"(exports2) {
+  "node_modules/colend-contract-helpers/dist/cjs/index.js"(exports2) {
     "use strict";
     Object.defineProperty(exports2, "__esModule", { value: true });
     exports2.PERMISSION_MAP = exports2.PERMISSION = void 0;

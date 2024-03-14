@@ -1,4 +1,4 @@
-import { ChainId, valueToWei } from '@aave/contract-helpers';
+import { ChainId, valueToWei } from 'colend-contract-helpers';
 import { BigNumberZeroDecimal, normalize, normalizeBN, valueToBigNumber } from '@aave/math-utils';
 import {
   constructBuildTx,

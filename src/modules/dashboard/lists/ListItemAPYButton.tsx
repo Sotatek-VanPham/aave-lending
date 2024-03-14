@@ -1,4 +1,4 @@
-import { InterestRate } from '@aave/contract-helpers';
+import { InterestRate } from 'colend-contract-helpers';
 import {
   CheckIcon,
   ChevronDownIcon,

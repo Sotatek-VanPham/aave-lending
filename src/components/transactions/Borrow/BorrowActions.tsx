@@ -5,7 +5,7 @@ import {
   InterestRate,
   MAX_UINT_AMOUNT,
   ProtocolAction,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import { Trans } from '@lingui/macro';
 import { BoxProps } from '@mui/material';
 import { parseUnits } from 'ethers/lib/utils';

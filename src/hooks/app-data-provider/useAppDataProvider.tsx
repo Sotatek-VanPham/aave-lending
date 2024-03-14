@@ -1,4 +1,4 @@
-import { ReserveDataHumanized } from '@aave/contract-helpers';
+import { ReserveDataHumanized } from 'colend-contract-helpers';
 import {
   ComputedUserReserve,
   formatGhoReserveData,

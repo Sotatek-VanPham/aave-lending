@@ -4,7 +4,7 @@ import {
   GovDelegate,
   GovDelegateTokensBySig,
   GovPrepareDelegateSig,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import { GovernanceService, ProposalState, Support } from 'src/services/GovernanceService';
 import { governanceConfig } from 'src/ui-config/governanceConfig';
 import { getProvider } from 'src/utils/marketsAndNetworksConfig';

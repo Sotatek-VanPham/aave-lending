@@ -31,21 +31,21 @@ export const navigation: Navigation[] = [
     title: t`Supply & Borrow Dashboard`,
     dataCy: 'menuDashboard',
   },
-  {
-    link: '',
-    title: t`Bridge to Base`,
-    dataCy: 'swapBase',
-    disabled: false,
-  },
-  {
-    link: ROUTES.staking,
-    title: t`Stake`,
-    dataCy: 'menuStake',
-    isVisible: () =>
-      process.env.NEXT_PUBLIC_ENABLE_STAKING === 'true' &&
-      process.env.NEXT_PUBLIC_ENV === 'prod' &&
-      !ENABLE_TESTNET,
-  },
+  // {
+  //   link: '',
+  //   title: t`Bridge to Base`,
+  //   dataCy: 'swapBase',
+  //   disabled: false,
+  // },
+  // {
+  //   link: ROUTES.staking,
+  //   title: t`Stake`,
+  //   dataCy: 'menuStake',
+  //   isVisible: () =>
+  //     process.env.NEXT_PUBLIC_ENABLE_STAKING === 'true' &&
+  //     process.env.NEXT_PUBLIC_ENV === 'prod' &&
+  //     !ENABLE_TESTNET,
+  // },
   {
     link: ROUTES.governance,
     title: t`Governance`,

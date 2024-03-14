@@ -1,4 +1,4 @@
-import { API_ETH_MOCK_ADDRESS } from '@aave/contract-helpers';
+import { API_ETH_MOCK_ADDRESS } from 'colend-contract-helpers';
 import { USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
@@ -226,7 +226,17 @@ export const SupplyAssetsList = () => {
   return (
     <ListWrapper
       titleComponent={
-        <Typography component="div" variant="h3" sx={{ mr: 4 }}>
+        <Typography
+          component="div"
+          variant="h3"
+          sx={{
+            mr: 4,
+            color: '#fff',
+            fontWeight: '500',
+            fontFamily: 'Work Sans',
+            fontSize: '24px',
+          }}
+        >
           <Trans>Assets to supply</Trans>
         </Typography>
       }
@@ -249,12 +259,29 @@ export const SupplyAssetsList = () => {
             ) : (
               filteredSupplyReserves.length === 0 &&
               (isTestnet ? (
-                <Warning severity="info">
-                  <Trans>Your {networkName} wallet is empty. Get free test assets at </Trans>{' '}
-                  <Link href={ROUTES.faucet} style={{ fontWeight: 400 }}>
-                    <Trans>{networkName} Faucet</Trans>
-                  </Link>
-                </Warning>
+                <Box
+                  sx={{
+                    background: 'transparent',
+                    border: ' 2px solid rgba(255, 66, 40, 0.30)',
+                    borderRadius: '6px',
+                    color: '#FF4228',
+                    fontFamily: 'Mulish',
+                    padding: '10px 16px',
+                    display: 'flex',
+                    gap: '13px',
+                  }}
+                >
+                  <img src="/icons/warning.svg" />
+                  <Box>
+                    <Trans>Your {networkName} wallet is empty. Get free test assets at </Trans>{' '}
+                    <Link
+                      href={ROUTES.faucet}
+                      style={{ fontWeight: 400, color: '#FF4228', fontFamily: 'Mulish' }}
+                    >
+                      <Trans>{networkName} Faucet</Trans>
+                    </Link>
+                  </Box>
+                </Box>
               ) : (
                 <WalletEmptyInfo name={networkName} bridge={bridge} chainId={currentChainId} />
               ))

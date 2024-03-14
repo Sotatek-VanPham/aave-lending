@@ -2,7 +2,7 @@ import {
   API_ETH_MOCK_ADDRESS,
   InterestRate,
   synthetixProxyByChainId,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import {
   BigNumberValue,
   calculateHealthFactorFromBalancesBigUnits,

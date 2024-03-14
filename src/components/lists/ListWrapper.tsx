@@ -23,7 +23,7 @@ export const ListWrapper = ({
   children,
   localStorageName,
   titleComponent,
-  subTitleComponent,
+  // subTitleComponent,
   subChildrenComponent,
   topInfo,
   withTopMargin,
@@ -93,7 +93,7 @@ export const ListWrapper = ({
         // border: `1px solid ${theme.palette.divider}`,
         borderRadius: '16px',
         background: 'rgba(27, 27, 29, 0.50)',
-        backdropFilter: 'blur(100px)'
+        backdropFilter: 'blur(100px)',
       })}
     >
       <Box
@@ -116,7 +116,7 @@ export const ListWrapper = ({
           }}
         >
           {titleComponent}
-          {subTitleComponent}
+          {/* {subTitleComponent} */}
         </Box>
 
         {!!localStorageName && !noData && (
@@ -128,17 +128,17 @@ export const ListWrapper = ({
               minHeight: '28px',
               pl: 3,
               span: {
-                width: '14px',
-                height: '2px',
-                bgcolor: 'text.secondary',
+                width: '13px',
+                height: '3px',
+                bgcolor: '#D9D9D9',
                 position: 'relative',
                 ml: 1,
                 '&:after': {
                   content: "''",
                   position: 'absolute',
-                  width: '14px',
-                  height: '2px',
-                  bgcolor: 'text.secondary',
+                  width: '13px',
+                  height: '3px',
+                  bgcolor: '#D9D9D9',
                   transition: 'all 0.2s ease',
                   transform: collapsed ? 'rotate(90deg)' : 'rotate(0)',
                   opacity: collapsed ? 1 : 0,
@@ -153,7 +153,16 @@ export const ListWrapper = ({
                 : undefined;
             }}
           >
-            <Typography variant="buttonM" color="text.secondary">
+            <Typography
+              variant="buttonM"
+              sx={{
+                fontFamily: 'Mulish',
+                fontSize: '12px',
+                fontStyle: 'normal',
+                fontWeight: 400,
+                color: '#fff',
+              }}
+            >
               {collapsed ? <Trans>Show</Trans> : <Trans>Hide</Trans>}
             </Typography>
             <span />

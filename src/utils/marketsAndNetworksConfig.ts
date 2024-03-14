@@ -1,4 +1,4 @@
-import { ChainIdToNetwork } from '@aave/contract-helpers';
+import { ChainIdToNetwork } from 'colend-contract-helpers';
 import { StaticJsonRpcProvider } from '@ethersproject/providers';
 import { providers as ethersProviders } from 'ethers';
 

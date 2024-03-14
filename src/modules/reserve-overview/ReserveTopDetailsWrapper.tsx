@@ -121,7 +121,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               <ReserveIcon />
               <Box>
                 {!loading && (
-                  <Typography sx={{ color: '#A5A8B6' }} variant="caption">
+                  <Typography sx={{ color: '#fff' }} variant="caption">
                     {poolReserve.symbol}
                   </Typography>
                 )}

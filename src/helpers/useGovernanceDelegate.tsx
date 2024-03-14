@@ -2,7 +2,7 @@ import {
   EthereumTransactionTypeExtended,
   gasLimitRecommendations,
   ProtocolAction,
-} from '@aave/contract-helpers';
+} from 'colend-contract-helpers';
 import { SignatureLike } from '@ethersproject/bytes';
 import { TransactionResponse } from '@ethersproject/providers';
 import { utils } from 'ethers';

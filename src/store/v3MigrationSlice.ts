@@ -5,8 +5,8 @@ import {
   InterestRate,
   Pool,
   V3MigrationHelperService,
-} from '@aave/contract-helpers';
-import { MigrationDelegationApproval } from '@aave/contract-helpers/dist/esm/v3-migration-contract/v3MigrationTypes';
+} from 'colend-contract-helpers';
+import { MigrationDelegationApproval } from 'colend-contract-helpers/dist/esm/v3-migration-contract/v3MigrationTypes';
 import { SignatureLike } from '@ethersproject/bytes';
 import dayjs from 'dayjs';
 import { BigNumberish } from 'ethers';

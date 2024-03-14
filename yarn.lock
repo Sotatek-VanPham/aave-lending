@@ -6495,6 +6495,13 @@ co@^4.6.0:
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
   integrity sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==
 
+colend-contract-helpers@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/colend-contract-helpers/-/colend-contract-helpers-1.0.1.tgz#6f0675a424b9caf6658439c4c1489d619cbfb943"
+  integrity sha512-Wa9AGvAwLzyL5rb0T90XlRpRWdWD3KMdeVUARiePCll3mhwpEoawtdl/fwCr21qOq3Uk0PJkzABQ80j0Osr8Ig==
+  dependencies:
+    isomorphic-unfetch "^3.1.0"
+
 collect-v8-coverage@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/collect-v8-coverage/-/collect-v8-coverage-1.0.1.tgz#cc2c8e94fc18bbdffe64d6534570c8a673b27f59"
