@@ -1,12 +1,12 @@
 import { Trans } from '@lingui/macro';
 import { Box, Checkbox, FormControlLabel } from '@mui/material';
-import { FaucetButton } from 'src/components/FaucetButton';
-import { LifiBridgeButton } from 'src/components/LifiBridgeButton';
+// import { FaucetButton } from 'src/components/FaucetButton';
+// import { LifiBridgeButton } from 'src/components/LifiBridgeButton';
 import { useRootStore } from 'src/store/root';
-import { ENABLE_TESTNET, STAGING_ENV } from 'src/utils/marketsAndNetworksConfig';
+// import { ENABLE_TESTNET, STAGING_ENV } from 'src/utils/marketsAndNetworksConfig';
 import { DASHBOARD } from 'src/utils/mixPanelEvents';
 
-import { BridgeButton } from '../../components/BridgeButton';
+// import { BridgeButton } from '../../components/BridgeButton';
 import { toggleLocalStorageClick } from '../../helpers/toggle-local-storage-click';
 import { NetworkConfig } from '../../ui-config/networksConfig';
 

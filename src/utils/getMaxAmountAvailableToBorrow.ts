@@ -138,7 +138,7 @@ export function assetCanBeBorrowedByUser(
     borrowingEnabled,
     isActive,
     borrowableInIsolation,
-    eModeCategoryId,
+    // eModeCategoryId,
     isFrozen,
     isPaused,
   }: ComputedReserveData,

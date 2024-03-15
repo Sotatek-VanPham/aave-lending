@@ -4,7 +4,7 @@ import { Box, Button, Divider, SvgIcon, Typography } from '@mui/material';
 import { Link } from 'src/components/primitives/Link';
 import { ComputedReserveData } from 'src/hooks/app-data-provider/useAppDataProvider';
 
-import { ReserveEModePanel } from '../ReserveEModePanel';
+// import { ReserveEModePanel } from '../ReserveEModePanel';
 import { PanelRow, PanelTitle } from '../ReservePanels';
 import { GhoBorrowInfo } from './GhoBorrowInfo';
 import { GhoDiscountCalculator } from './GhoDiscountCalculator';
