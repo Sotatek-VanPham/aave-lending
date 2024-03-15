@@ -224,7 +224,9 @@ export const BorrowInfo = ({
         sx={{ display: 'inline-flex', alignItems: 'center', pt: '42px', pb: '12px' }}
         paddingTop={'42px'}
       >
-        <Typography sx={{ fontSize: '16px', fontFamily: 'Work Sans', fontWeight: 500, color: '#fff' }}>
+        <Typography
+          sx={{ fontSize: '16px', fontFamily: 'Work Sans', fontWeight: 500, color: '#fff' }}
+        >
           <Trans>Collector Info</Trans>
         </Typography>
       </Box>

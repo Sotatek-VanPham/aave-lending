@@ -104,7 +104,6 @@ export const BorrowAssetsList = () => {
   const tokensToBorrow = reserves
     .filter((reserve) => assetCanBeBorrowedByUser(reserve, user))
     .map((reserve: ComputedReserveData) => {
-      
       const availableBorrows = user
         ? Number(getMaxAmountAvailableToBorrow(reserve, user, InterestRate.Variable))
         : 0;
@@ -150,17 +149,22 @@ export const BorrowAssetsList = () => {
       ? tokensToBorrow
       : tokensToBorrow.filter(
           ({ availableBorrowsInUSD, totalLiquidityUSD }) =>
-            availableBorrowsInUSD !== '0.00' &&
-            (totalLiquidityUSD !== '0'
-            //  ||
-            //   displayGho({
-            //     symbol,
-            //     currentMarket,
-            //   })
-              )
+            availableBorrowsInUSD !== '0.00' && totalLiquidityUSD !== '0'
+          //  ||
+          //   displayGho({
+          //     symbol,
+          //     currentMarket,
+          //   })
         );
 
-        console.log('user111', reserves, user, maxBorrowAmount.toString(), tokensToBorrow, borrowReserves);
+  console.log(
+    'user111',
+    reserves,
+    user,
+    maxBorrowAmount.toString(),
+    tokensToBorrow,
+    borrowReserves
+  );
   const { value: ghoReserve, filtered: filteredReserves } = findAndFilterGhoReserve(borrowReserves);
   const sortedReserves = handleSortDashboardReserves(
     sortDesc,

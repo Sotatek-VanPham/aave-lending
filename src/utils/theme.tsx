@@ -20,7 +20,6 @@ const {
 const FONT_MULISH = 'Mulish';
 const FONT_WORK_SANS = 'Work sans';
 
-
 declare module '@mui/material/styles/createPalette' {
   interface PaletteColor extends ColorPartial {}
 

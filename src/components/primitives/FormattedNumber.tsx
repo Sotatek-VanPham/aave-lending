@@ -131,7 +131,7 @@ export function FormattedNumber({
       {symbol?.toLowerCase() === 'usd' && !percent && (
         <Typography
           component="span"
-          sx={{ mr: 0.5, fontWeight: '500', fontFamily: 'Work Sans', ...rest.sx}}
+          sx={{ mr: 0.5, fontWeight: '500', fontFamily: 'Work Sans', ...rest.sx }}
           variant={symbolsVariant || rest.variant}
           color={symbolsColor || '#fff'}
         >

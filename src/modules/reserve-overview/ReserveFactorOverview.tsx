@@ -82,7 +82,9 @@ export const ReserveFactorOverview = ({
           sx={{ textDecoration: 'none' }}
         >
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Typography sx={{ color: '#fff', fontSize: '16px', fontWeight: 500, fontFamily: "Work sans"}}>
+            <Typography
+              sx={{ color: '#fff', fontSize: '16px', fontWeight: 500, fontFamily: 'Work sans' }}
+            >
               <Trans>View contract</Trans>
             </Typography>
             <SvgIcon sx={{ ml: 1, fontSize: 14 }}>

@@ -128,7 +128,7 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
 
       {(reserve.borrowingEnabled || Number(reserve.totalDebt) > 0) && (
         <>
-          <Divider sx={{ my: { xs: 6, sm: 10 }, borderColor: 'rgba(255, 255, 255, 0.10)'}} />
+          <Divider sx={{ my: { xs: 6, sm: 10 }, borderColor: 'rgba(255, 255, 255, 0.10)' }} />
 
           <PanelRow>
             <PanelTitle>Interest rate model</PanelTitle>

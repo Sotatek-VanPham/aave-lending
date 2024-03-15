@@ -264,7 +264,7 @@ export const SupplyInfo = ({
               percent
               variant="secondary16"
               visibleDecimals={2}
-              sx={{ fontWeight: 500, fontFamily: 'Work sans'}}
+              sx={{ fontWeight: 500, fontFamily: 'Work sans' }}
             />
           </ReserveOverviewBox>
 

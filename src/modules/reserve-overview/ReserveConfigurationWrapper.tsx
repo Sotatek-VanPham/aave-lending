@@ -49,11 +49,11 @@ export const ReserveConfigurationWrapper: React.FC<ReserveConfigurationProps> = 
       >
         <Typography
           sx={{
-            fontFamily: "Work Sans",
+            fontFamily: 'Work Sans',
             fontSize: '24px',
             fontStyle: 'normal',
             fontWeight: '500',
-            color: '#fff'
+            color: '#fff',
           }}
         >
           <Trans>Reserve status &#38; configuration</Trans>
