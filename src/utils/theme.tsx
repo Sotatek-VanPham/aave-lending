@@ -17,7 +17,9 @@ const {
   typography: { pxToRem },
 } = theme;
 
-const FONT = 'Inter, Arial';
+const FONT_MULISH = 'Mulish';
+const FONT_WORK_SANS = 'Work sans';
+
 
 declare module '@mui/material/styles/createPalette' {
   interface PaletteColor extends ColorPartial {}
@@ -225,7 +227,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
     },
     spacing: 4,
     typography: {
-      fontFamily: FONT,
+      fontFamily: FONT_MULISH,
       h5: undefined,
       h6: undefined,
       subtitle1: undefined,
@@ -235,56 +237,56 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
       button: undefined,
       overline: undefined,
       display1: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 700,
         letterSpacing: pxToRem(0.25),
         lineHeight: '123.5%',
         fontSize: pxToRem(32),
       },
       h1: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 700,
         letterSpacing: pxToRem(0.25),
         lineHeight: '123.5%',
         fontSize: pxToRem(28),
       },
       h2: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 600,
         letterSpacing: 'unset',
         lineHeight: '133.4%',
         fontSize: pxToRem(21),
       },
       h3: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 600,
         letterSpacing: pxToRem(0.15),
         lineHeight: '160%',
         fontSize: pxToRem(18),
       },
       h4: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 600,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(24),
         fontSize: pxToRem(16),
       },
       subheader1: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 600,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(20),
         fontSize: pxToRem(14),
       },
       subheader2: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         letterSpacing: pxToRem(0.1),
         lineHeight: pxToRem(16),
         fontSize: pxToRem(12),
       },
       subheader2Light: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         color: '#FFF',
         letterSpacing: pxToRem(0.1),
@@ -292,34 +294,34 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         fontSize: pxToRem(12),
       },
       description: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 400,
         letterSpacing: pxToRem(0.15),
         lineHeight: '143%',
         fontSize: pxToRem(14),
       },
       caption: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 400,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(16),
         fontSize: pxToRem(12),
       },
       buttonL: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         letterSpacing: pxToRem(0.46),
         lineHeight: pxToRem(24),
         fontSize: pxToRem(16),
       },
       buttonM: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         lineHeight: pxToRem(24),
         fontSize: pxToRem(14),
       },
       buttonS: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 600,
         letterSpacing: pxToRem(0.46),
         lineHeight: pxToRem(20),
@@ -327,68 +329,68 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         fontSize: pxToRem(10),
       },
       helperText: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 400,
         letterSpacing: pxToRem(0.4),
         lineHeight: pxToRem(12),
         fontSize: pxToRem(10),
       },
       tooltip: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 400,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(16),
         fontSize: pxToRem(12),
       },
       main21: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 800,
         lineHeight: '133.4%',
         fontSize: pxToRem(21),
       },
       secondary21: {
-        fontFamily: FONT,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         lineHeight: '133.4%',
         fontSize: pxToRem(21),
       },
       main16: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 600,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(24),
         fontSize: pxToRem(16),
       },
       secondary16: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 500,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(24),
         fontSize: pxToRem(16),
       },
       main14: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 600,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(20),
         fontSize: pxToRem(14),
       },
       secondary14: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 500,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(20),
         fontSize: pxToRem(14),
       },
       main12: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 600,
         letterSpacing: pxToRem(0.1),
         lineHeight: pxToRem(16),
         fontSize: pxToRem(12),
       },
       secondary12: {
-        fontFamily: FONT,
+        fontFamily: FONT_MULISH,
         fontWeight: 500,
         letterSpacing: pxToRem(0.1),
         lineHeight: pxToRem(16),
@@ -822,7 +824,7 @@ export function getThemedComponents(theme: Theme) {
       MuiCssBaseline: {
         styleOverrides: {
           body: {
-            fontFamily: FONT,
+            fontFamily: FONT_MULISH,
             fontWeight: 400,
             fontSize: pxToRem(14),
             minWidth: '375px',

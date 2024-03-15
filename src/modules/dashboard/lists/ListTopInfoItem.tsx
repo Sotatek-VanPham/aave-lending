@@ -23,10 +23,15 @@ export const ListTopInfoItem = ({ title, value, percent, tooltip }: ListTopInfoI
         bgcolor: 'transparent',
       }}
     >
-      <Typography color="text.secondary" sx={{ mr: 1 }} noWrap>
+      <Typography color="#FFF" sx={{ mr: 1, fontSize: '12px' }} noWrap>
         {title}
       </Typography>
-      <FormattedNumber value={value} percent={percent} variant="secondary14" symbol="USD" />
+      <FormattedNumber
+        value={value}
+        percent={percent}
+        symbol="USD"
+        sx={{ fontFamily: 'Mulish', color: '#fff', fontSize: '12px' }}
+      />
 
       {tooltip}
     </Paper>

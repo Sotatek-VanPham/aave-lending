@@ -13,6 +13,7 @@ import { ListAPRColumn } from '../ListAPRColumn';
 import { ListButtonsColumn } from '../ListButtonsColumn';
 import { ListItemWrapper } from '../ListItemWrapper';
 import { ListValueColumn } from '../ListValueColumn';
+import { ButtonSupplyCustom } from '../SupplyAssetsList/SupplyAssetsListItem';
 
 export const BorrowAssetsListItem = ({
   symbol,
@@ -71,18 +72,16 @@ export const BorrowAssetsListItem = ({
         symbol={symbol}
       />
       <ListButtonsColumn>
-        <Button
+        <ButtonSupplyCustom
           disabled={disableBorrow}
           variant="contained"
           onClick={() => {
             openBorrow(underlyingAsset, currentMarket, name, 'dashboard');
           }}
-          sx={{ bgcolor: '#3AB0FF' }}
         >
           <Trans>Borrow</Trans>
-        </Button>
+        </ButtonSupplyCustom>
         <Button
-          variant="outlined"
           component={Link}
           href={ROUTES.reserveOverview(underlyingAsset, currentMarket)}
           onClick={() => {
@@ -94,8 +93,11 @@ export const BorrowAssetsListItem = ({
             });
           }}
           sx={(theme) => ({
-            backgroundColor: theme.palette.background.surface,
-            color: theme.palette.text.links,
+            backgroundColor: '#DA3E3E',
+            color: '#1A1A1C',
+            fontSize: '12px',
+            width: '65.229px',
+            height: '32px',
             '&:hover': { backgroundColor: theme.palette.background.surface },
           })}
         >

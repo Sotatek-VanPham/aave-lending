@@ -23,7 +23,11 @@ export function GraphLegend({
               borderRadius: '50%',
             }}
           />
-          <Typography variant="description" color="text.secondary">
+          <Typography
+            variant="description"
+            color="#fff"
+            sx={{ fontFamily: 'Work sans', fontWeight: 400 }}
+          >
             {label.text}
           </Typography>
         </Box>

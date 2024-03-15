@@ -15,8 +15,17 @@ export const PanelRow: React.FC<BoxProps> = (props) => (
 export const PanelTitle: React.FC<TypographyProps> = (props) => (
   <Typography
     {...props}
-    variant="subheader1"
-    sx={{ minWidth: { xs: '170px' }, mr: 4, mb: { xs: 6, md: 0 }, ...props.sx }}
+    sx={{
+      minWidth: { xs: '170px' },
+      mr: 4,
+      mb: { xs: 6, md: 0 },
+      ...props.sx,
+      fontFamily: 'Work Sans',
+      fontSize: '16px',
+      fontStyle: 'normal',
+      fontWeight: 500,
+      color: '#fff',
+    }}
   />
 );
 
@@ -52,7 +61,7 @@ export const PanelItem: React.FC<PanelItemProps> = ({ title, children, className
       }}
       className={className}
     >
-      <Typography color="text.secondary" component="span">
+      <Typography color="#fff" component="span" sx={{ fontSize: '16px', fontFamily: 'Work Sans' }}>
         {title}
       </Typography>
       <Box

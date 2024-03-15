@@ -104,6 +104,7 @@ export const BorrowAssetsList = () => {
   const tokensToBorrow = reserves
     .filter((reserve) => assetCanBeBorrowedByUser(reserve, user))
     .map((reserve: ComputedReserveData) => {
+      
       const availableBorrows = user
         ? Number(getMaxAmountAvailableToBorrow(reserve, user, InterestRate.Variable))
         : 0;
@@ -148,15 +149,18 @@ export const BorrowAssetsList = () => {
     user?.totalCollateralMarketReferenceCurrency === '0' || +collateralUsagePercent >= 0.98
       ? tokensToBorrow
       : tokensToBorrow.filter(
-          ({ availableBorrowsInUSD, totalLiquidityUSD, symbol }) =>
+          ({ availableBorrowsInUSD, totalLiquidityUSD }) =>
             availableBorrowsInUSD !== '0.00' &&
-            (totalLiquidityUSD !== '0' ||
-              displayGho({
-                symbol,
-                currentMarket,
-              }))
+            (totalLiquidityUSD !== '0'
+            //  ||
+            //   displayGho({
+            //     symbol,
+            //     currentMarket,
+            //   })
+              )
         );
 
+        console.log('user111', reserves, user, maxBorrowAmount.toString(), tokensToBorrow, borrowReserves);
   const { value: ghoReserve, filtered: filteredReserves } = findAndFilterGhoReserve(borrowReserves);
   const sortedReserves = handleSortDashboardReserves(
     sortDesc,
@@ -164,6 +168,7 @@ export const BorrowAssetsList = () => {
     'asset',
     filteredReserves as unknown as DashboardReserve[]
   );
+
   const borrowDisabled = !sortedReserves.length && !ghoReserve;
 
   const RenderHeader: React.FC = () => {

@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, styled } from '@mui/material';
 import React, { ReactNode } from 'react';
 
 type ReserveOverviewBoxProps = {
@@ -7,6 +7,15 @@ type ReserveOverviewBoxProps = {
   fullWidth?: boolean;
 };
 
+export const TypographyCustom = styled(Typography)(() => ({
+  p: {
+    color: '#FFF',
+    fontFamily: 'Work Sans',
+    fontSize: '16px',
+    fontWeight: 500,
+  },
+})) as typeof Typography;
+
 export function ReserveOverviewBox({
   title,
   children,
@@ -14,12 +23,15 @@ export function ReserveOverviewBox({
 }: ReserveOverviewBoxProps) {
   return (
     <Box
-      sx={(theme) => ({
+      sx={() => ({
         borderRadius: '6px',
-        border: `1px solid ${theme.palette.divider}`,
+        background: 'rgba(27, 27, 29, 0.50)',
+        backdropFilter: 'blur(100px)',
+        border: '1px solid rgba(255, 255, 255, 0.07)',
         flex: fullWidth ? '0 100%' : '0 32%',
         marginBottom: '2%',
         maxWidth: fullWidth ? '100%' : '32%',
+        color: '#fff',
       })}
     >
       <Box
@@ -31,11 +43,7 @@ export function ReserveOverviewBox({
           padding: '8px',
         }}
       >
-        {title && (
-          <Typography variant="secondary14" color="text.secondary" component="span">
-            {title}
-          </Typography>
-        )}
+        {title && <TypographyCustom>{title}</TypographyCustom>}
         {children}
       </Box>
     </Box>

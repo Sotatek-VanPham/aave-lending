@@ -484,10 +484,10 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
 
               {fields.map((field) => (
                 <Box key={field.name} sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <Typography variant="caption" color="text.secondary" sx={{ mr: 2 }}>
+                  <Typography variant="caption" color="#A5A8B3" sx={{ mr: 2 }}>
                     {field.text}
                   </Typography>
-                  <Typography variant="main12" color="text.primary">
+                  <Typography variant="main12" color="#A5A8B3">
                     {tooltipValueAccessors[field.name](tooltipData).toFixed(2)}%
                   </Typography>
                 </Box>

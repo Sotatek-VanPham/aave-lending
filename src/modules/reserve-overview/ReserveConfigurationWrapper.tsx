@@ -25,7 +25,16 @@ export const ReserveConfigurationWrapper: React.FC<ReserveConfigurationProps> = 
   const isGho = displayGho({ symbol: reserve.symbol, currentMarket });
 
   return (
-    <Paper sx={{ pt: 4, pb: 20, px: downToXsm ? 4 : 6 }}>
+    <Paper
+      sx={{
+        pt: 4,
+        pb: 20,
+        px: downToXsm ? 4 : 6,
+        borderRadius: '16px',
+        background: 'rgba(27, 27, 29, 0.50)',
+        backdropFilter: 'blur(100px)',
+      }}
+    >
       <Box
         sx={{
           display: 'flex',
@@ -38,7 +47,15 @@ export const ReserveConfigurationWrapper: React.FC<ReserveConfigurationProps> = 
               : '36px',
         }}
       >
-        <Typography variant="h3">
+        <Typography
+          sx={{
+            fontFamily: "Work Sans",
+            fontSize: '24px',
+            fontStyle: 'normal',
+            fontWeight: '500',
+            color: '#fff'
+          }}
+        >
           <Trans>Reserve status &#38; configuration</Trans>
         </Typography>
       </Box>

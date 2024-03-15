@@ -3,10 +3,11 @@ import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackOutlined';
 import {
   Box,
   Button,
-  Divider,
+  // Divider,
   Skeleton,
   SvgIcon,
   Typography,
+  styled,
   useMediaQuery,
   useTheme,
 } from '@mui/material';
@@ -26,6 +27,18 @@ import { AddTokenDropdown } from './AddTokenDropdown';
 import { GhoReserveTopDetails } from './Gho/GhoReserveTopDetails';
 import { ReserveTopDetails } from './ReserveTopDetails';
 import { TokenLinkDropdown } from './TokenLinkDropdown';
+
+export const ButtonBack = styled(Button)(() => ({
+  borderRadius: '4px',
+  color: '#C4C8E2',
+  border: '1px solid rgba(194, 195, 233, 0.80)',
+  background: 'rgba(72, 74, 119, 0.30)',
+  width: '103px',
+  height: '36px',
+  fontSize: '14px',
+  fontWeight: 700,
+  padding: '8px 10px',
+})) as typeof Button;
 
 interface ReserveTopDetailsProps {
   underlyingAsset: string;
@@ -50,14 +63,22 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
 
   const ReserveIcon = () => {
     return (
-      <Box mr={3} sx={{ mr: 3, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <Box
+        mr={3}
+        sx={{
+          mr: 3,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         {loading ? (
           <Skeleton variant="circular" width={40} height={40} sx={{ background: '#383D51' }} />
         ) : (
           <img
-            src={`/icons/tokens/${poolReserve.iconSymbol.toLowerCase()}.svg`}
-            width="40px"
-            height="40px"
+            src={`/icons/tokens/${poolReserve.iconSymbol.toLowerCase() || 'unknow'}.svg`}
+            width="39px"
+            height="39px"
             alt=""
           />
         )}
@@ -69,7 +90,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
     return loading ? (
       <Skeleton width={60} height={28} sx={{ background: '#383D51' }} />
     ) : (
-      <Typography variant={valueTypographyVariant}>{poolReserve.name}</Typography>
+      <Typography variant={valueTypographyVariant}>{poolReserve.name || 'Unknow'}</Typography>
     );
   };
 
@@ -89,10 +110,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               flexDirection: downToSM ? 'column' : 'row',
             }}
           >
-            <Button
-              variant="surface"
-              size="medium"
-              color="primary"
+            <ButtonBack
               startIcon={
                 <SvgIcon sx={{ fontSize: '20px' }}>
                   <ArrowBackRoundedIcon />
@@ -106,7 +124,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               sx={{ mr: 3, mb: downToSM ? '24px' : '0' }}
             >
               <Trans>Go Back</Trans>
-            </Button>
+            </ButtonBack>
 
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <MarketLogo size={20} logo={network.networkLogoPath} />
@@ -122,7 +140,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               <Box>
                 {!loading && (
                   <Typography sx={{ color: '#fff' }} variant="caption">
-                    {poolReserve.symbol}
+                    {poolReserve.symbol || 'Unknow'}
                   </Typography>
                 )}
                 <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
@@ -187,11 +205,11 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               </Box>
             </Box>
           </TopInfoPanelItem>
-          <Divider
+          {/* <Divider
             orientation="vertical"
             flexItem
             sx={{ my: 1, borderColor: 'rgba(235, 235, 239, 0.08)' }}
-          />
+          /> */}
         </>
       )}
       {isGho ? <GhoReserveTopDetails /> : <ReserveTopDetails underlyingAsset={underlyingAsset} />}

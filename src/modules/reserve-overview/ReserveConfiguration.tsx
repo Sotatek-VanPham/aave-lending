@@ -17,7 +17,7 @@ import { GENERAL } from 'src/utils/mixPanelEvents';
 
 import { BorrowInfo } from './BorrowInfo';
 import { InterestRateModelGraphContainer } from './graphs/InterestRateModelGraphContainer';
-import { ReserveEModePanel } from './ReserveEModePanel';
+// import { ReserveEModePanel } from './ReserveEModePanel';
 import { PanelItem, PanelRow, PanelTitle } from './ReservePanels';
 import { SupplyInfo } from './SupplyInfo';
 
@@ -97,7 +97,7 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
 
       {(reserve.borrowingEnabled || Number(reserve.totalDebt) > 0) && (
         <>
-          <Divider sx={{ my: { xs: 6, sm: 10 } }} />
+          <Divider sx={{ my: { xs: 6, sm: 10, borderColor: 'rgba(255, 255, 255, 0.10)' } }} />
           <PanelRow>
             <PanelTitle>Borrow info</PanelTitle>
             <Box sx={{ flexGrow: 1, minWidth: 0, maxWidth: '100%', width: '100%' }}>
@@ -119,16 +119,16 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
         </>
       )}
 
-      {reserve.eModeCategoryId !== 0 && (
+      {/* {reserve.eModeCategoryId !== 0 && (
         <>
           <Divider sx={{ my: { xs: 6, sm: 10 } }} />
           <ReserveEModePanel reserve={reserve} />
         </>
-      )}
+      )} */}
 
       {(reserve.borrowingEnabled || Number(reserve.totalDebt) > 0) && (
         <>
-          <Divider sx={{ my: { xs: 6, sm: 10 } }} />
+          <Divider sx={{ my: { xs: 6, sm: 10 }, borderColor: 'rgba(255, 255, 255, 0.10)'}} />
 
           <PanelRow>
             <PanelTitle>Interest rate model</PanelTitle>

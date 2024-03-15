@@ -145,7 +145,7 @@ export function assetCanBeBorrowedByUser(
   user: ExtendedFormattedUser
 ) {
   if (!borrowingEnabled || !isActive || isFrozen || isPaused) return false;
-  if (user?.isInEmode && eModeCategoryId !== user.userEmodeCategoryId) return false;
+  // if (user?.isInEmode && eModeCategoryId !== user.userEmodeCategoryId) return false;
   if (user?.isInIsolationMode && !borrowableInIsolation) return false;
   return true;
 }

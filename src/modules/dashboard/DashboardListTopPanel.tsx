@@ -48,11 +48,11 @@ export const DashboardListTopPanel = ({
         label={<Trans>Show assets with 0 balance</Trans>}
       />
 
-      {(STAGING_ENV || ENABLE_TESTNET) && <FaucetButton />}
+      {/* {(STAGING_ENV || ENABLE_TESTNET) && <FaucetButton />}
       <Box sx={{ display: 'flex', gap: 4 }}>
         {!ENABLE_TESTNET && <LifiBridgeButton />}
         {!ENABLE_TESTNET && <BridgeButton bridge={bridge} />}
-      </Box>
+      </Box> */}
     </Box>
   );
 };

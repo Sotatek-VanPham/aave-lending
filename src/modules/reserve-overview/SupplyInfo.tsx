@@ -103,22 +103,41 @@ export const SupplyInfo = ({
               }
             >
               <Box>
-                <FormattedNumber value={reserve.totalLiquidity} variant="main16" compact />
+                <FormattedNumber
+                  value={reserve.totalLiquidity}
+                  compact
+                  sx={{
+                    fontWeight: 600,
+                    fontFamily: 'Work Sans',
+                    fontSize: '16px',
+                  }}
+                />
                 <Typography
                   component="span"
-                  color="text.primary"
-                  variant="secondary16"
-                  sx={{ display: 'inline-block', mx: 1 }}
+                  color="#fff"
+                  sx={{
+                    mx: 1,
+                    fontWeight: 600,
+                    fontFamily: 'Work Sans',
+                    fontSize: '16px',
+                  }}
                 >
                   <Trans>of</Trans>
                 </Typography>
-                <FormattedNumber value={reserve.supplyCap} variant="main16" />
+                <FormattedNumber
+                  value={reserve.supplyCap}
+                  sx={{
+                    fontWeight: 600,
+                    fontFamily: 'Work Sans',
+                    fontSize: '16px',
+                  }}
+                />
               </Box>
               <Box>
                 <ReserveSubheader value={reserve.totalLiquidityUSD} />
                 <Typography
                   component="span"
-                  color="text.secondary"
+                  color="#fff"
                   variant="secondary12"
                   sx={{ display: 'inline-block', mx: 1 }}
                 >
@@ -137,12 +156,16 @@ export const SupplyInfo = ({
               </Box>
             }
           >
-            <FormattedNumber value={reserve.totalLiquidity} variant="main16" compact />
+            <FormattedNumber value={reserve.totalLiquidity} compact />
             <ReserveSubheader value={reserve.totalLiquidityUSD} />
           </PanelItem>
         )}
         <PanelItem title={<Trans>APY</Trans>}>
-          <FormattedNumber value={reserve.supplyAPY} percent variant="main16" />
+          <FormattedNumber
+            value={reserve.supplyAPY}
+            percent
+            sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+          />
           <IncentivesButton
             symbol={reserve.symbol}
             incentives={reserve.aIncentivesData}
@@ -151,7 +174,7 @@ export const SupplyInfo = ({
         </PanelItem>
         {reserve.unbacked && reserve.unbacked !== '0' && (
           <PanelItem title={<Trans>Unbacked</Trans>}>
-            <FormattedNumber value={reserve.unbacked} variant="main16" symbol={reserve.name} />
+            <FormattedNumber value={reserve.unbacked} symbol={reserve.name} />
             <ReserveSubheader value={reserve.unbackedUSD} />
           </PanelItem>
         )}
@@ -166,7 +189,11 @@ export const SupplyInfo = ({
       <div>
         {reserve.isIsolated ? (
           <Box sx={{ pt: '42px', pb: '12px' }}>
-            <Typography variant="subheader1" color="text.main" paddingBottom={'12px'}>
+            <Typography
+              color="#fff"
+              paddingBottom={'12px'}
+              sx={{ color: '#fff', fontFamily: 'Work Sans', fontSize: '16px', fontWeight: 500 }}
+            >
               <Trans>Collateral usage</Trans>
             </Typography>
             <Warning severity="warning">
@@ -185,7 +212,9 @@ export const SupplyInfo = ({
             sx={{ display: 'inline-flex', alignItems: 'center', pt: '42px', pb: '12px' }}
             paddingTop={'42px'}
           >
-            <Typography variant="subheader1" color="text.main">
+            <Typography
+              sx={{ color: '#fff', fontFamily: 'Work Sans', fontSize: '16px', fontWeight: 500 }}
+            >
               <Trans>Collateral usage</Trans>
             </Typography>
             <CheckRoundedIcon fontSize="small" color="success" sx={{ ml: 2 }} />
@@ -195,7 +224,9 @@ export const SupplyInfo = ({
           </Box>
         ) : (
           <Box sx={{ pt: '42px', pb: '12px' }}>
-            <Typography variant="subheader1" color="text.main">
+            <Typography
+              sx={{ color: '#fff', fontFamily: 'Work Sans', fontSize: '16px', fontWeight: 500 }}
+            >
               <Trans>Collateral usage</Trans>
             </Typography>
             <Warning sx={{ my: '12px' }} severity="warning">
@@ -231,8 +262,9 @@ export const SupplyInfo = ({
             <FormattedNumber
               value={reserve.formattedBaseLTVasCollateral}
               percent
-              variant="secondary14"
+              variant="secondary16"
               visibleDecimals={2}
+              sx={{ fontWeight: 500, fontFamily: 'Work sans'}}
             />
           </ReserveOverviewBox>
 
@@ -247,7 +279,7 @@ export const SupplyInfo = ({
                     assetName: reserve.name,
                   },
                 }}
-                variant="description"
+                // variant="description"
                 text={<Trans>Liquidation threshold</Trans>}
               />
             }
@@ -255,7 +287,7 @@ export const SupplyInfo = ({
             <FormattedNumber
               value={reserve.formattedReserveLiquidationThreshold}
               percent
-              variant="secondary14"
+              variant="secondary16"
               visibleDecimals={2}
             />
           </ReserveOverviewBox>
@@ -279,7 +311,7 @@ export const SupplyInfo = ({
             <FormattedNumber
               value={reserve.formattedReserveLiquidationBonus}
               percent
-              variant="secondary14"
+              variant="secondary16"
               visibleDecimals={2}
             />
           </ReserveOverviewBox>

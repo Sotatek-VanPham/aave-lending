@@ -98,22 +98,28 @@ export const BorrowInfo = ({
               }
             >
               <Box>
-                <FormattedNumber value={reserve.totalDebt} variant="main16" />
+                <FormattedNumber
+                  value={reserve.totalDebt}
+                  sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+                />
                 <Typography
                   component="span"
-                  color="text.primary"
+                  color="#fff"
                   variant="secondary16"
                   sx={{ display: 'inline-block', mx: 1 }}
                 >
                   <Trans>of</Trans>
                 </Typography>
-                <FormattedNumber value={reserve.borrowCap} variant="main16" />
+                <FormattedNumber
+                  value={reserve.borrowCap}
+                  sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+                />
               </Box>
               <Box>
                 <ReserveSubheader value={reserve.totalDebtUSD} />
                 <Typography
                   component="span"
-                  color="text.primary"
+                  color="#fff"
                   variant="secondary16"
                   sx={{ display: 'inline-block', mx: 1 }}
                 >
@@ -132,7 +138,10 @@ export const BorrowInfo = ({
               </Box>
             }
           >
-            <FormattedNumber value={reserve.totalDebt} variant="main16" />
+            <FormattedNumber
+              value={reserve.totalDebt}
+              sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+            />
             <ReserveSubheader value={reserve.totalDebtUSD} />
           </PanelItem>
         )}
@@ -153,7 +162,11 @@ export const BorrowInfo = ({
             />
           }
         >
-          <FormattedNumber value={reserve.variableBorrowAPY} percent variant="main16" />
+          <FormattedNumber
+            value={reserve.variableBorrowAPY}
+            percent
+            sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+          />
           <IncentivesButton
             symbol={reserve.symbol}
             incentives={reserve.vIncentivesData}
@@ -178,7 +191,11 @@ export const BorrowInfo = ({
               />
             }
           >
-            <FormattedNumber value={reserve.stableBorrowAPY} percent variant="main16" />
+            <FormattedNumber
+              value={reserve.stableBorrowAPY}
+              percent
+              sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+            />
             <IncentivesButton
               symbol={reserve.symbol}
               incentives={reserve.sIncentivesData}
@@ -188,7 +205,10 @@ export const BorrowInfo = ({
         )}
         {reserve.borrowCapUSD && reserve.borrowCapUSD !== '0' && (
           <PanelItem title={<Trans>Borrow cap</Trans>}>
-            <FormattedNumber value={reserve.borrowCap} variant="main16" />
+            <FormattedNumber
+              value={reserve.borrowCap}
+              sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
+            />
             <ReserveSubheader value={reserve.borrowCapUSD} />
           </PanelItem>
         )}
@@ -204,7 +224,7 @@ export const BorrowInfo = ({
         sx={{ display: 'inline-flex', alignItems: 'center', pt: '42px', pb: '12px' }}
         paddingTop={'42px'}
       >
-        <Typography variant="subheader1" color="text.main">
+        <Typography sx={{ fontSize: '16px', fontFamily: 'Work Sans', fontWeight: 500, color: '#fff' }}>
           <Trans>Collector Info</Trans>
         </Typography>
       </Box>
