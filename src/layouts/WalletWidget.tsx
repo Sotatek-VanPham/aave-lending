@@ -70,7 +70,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
   const router = useRouter();
   const { setWalletModalOpen } = useWalletModalContext();
 
-  const { breakpoints, palette } = useTheme();
+  const { breakpoints } = useTheme();
   const xsm = useMediaQuery(breakpoints.down('xsm'));
   const md = useMediaQuery(breakpoints.down('md'));
   const trackEvent = useRootStore((store) => store.trackEvent);

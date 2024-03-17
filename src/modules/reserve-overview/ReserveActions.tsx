@@ -2,7 +2,6 @@ import { BigNumberValue, USD_DECIMALS, valueToBigNumber } from '@aave/math-utils
 import { Trans } from '@lingui/macro';
 import {
   Box,
-  Button,
   CircularProgress,
   Divider,
   Paper,
