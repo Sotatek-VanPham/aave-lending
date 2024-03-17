@@ -25,9 +25,9 @@ export const NoSearchResults: React.FC<NoSearchResultsProps> = ({ searchTerm, su
     >
       {sm ? (
         <Box sx={{ textAlign: 'center', maxWidth: '300px' }}>
-          <Typography variant="h2">{t`No search results${searchTerm && ' for'}`}</Typography>
+          <Typography variant="h2" color="#fff">{t`No search results${searchTerm && ' for'}`}</Typography>
           {searchTerm && (
-            <Typography sx={{ overflowWrap: 'anywhere' }} variant="h2">
+            <Typography sx={{ overflowWrap: 'anywhere' }} variant="h2" color="#fff">
               &apos;{searchTerm}&apos;
             </Typography>
           )}
@@ -36,6 +36,7 @@ export const NoSearchResults: React.FC<NoSearchResultsProps> = ({ searchTerm, su
         <Typography
           sx={{ textAlign: 'center', maxWidth: '480px', overflowWrap: 'anywhere' }}
           variant="h2"
+          color="#fff"
         >
           {t`No search results${searchTerm && ` for \'${searchTerm}\'`}`}
         </Typography>
@@ -44,7 +45,7 @@ export const NoSearchResults: React.FC<NoSearchResultsProps> = ({ searchTerm, su
         <Typography
           sx={{ width: '280px', textAlign: 'center' }}
           variant="description"
-          color="text.secondary"
+          color="#A5A8B3"
         >
           {subtitle}
         </Typography>

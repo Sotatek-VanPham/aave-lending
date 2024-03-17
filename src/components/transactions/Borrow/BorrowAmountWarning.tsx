@@ -44,8 +44,9 @@ export const BorrowAmountWarning = ({
           }}
           size="small"
           data-cy={'risk-checkbox'}
+          sx={{ color: '#484A77'}}
         />
-        <Typography variant="description">
+        <Typography variant="description" color='#fff'>
           <Trans>I acknowledge the risks involved.</Trans>
         </Typography>
       </Box>

@@ -39,9 +39,9 @@ const Content = ({
         <FormattedNumber
           value={subValue}
           symbol="USD"
-          variant="secondary12"
           color="#A5A8B3"
           symbolsColor="#A5A8B3"
+          sx={{ fontSize: '10px'}}
         />
       )}
     </>

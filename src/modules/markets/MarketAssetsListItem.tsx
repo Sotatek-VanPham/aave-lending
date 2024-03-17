@@ -17,6 +17,7 @@ import { Link, ROUTES } from '../../components/primitives/Link';
 import { TokenIcon } from '../../components/primitives/TokenIcon';
 import { ComputedReserveData } from '../../hooks/app-data-provider/useAppDataProvider';
 import { MARKETS } from '../../utils/mixPanelEvents';
+import { ButtonDetailCustom } from '../dashboard/lists/SupplyAssetsList/SupplyAssetsListItem';
 
 export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
   const router = useRouter();
@@ -41,7 +42,9 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
         });
         router.push(ROUTES.reserveOverview(reserve.underlyingAsset, currentMarket));
       }}
-      sx={{ cursor: 'pointer' }}
+      sx={{
+        cursor: 'pointer',
+      }}
       button
       data-cy={`marketListItemListItem_${reserve.symbol.toUpperCase()}`}
     >
@@ -131,8 +134,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
       </ListColumn>
 
       <ListColumn minWidth={95} maxWidth={95} align="right">
-        <Button
-          variant="outlined"
+        <ButtonDetailCustom
           component={Link}
           href={ROUTES.reserveOverview(reserve.underlyingAsset, currentMarket)}
           onClick={() =>
@@ -143,25 +145,9 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
               market: currentMarket,
             })
           }
-          sx={() => ({
-            backgroundColor: '#DA3E3E',
-            color: '#1A1A1C',
-            border: 'none',
-            borderRadius: '4px',
-            fontFamily: 'Mulish',
-            fontSize: '12px',
-            fontWeight: 700,
-            height: '32px',
-            width: '65px',
-
-            '&:hover': {
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-            },
-          })}
         >
           <Trans>Details</Trans>
-        </Button>
+        </ButtonDetailCustom>
       </ListColumn>
     </ListItem>
   );

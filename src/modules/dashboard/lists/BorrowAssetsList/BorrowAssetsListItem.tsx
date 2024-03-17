@@ -98,7 +98,7 @@ export const BorrowAssetsListItem = ({
             fontSize: '12px',
             width: '65.229px',
             height: '32px',
-            '&:hover': { backgroundColor: theme.palette.background.surface },
+            '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
           })}
         >
           <Trans>Details</Trans>

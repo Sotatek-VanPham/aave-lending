@@ -62,14 +62,14 @@ export const GasStation: React.FC<GasStationProps> = ({ gasLimit, skipLoad, disa
 
   return (
     <Stack gap={6}>
-      <Box sx={{ display: 'flex', alignItems: 'center', mt: 6 }}>
-        <LocalGasStationIcon color="primary" sx={{ fontSize: '16px', mr: 1.5 }} />
+      <Box sx={{ display: 'flex', alignItems: 'center', mt: 6, color: '#A5A8B3' }}>
+        <LocalGasStationIcon sx={{ fontSize: '16px', mr: 1.5, color: '#fff' }} />
 
         {loadingTxns && !skipLoad ? (
           <CircularProgress size="16px" sx={{ mr: 2, color: '#fff' }} />
         ) : totalGasCostsUsd && !disabled ? (
           <>
-            <FormattedNumber value={totalGasCostsUsd} symbol="USD" color="#fff" />
+            <FormattedNumber value={totalGasCostsUsd} symbol="USD" color="#A5A8B3" symbolsColor='#A5A8B3' />
             <GasTooltip />
           </>
         ) : (

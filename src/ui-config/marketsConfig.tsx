@@ -124,7 +124,7 @@ export const marketsData: {
       incentives: true,
     },
     // TODO: Need subgraph, currently not supported
-    subgraphUrl: '',
+    subgraphUrl: 'https://thegraph.test.btcs.network/subgraphs/name/aave-fork-testnet',
     addresses: {
       LENDING_POOL_ADDRESS_PROVIDER: CORE_TESTNET_ADDRESS.LENDING_POOL_ADDRESS_PROVIDER,
       LENDING_POOL: CORE_TESTNET_ADDRESS.LENDING_POOL,

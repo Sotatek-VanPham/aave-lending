@@ -27,9 +27,35 @@ export const ButtonSupplyCustom = styled(Button)(() => ({
   fontSize: '12px',
   color: '#C4C8E2',
   fontWeight: 700,
+  '&:hover': {
+    background: '#484A77',
+    opacity: 0.7,
+  },
   '&:disabled': {
     background: '#484A77',
     color: '#C4C8E2',
+    border: 'none',
+    cursor: 'not-allowed',
+    opacity: 0.7,
+  },
+})) as typeof Button;
+
+export const ButtonDetailCustom = styled(Button)(() => ({
+  borderRadius: '4px',
+  background: '#DA3E3E',
+  border: 'none',
+  width: '65.229px',
+  height: '32px',
+  fontSize: '12px',
+  color: '#1A1A1C',
+  fontWeight: 700,
+  '&:hover': {
+    background: '#DA3E3E',
+    opacity: 0.7,
+  },
+  '&:disabled': {
+    background: '#DA3E3E',
+    color: '#1A1A1C',
     border: 'none',
     cursor: 'not-allowed',
     opacity: 0.7,
@@ -112,7 +138,7 @@ export const SupplyAssetsListItem = ({
         >
           <Trans>Supply</Trans>
         </ButtonSupplyCustom>
-        <Button
+        <ButtonDetailCustom
           component={Link}
           href={ROUTES.reserveOverview(detailsAddress, currentMarket)}
           onClick={() => {
@@ -123,17 +149,9 @@ export const SupplyAssetsListItem = ({
               asset: underlyingAsset,
             });
           }}
-          sx={(theme) => ({
-            backgroundColor: '#DA3E3E',
-            color: '#1A1A1C',
-            fontSize: '12px',
-            width: '65.229px',
-            height: '32px',
-            '&:hover': { backgroundColor: theme.palette.background.surface },
-          })}
         >
           <Trans>Details</Trans>
-        </Button>
+        </ButtonDetailCustom>
       </ListButtonsColumn>
     </ListItemWrapper>
   );

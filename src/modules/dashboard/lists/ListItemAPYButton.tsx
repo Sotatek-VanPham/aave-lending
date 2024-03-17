@@ -55,13 +55,14 @@ export const ListItemAPYButton = ({
   return (
     <>
       <Button
-        variant="outlined"
         onClick={handleClick}
         sx={{
           color: 'text.links',
-          bgcolor: 'background.surfaceLight',
+          borderRadius: '16px',
+          border: '1px solid rgba(255, 255, 255, 0.20)',
+          background: 'rgba(219, 72, 151, 0.42)',
           '&:hover': {
-            bgcolor: 'background.surfaceLight',
+            background: 'rgba(219, 72, 151, 0.42)',
           },
         }}
         size="small"

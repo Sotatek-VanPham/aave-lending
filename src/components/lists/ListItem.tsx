@@ -22,7 +22,7 @@ export const ListItem = ({ children, minHeight = 71, px = 4, button, ...rest }: 
           borderColor: 'rgba(255, 255, 255, 0.10)',
         },
         ...rest.sx,
-        ...(button ? { '&:hover': { bgcolor: 'action.hover' /*color: `text.hover`*/ } } : {}),
+        ...{ '&:hover': { bgcolor: 'rgba(91, 103, 145, 0.25)' /*color: `text.hover`*/ } },
       }}
     >
       {children}

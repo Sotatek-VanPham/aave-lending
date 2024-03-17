@@ -16,11 +16,12 @@ export const ListTopInfoItem = ({ title, value, percent, tooltip }: ListTopInfoI
       variant="outlined"
       sx={{
         mr: 2,
-        p: '2px 4px',
+        p: '2px 8px',
         display: 'flex',
         alignItems: 'center',
         boxShadow: 'none',
-        bgcolor: 'transparent',
+        bgcolor: 'rgba(27, 27, 29, 0.42)',
+        borderColor: 'rgba(255, 255, 255, 0.20)'
       }}
     >
       <Typography color="#FFF" sx={{ mr: 1, fontSize: '12px' }} noWrap>

@@ -13,6 +13,7 @@ import {
   MenuItem,
   MenuList,
   Skeleton,
+  styled,
   SvgIcon,
   Typography,
   useMediaQuery,
@@ -35,6 +36,19 @@ import { Link, ROUTES } from '../components/primitives/Link';
 import { ENABLE_TESTNET, getNetworkConfig, STAGING_ENV } from '../utils/marketsAndNetworksConfig';
 import { DrawerWrapper } from './components/DrawerWrapper';
 import { MobileCloseButton } from './components/MobileCloseButton';
+
+export const ButtonConnect = styled(Button)(() => ({
+  background: '#DA3E3E',
+  border: 'none',
+  fontSize: '12px',
+  color: '#1A1A1C',
+  fontWeight: 700,
+  '&:hover': {
+    background: '#DA3E3E',
+    opacity: 0.7,
+  },
+})) as typeof Button;
+
 
 interface WalletWidgetProps {
   open: boolean;
@@ -167,11 +181,11 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
       {!md && (
         <Box sx={{ display: 'flex', flexDirection: 'row', padding: '0 16px 10px' }}>
           <Button
-            variant="outlined"
             sx={{
               padding: '0 5px',
               marginRight: '10px',
-              color: '#FFF',
+              background: '#DA3E3E',
+                color: '#1A1A1C',
             }}
             size="small"
             onClick={handleSwitchWallet}
@@ -182,7 +196,8 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
             variant="outlined"
             sx={{
               padding: '0 5px',
-              color: '#FFF',
+              background: '#DA3E3E',
+              color: '#1A1A1C',
             }}
             size="small"
             onClick={handleDisconnect}
@@ -310,31 +325,23 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
         <>
           <Divider sx={{ my: { xs: 7, md: 0 }, borderColor: { xs: '#FFFFFF1F', md: 'divider' } }} />
           <Box sx={{ padding: '16px 16px 10px' }}>
-            <Button
+            <ButtonConnect
               sx={{
                 marginBottom: '16px',
-                background: '#383D51',
-                color: '#F1F1F3',
               }}
               fullWidth
               size="large"
-              variant={palette.mode === 'dark' ? 'outlined' : 'text'}
               onClick={handleSwitchWallet}
             >
               Switch wallet
-            </Button>
-            <Button
-              sx={{
-                background: '#383D51',
-                color: '#F1F1F3',
-              }}
+            </ButtonConnect>
+            <ButtonConnect
               fullWidth
               size="large"
-              variant={palette.mode === 'dark' ? 'outlined' : 'text'}
               onClick={handleDisconnect}
             >
               Disconnect
-            </Button>
+            </ButtonConnect>
           </Box>
         </>
       )}

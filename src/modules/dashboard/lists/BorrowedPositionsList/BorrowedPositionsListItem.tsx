@@ -19,6 +19,7 @@ import { ListItemWrapper } from '../ListItemWrapper';
 import { ListMobileItemWrapper } from '../ListMobileItemWrapper';
 import { ListValueColumn } from '../ListValueColumn';
 import { ListValueRow } from '../ListValueRow';
+import { ButtonWithdrawCustom } from '../SuppliedPositionsList/SuppliedPositionsListItem';
 
 export const BorrowedPositionsListItem = ({ item }: { item: DashboardReserve }) => {
   const { borrowCap } = useAssetCaps();
@@ -143,34 +144,37 @@ const BorrowedPositionsListItemDesktop = ({
       </ListColumn>
 
       <ListButtonsColumn>
-        <Button
-          disabled={!isActive}
-          variant="outlined"
-          onClick={onOpenRepay}
-          sx={(theme) => ({
-            backgroundColor: theme.palette.background.surface2,
-            color: theme.palette.text.links,
-            '&:hover': { backgroundColor: theme.palette.background.surface2 },
-          })}
-        >
+        <ButtonWithdrawCustom disabled={!isActive} onClick={onOpenRepay}>
           <Trans>Repay</Trans>
-        </Button>
+        </ButtonWithdrawCustom>
         {showSwitchButton ? (
           <Button
             disabled={disableSwitch}
-            variant="outlined"
             onClick={onDetbSwitchClick}
             data-cy={`swapButton`}
-            sx={{ bgcolor: '#3AB0FF' }}
+            sx={(theme) => ({
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
+            })}
           >
             <Trans>Switch</Trans>
           </Button>
         ) : (
           <Button
             disabled={disableBorrow}
-            variant="outlined"
             onClick={onOpenBorrow}
-            sx={{ color: 'white' }}
+            sx={(theme) => ({
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
+            })}
           >
             <Trans>Borrow</Trans>
           </Button>
@@ -256,7 +260,7 @@ const BorrowedPositionsListItemMobile = ({
       </Row>
 
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mt: 5 }}>
-        <Button
+        <ButtonWithdrawCustom
           disabled={!isActive}
           variant="contained"
           onClick={onOpenRepay}
@@ -264,19 +268,38 @@ const BorrowedPositionsListItemMobile = ({
           fullWidth
         >
           <Trans>Repay</Trans>
-        </Button>
+        </ButtonWithdrawCustom>
         {showSwitchButton ? (
           <Button
             disabled={disableSwitch}
-            variant="outlined"
             fullWidth
             onClick={onDetbSwitchClick}
             data-cy={`swapButton`}
+            sx={(theme) => ({
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
+            })}
           >
             <Trans>Switch</Trans>
           </Button>
         ) : (
-          <Button disabled={disableBorrow} variant="outlined" onClick={onOpenBorrow} fullWidth>
+          <Button
+            disabled={disableBorrow}
+            onClick={onOpenBorrow}
+            fullWidth
+            sx={(theme) => ({
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
+            })}
+          >
             <Trans>Borrow</Trans>
           </Button>
         )}

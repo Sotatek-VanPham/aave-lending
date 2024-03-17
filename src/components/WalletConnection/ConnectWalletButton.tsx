@@ -22,12 +22,13 @@ export const ConnectWalletButton: React.FC<ConnectWalletProps> = ({ funnel }) =>
           setWalletModalOpen(true);
         }}
         sx={(theme) => ({
-          color: theme.palette.text.links,
+          color: '#1A1A1C',
           backgroundColor: '#FF4228',
+          fontWeight: '700',
           borderColor: theme.palette.primary.main,
           fontFamily: 'Mulish',
           '&:hover': {
-            color: theme.palette.text.links,
+            color: '#1A1A1C',
             opacity: '0.8',
             backgroundColor: '#FF4228',
             borderColor: theme.palette.primary.main,

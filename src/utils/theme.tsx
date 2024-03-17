@@ -195,7 +195,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
       background: {
         default: getColor('#121212', '#121212'),
         paper: getColor('#FFF', '#FFF'),
-        surface: getColor('#77037B', '#77037B'),
+        surface: getColor('#DA3E3E', '#DA3E3E'),
         surface2: getColor('#3AB0FF', '#3AB0FF'),
         surfaceLight: getColor('#B06FB3', '#B06FB3'),
         subscribe: getColor('#fbbf24', '#fbbf24'),
@@ -209,7 +209,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
       divider: getColor('#EAEBEF', '#EBEBEF14'),
       action: {
         active: getColor('#8E92A3', '#EBEBEF8F'),
-        hover: getColor('#3AB0FF', '#3AB0FF'),
+        action: getColor('#3AB0FF', '#3AB0FF'),
         selected: getColor('#EAEBEF', '#EBEBEF29'),
         disabled: getColor('#BBBECA', '#EBEBEF4D'),
         disabledBackground: getColor('#EAEBEF', '#EBEBEF1F'),
@@ -510,6 +510,7 @@ export function getThemedComponents(theme: Theme) {
             main14: 'p',
             main16: 'p',
             main21: 'p',
+            secondary10: 'p',
             secondary12: 'p',
             secondary14: 'p',
             secondary16: 'p',

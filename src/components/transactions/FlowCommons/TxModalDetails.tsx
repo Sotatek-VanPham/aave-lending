@@ -136,7 +136,7 @@ export const DetailsNumberLineWithSub = ({
   loading = false,
 }: DetailsNumberLineWithSubProps) => {
   return (
-    <Row caption={description} captionVariant="description" mb={4} align="flex-start">
+    <Row caption={description} captionVariant="description" mb={4} align="flex-start" sx={{ color: '#fff'}}>
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
         {loading ? (
           <>
@@ -309,6 +309,7 @@ export const DetailsHFLine = ({
       captionVariant="description"
       mb={4}
       align="flex-start"
+      sx={{ color: '#fff'}}
     >
       <Box sx={{ textAlign: 'right' }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>

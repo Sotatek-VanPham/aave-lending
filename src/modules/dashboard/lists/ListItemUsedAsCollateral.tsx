@@ -28,6 +28,7 @@ export const ListItemUsedAsCollateral = ({
           disableRipple
           checked={isEnabled}
           disabled={!canBeEnabledAsCollateral || disabled}
+          color="default"
         />
       ) : (
         <ListItemIsolationBadge>
@@ -36,6 +37,7 @@ export const ListItemUsedAsCollateral = ({
             disableRipple
             checked={isEnabled}
             disabled={!canBeEnabledAsCollateral || disabled}
+            color="default"
           />
         </ListItemIsolationBadge>
       )}

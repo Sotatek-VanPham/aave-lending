@@ -25,6 +25,10 @@ export const ButtonWithdrawCustom = styled(Button)(() => ({
   fontSize: '12px',
   color: '#C4C8E2',
   fontWeight: 700,
+  '&:hover': {
+    background: '#484A77',
+    opacity: 0.7,
+  },
   '&:disabled': {
     background: '#484A77',
     color: '#C4C8E2',
@@ -144,7 +148,7 @@ export const SuppliedPositionsListItem = ({
               fontSize: '12px',
               width: '65.229px',
               height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface },
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
             })}
           >
             <Trans>Supply</Trans>

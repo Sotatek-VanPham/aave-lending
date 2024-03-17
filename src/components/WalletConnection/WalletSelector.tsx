@@ -82,7 +82,6 @@ const WalletRow = ({ walletName, walletType }: WalletRowProps) => {
   return (
     <Button
       disabled={loading}
-      variant="outlined"
       sx={(theme) => ({
         display: 'flex',
         flexDirection: 'row',
@@ -90,10 +89,11 @@ const WalletRow = ({ walletName, walletType }: WalletRowProps) => {
         width: '100%',
         mb: '8px',
         bgcolor: theme.palette.background.surface,
-        color: theme.palette.text.links,
+        color: '#1A1A1C',
         '&:hover': {
           bgcolor: theme.palette.background.surface,
-          color: theme.palette.text.links,
+          color: '#1A1A1C',
+          opacity: 0.7
         },
       })}
       size="large"
@@ -214,7 +214,7 @@ export const WalletSelector = () => {
         walletName="Browser wallet"
         walletType={WalletType.INJECTED}
       />
-      <WalletRow
+      {/* <WalletRow
         key="walletconnect_wallet"
         walletName="WalletConnect"
         walletType={WalletType.WALLET_CONNECT}
@@ -223,9 +223,9 @@ export const WalletSelector = () => {
         key="walletlink_wallet"
         walletName="Coinbase Wallet"
         walletType={WalletType.WALLET_LINK}
-      />
+      /> */}
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 1, padding: '10px 0' }}>
-        <Typography variant="subheader1" color="text.secondary">
+        <Typography variant="subheader1" color="#fff">
           <Trans>Track wallet balance in read-only mode</Trans>
         </Typography>
         <ReadOnlyModeTooltip />
@@ -240,6 +240,7 @@ export const WalletSelector = () => {
             mb: 1,
             overflow: 'show',
             fontSize: sm ? '16px' : '14px',
+            color: '#fff'
           })}
           placeholder="Enter ethereum address or username"
           fullWidth
@@ -257,14 +258,18 @@ export const WalletSelector = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             mb: '8px',
-            color: theme.palette.text.links,
+            color: '#1A1A1C',
             backgroundColor: theme.palette.background.surface,
-            borderColor: theme.palette.primary.main,
+            border: 'none',
             '&:hover': {
-              color: theme.palette.text.links,
+              color: '#1A1A1C',
               backgroundColor: theme.palette.background.surface,
-              borderColor: theme.palette.primary.main,
             },
+            '&:disabled': {
+              border: 'none',
+              color: '#1A1A1C',
+              opacity: 0.7
+            }
           })}
           size="large"
           fullWidth
@@ -283,19 +288,22 @@ export const WalletSelector = () => {
           <Trans>Please enter a valid wallet address.</Trans>
         </Typography>
       )}
-      <Typography variant="description" sx={{ mt: '22px', mb: '30px', alignSelf: 'center' }}>
+      <Typography variant="description" sx={{ mt: '22px', mb: '30px', alignSelf: 'center' }} color="#fff">
         <Trans>
           Need help connecting a wallet?{' '}
           <Link
             href="https://docs.seamlessprotocol.com/overview/faq"
             target="_blank"
             rel="noopener"
+            sx={{
+              color: '#fff'
+            }}
           >
             Read our FAQ
           </Link>
         </Trans>
       </Typography>
-      <Typography variant="helperText">
+      <Typography variant="helperText" color="#fff">
         <Trans>
           Wallets are provided by External Providers and by selecting you agree to Terms of those
           Providers. Your access to the wallet might be reliant on the External Provider being

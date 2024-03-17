@@ -75,7 +75,7 @@ export const TxSuccessView = ({
           </SvgIcon>
         </Box>
 
-        <Typography sx={{ mt: 4 }} variant="h2">
+        <Typography sx={{ mt: 4, color: '#fff' }} variant="h2">
           <Trans>All done!</Trans>
         </Typography>
 
@@ -90,7 +90,7 @@ export const TxSuccessView = ({
           }}
         >
           {action && amount && symbol && (
-            <Typography>
+            <Typography color="#fff">
               <Trans>
                 You {action}{' '}
                 <FormattedNumber value={Number(amount)} compact variant="secondary14" /> {symbol}
@@ -99,20 +99,20 @@ export const TxSuccessView = ({
           )}
 
           {customAction && (
-            <Typography>
+            <Typography color="#fff">
               {customText}
               {customAction}
             </Typography>
           )}
 
           {!action && !amount && symbol && (
-            <Typography>
+            <Typography color="#fff">
               Your {symbol} {collateral ? 'now' : 'is not'} used as collateral
             </Typography>
           )}
 
           {rate && (
-            <Typography>
+            <Typography color="#fff">
               <Trans>
                 You switched to {rate === InterestRate.Variable ? 'variable' : 'stable'} rate
               </Trans>
@@ -124,7 +124,7 @@ export const TxSuccessView = ({
               sx={(theme) => ({
                 border:
                   theme.palette.mode === 'dark' ? `1px solid ${theme.palette.divider}` : 'none',
-                background: theme.palette.mode === 'dark' ? 'none' : '#F7F7F9',
+                background: 'rgba(91, 103, 145, 0.25)',
                 borderRadius: '12px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -138,7 +138,7 @@ export const TxSuccessView = ({
                 aToken={addToken && addToken.sToken ? true : false}
                 sx={{ fontSize: '32px', mt: '12px', mb: '8px' }}
               />
-              <Typography variant="description" color="text.primary" sx={{ mx: '24px' }}>
+              <Typography variant="description" color="#fff" sx={{ mx: '24px' }}>
                 <Trans>
                   Add {addToken && addToken.sToken ? 'sToken ' : 'token '} to wallet to track your
                   balance.
@@ -155,7 +155,7 @@ export const TxSuccessView = ({
                 }}
                 variant={theme.palette.mode === 'dark' ? 'outlined' : 'contained'}
                 size="medium"
-                sx={{ mt: '8px', mb: '12px' }}
+                sx={{ mt: '8px', mb: '12px', background: '#DA3E3E' }}
               >
                 {addToken.symbol && !/_/.test(addToken.symbol) && (
                   <Base64Token
@@ -165,7 +165,7 @@ export const TxSuccessView = ({
                   />
                 )}
                 <WalletIcon sx={{ width: '20px', height: '20px' }} />
-                <Typography variant="buttonM" color="white" ml="4px">
+                <Typography variant="buttonM" color="#0B0B0B" ml="4px">
                   <Trans>Add to wallet</Trans>
                 </Typography>
               </Button>
@@ -186,6 +186,7 @@ export const TxSuccessView = ({
             justifyContent: 'right',
             mt: 6,
             mb: 3,
+            color: '#fff',
           }}
           underline="hover"
           target="_blank"
@@ -197,8 +198,18 @@ export const TxSuccessView = ({
         <Button
           onClick={close}
           variant="contained"
-          size="large"
-          sx={{ minHeight: '44px' }}
+          sx={{
+            minHeight: '44px',
+            background: '#DA3E3E',
+            color: '#0B0B0B',
+            fontWeight: '700',
+            fontFamily: 'Mulish',
+            fontSize: '15px',
+            '&:hover': {
+              background: '#DA3E3E',
+              opacity: 0.7,
+            },
+          }}
           data-cy="closeButton"
         >
           <Trans>Ok, Close</Trans>

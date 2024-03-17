@@ -43,6 +43,7 @@ import { CapType } from '../../components/caps/helper';
 import { AvailableTooltip } from '../../components/infoTooltips/AvailableTooltip';
 import { Link, ROUTES } from '../../components/primitives/Link';
 import { useReserveActionState } from '../../hooks/useReserveActionState';
+import { ButtonDetailCustom } from '../dashboard/lists/SupplyAssetsList/SupplyAssetsListItem';
 
 const amountToUSD = (
   amount: BigNumberValue,
@@ -261,8 +262,17 @@ const ActionsSkeleton = () => {
 
 const PaperWrapper = ({ children }: { children: ReactNode }) => {
   return (
-    <Paper sx={{ pt: 4, pb: { xs: 4, xsm: 6 }, px: { xs: 4, xsm: 6 } }}>
-      <Typography variant="h3" sx={{ mb: 6 }}>
+    <Paper
+      sx={{
+        pt: 4,
+        pb: { xs: 4, xsm: 6 },
+        px: { xs: 4, xsm: 6 },
+        borderRadius: '16px',
+        background: 'rgba(27, 27, 29, 0.50)',
+        backdropFilter: 'blur(100px)',
+      }}
+    >
+      <Typography variant="h3" sx={{ mb: 6 }} color="#fff">
         <Trans>Your info</Trans>
       </Typography>
 
@@ -278,10 +288,10 @@ const ConnectWallet = ({ loading }: { loading: boolean }) => {
         <CircularProgress />
       ) : (
         <>
-          <Typography variant="h3" sx={{ mb: { xs: 6, xsm: 10 } }}>
+          <Typography variant="h3" sx={{ mb: { xs: 6, xsm: 10 } }} color="#fff">
             <Trans>Your info</Trans>
           </Typography>
-          <Typography sx={{ mb: 6 }} color="text.secondary">
+          <Typography sx={{ mb: 6 }} color="#fff">
             <Trans>Please connect a wallet to view your personal information here.</Trans>
           </Typography>
           <ConnectWalletButton />
@@ -312,6 +322,7 @@ const SupplyAction = ({
     <Stack>
       <AvailableTooltip
         variant="description"
+        textColor="#fff"
         text={<Trans>Available to supply</Trans>}
         capType={CapType.supplyCap}
         event={{
@@ -334,13 +345,12 @@ const SupplyAction = ({
           <FormattedNumber
             value={usdValue}
             variant="subheader2"
-            color="text.muted"
-            symbolsColor="text.muted"
+            color="#fff"
+            symbolsColor="#fff"
             symbol="USD"
           />
         </Box>
-        <Button
-          sx={{ height: '36px', width: '96px' }}
+        <ButtonDetailCustom
           onClick={onActionClicked}
           disabled={disable}
           fullWidth={false}
@@ -348,7 +358,7 @@ const SupplyAction = ({
           data-cy="supplyButton"
         >
           <Trans>Supply</Trans>
-        </Button>
+        </ButtonDetailCustom>
       </Stack>
     </Stack>
   );
@@ -376,6 +386,7 @@ const BorrowAction = ({
             assetName: reserve.name,
           },
         }}
+        sx={{ color: '#fff' }}
       />
       <Stack
         sx={{ height: '44px' }}
@@ -388,13 +399,12 @@ const BorrowAction = ({
           <FormattedNumber
             value={usdValue}
             variant="subheader2"
-            color="text.muted"
-            symbolsColor="text.muted"
+            color="#fff"
+            symbolsColor="#fff"
             symbol="USD"
           />
         </Box>
-        <Button
-          sx={{ height: '36px', width: '96px' }}
+        <ButtonDetailCustom
           onClick={onActionClicked}
           disabled={disable}
           fullWidth={false}
@@ -402,7 +412,7 @@ const BorrowAction = ({
           data-cy="borrowButton"
         >
           <Trans>Borrow </Trans>
-        </Button>
+        </ButtonDetailCustom>
       </Stack>
     </Stack>
   );
@@ -459,8 +469,8 @@ interface ValueWithSymbolProps {
 const ValueWithSymbol = ({ value, symbol, children }: ValueWithSymbolProps) => {
   return (
     <Stack direction="row" alignItems="center" gap={1}>
-      <FormattedNumber value={value} variant="h4" color="text.primary" />
-      <Typography variant="buttonL" color="text.secondary">
+      <FormattedNumber value={value} variant="h4" color="#fff" />
+      <Typography variant="buttonL" color="#fff">
         {symbol}
       </Typography>
       {children}
@@ -491,7 +501,7 @@ const WalletBalance = ({ balance, symbol }: WalletBalanceProps) => {
         <WalletIcon sx={{ stroke: `black` }} />
       </Box>
       <Box>
-        <Typography variant="description" color="text.secondary">
+        <Typography variant="description" color="#fff">
           Wallet balance
         </Typography>
         <ValueWithSymbol value={balance} symbol={symbol}>

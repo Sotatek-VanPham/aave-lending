@@ -149,7 +149,7 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
           </SvgIcon>
           <Typography
             variant="subheader1"
-            color="text.primary"
+            color="#fff"
             sx={{
               ml: 1,
               textOverflow: 'ellipsis',
@@ -195,19 +195,24 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
             maxHeight: 300,
             mt: 1,
             boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.2), 0px 2px 10px rgba(0, 0, 0, 0.1)',
+            border: '1px solid #EAEBEF',
             borderRadius: '4px',
+            background: '#1B1A1E'
           },
         }}
       >
         <MenuItem
           onClick={() => handleFilterClick(undefined)}
           sx={{
-            background: allSelected ? theme.palette.background.surface : undefined,
+            background: allSelected ? '#DA3E3E' : undefined,
             display: 'flex',
             justifyContent: 'space-between',
+            '&:hover': {
+              background: '#DA3E3E',
+            }
           }}
         >
-          <Typography variant="subheader1" color="text.primary">
+          <Typography variant="subheader1" color="#fff">
             <Trans>All transactions</Trans>
           </Typography>
           {allSelected && (
@@ -238,13 +243,16 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
                   onClick={() => handleFilterClick(option)}
                   sx={{
                     background: currentFilter.includes(option)
-                      ? theme.palette.background.surface
+                      ? '#DA3E3E'
                       : undefined,
                     display: 'flex',
                     justifyContent: 'space-between',
+                    '&:hover': {
+                      background: '#DA3E3E',
+                    }
                   }}
                 >
-                  <Typography variant="subheader1" color="text.primary">
+                  <Typography variant="subheader1" color="#fff">
                     <FilterLabel filter={option} />
                   </Typography>
                   {currentFilter.includes(option) && (

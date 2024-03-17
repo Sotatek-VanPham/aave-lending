@@ -266,11 +266,37 @@ const GhoBorrowedPositionsListItemMobile = ({
           <Trans>Repay</Trans>
         </Button>
         {showSwitchButton ? (
-          <Button disabled={disableSwitch} variant="outlined" fullWidth onClick={onSwitchClick}>
+          <Button
+            disabled={disableSwitch}
+            variant="outlined"
+            fullWidth
+            onClick={onSwitchClick}
+            sx={(theme) => ({
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
+            })}
+          >
             <Trans>Switch</Trans>
           </Button>
         ) : (
-          <Button disabled={borrowDisabled} variant="outlined" onClick={onBorrowClick} fullWidth>
+          <Button
+            disabled={borrowDisabled}
+            variant="outlined"
+            onClick={onBorrowClick}
+            fullWidth
+            sx={(theme) => ({
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
+              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
+            })}
+          >
             <Trans>Borrow</Trans>
           </Button>
         )}

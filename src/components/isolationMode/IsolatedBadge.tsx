@@ -18,7 +18,7 @@ const InfoIcon = () => (
   <SvgIcon
     sx={{
       ml: '3px',
-      color: 'text.muted',
+      color: '#A5A8B3',
       fontSize: '14px',
     }}
   >

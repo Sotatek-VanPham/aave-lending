@@ -38,7 +38,7 @@ export const DashboardListTopPanel = ({
     >
       <FormControlLabel
         sx={{ mt: { xs: bridge ? 2 : 0, xsm: 0 }, color: '#fff' }}
-        control={<Checkbox sx={{ p: '6px' }} />}
+        control={<Checkbox sx={{ p: '6px', color: '#484A77'}} />}
         checked={value}
         onChange={() => {
           trackEvent(DASHBOARD.SHOW_ASSETS_0_BALANCE, {});

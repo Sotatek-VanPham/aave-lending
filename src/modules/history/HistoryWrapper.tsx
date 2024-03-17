@@ -160,7 +160,7 @@ export const HistoryWrapper = () => {
   return (
     <ListWrapper
       titleComponent={
-        <Typography component="div" variant="h2" sx={{ mr: 4 }}>
+        <Typography component="div" variant="h2" sx={{ mr: 4 }} color="#fff">
           <Trans>Transactions</Trans>
         </Typography>
       }
@@ -190,9 +190,9 @@ export const HistoryWrapper = () => {
             onClick={handleCsvDownload}
           >
             <SvgIcon>
-              <DocumentDownloadIcon width={22} height={22} />
+              <DocumentDownloadIcon width={22} height={22} stroke='#fff'/>
             </SvgIcon>
-            <Typography variant="buttonM" color="text.primary">
+            <Typography variant="buttonM" color="#fff">
               <Trans>.CSV</Trans>
             </Typography>
           </Box>
@@ -208,9 +208,9 @@ export const HistoryWrapper = () => {
             onClick={handleJsonDownload}
           >
             <SvgIcon>
-              <DocumentDownloadIcon width={22} height={22} />
+              <DocumentDownloadIcon width={22} height={22} stroke='#fff'/>
             </SvgIcon>
-            <Typography variant="buttonM" color="text.primary">
+            <Typography variant="buttonM" color="#fff">
               <Trans>.JSON</Trans>
             </Typography>
           </Box>
@@ -225,7 +225,7 @@ export const HistoryWrapper = () => {
       ) : !isEmpty ? (
         Object.entries(groupByDate(filteredTxns)).map(([date, txns], groupIndex) => (
           <React.Fragment key={groupIndex}>
-            <Typography variant="h4" color="text.primary" sx={{ ml: 9, mt: 6, mb: 2 }}>
+            <Typography variant="h4" color="#fff" sx={{ ml: 9, mt: 6, mb: 2 }}>
               {date}
             </Typography>
             {txns.map((transaction: TransactionHistoryItemUnion, index: number) => {
@@ -253,21 +253,29 @@ export const HistoryWrapper = () => {
             my: 24,
           }}
         >
-          <Typography variant="h3" color="text.primary">
+          <Typography variant="h3" color="#fff">
             <Trans>Nothing found</Trans>
           </Typography>
-          <Typography sx={{ mt: 1, mb: 4 }} variant="description" color="text.secondary">
+          <Typography sx={{ mt: 1, mb: 4 }} variant="description" color="#A5A8B3">
             <Trans>
               We couldn&apos;t find any transactions related to your search. Try again with a
               different asset name, or reset filters.
             </Trans>
           </Typography>
           <Button
-            variant="outlined"
             onClick={() => {
               setSearchQuery('');
               setFilterQuery([]);
               setSearchResetKey((prevKey) => prevKey + 1); // Remount SearchInput component to clear search query
+            }}
+            sx={{
+              borderRadius: '4px',
+              background: '#DA3E3E',
+              color: '#1A1A1C',
+              '&:hover': {
+                background: '#DA3E3E',
+                opacity: 0.7
+              }
             }}
           >
             Reset Filters
@@ -285,7 +293,7 @@ export const HistoryWrapper = () => {
             flex: 1,
           }}
         >
-          <Typography sx={{ my: 24 }} variant="h3" color="text.primary">
+          <Typography sx={{ my: 24 }} variant="h3" color="#fff">
             <Trans>No transactions yet.</Trans>
           </Typography>
         </Box>

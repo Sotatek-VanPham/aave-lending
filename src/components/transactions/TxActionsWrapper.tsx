@@ -58,7 +58,7 @@ export const ButtonAction = styled(Button)(() => ({
     cursor: 'not-allowed',
   },
   '&:hover': {
-    bacbackground: '#DA3E3E',
+    background: '#DA3E3E',
     opacity: '0.7',
   },
 })) as typeof Button;
@@ -162,7 +162,7 @@ export const TxActionsWrapper = ({
       )}
 
       {approvalParams && !readOnlyModeAddress && (
-        <Button
+        <ButtonAction
           variant="contained"
           disabled={approvalParams.disabled || blocked}
           onClick={() => approvalParams.handleClick && approvalParams.handleClick()}
@@ -174,7 +174,7 @@ export const TxActionsWrapper = ({
             <CircularProgress color="inherit" size="16px" sx={{ mr: 2 }} />
           )}
           {approvalParams.content}
-        </Button>
+        </ButtonAction>
       )}
 
       <ButtonAction
