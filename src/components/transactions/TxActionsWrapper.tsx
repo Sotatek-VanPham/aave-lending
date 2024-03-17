@@ -1,6 +1,14 @@
 import { CheckIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
-import { Box, BoxProps, Button, CircularProgress, SvgIcon, Typography } from '@mui/material';
+import {
+  Box,
+  BoxProps,
+  Button,
+  CircularProgress,
+  styled,
+  SvgIcon,
+  Typography,
+} from '@mui/material';
 import { ReactNode } from 'react';
 import { TxStateType, useModalContext } from 'src/hooks/useModal';
 import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
@@ -34,6 +42,26 @@ interface TxActionsWrapperProps extends BoxProps {
   tryPermit?: boolean;
   event?: TrackEventProps;
 }
+
+export const ButtonAction = styled(Button)(() => ({
+  borderRadius: '4px',
+  background: '#DA3E3E',
+  border: 'none',
+  height: '44px',
+  fontSize: '15px',
+  fontWeight: '700',
+  color: '#0B0B0B',
+  '&:disabled': {
+    background: '#484A77',
+    color: '#999EBA',
+    border: 'none',
+    cursor: 'not-allowed',
+  },
+  '&:hover': {
+    bacbackground: '#DA3E3E',
+    opacity: '0.7',
+  },
+})) as typeof Button;
 
 export const TxActionsWrapper = ({
   actionInProgressText,
@@ -149,7 +177,7 @@ export const TxActionsWrapper = ({
         </Button>
       )}
 
-      <Button
+      <ButtonAction
         variant="contained"
         disabled={disabled || blocked || readOnlyModeAddress !== undefined}
         onClick={handleClick}
@@ -159,7 +187,7 @@ export const TxActionsWrapper = ({
       >
         {loading && <CircularProgress color="inherit" size="16px" sx={{ mr: 2 }} />}
         {content}
-      </Button>
+      </ButtonAction>
       {readOnlyModeAddress && (
         <Typography variant="helperText" color="warning.main" sx={{ textAlign: 'center', mt: 2 }}>
           <Trans>Read-only mode. Connect to a wallet to perform transactions.</Trans>

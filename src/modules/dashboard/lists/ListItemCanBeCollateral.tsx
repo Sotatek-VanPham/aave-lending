@@ -22,12 +22,12 @@ export const ListItemCanBeCollateral = ({
       );
     } else if (usageAsCollateralEnabled && isIsolated) {
       return (
-        <SvgIcon sx={{ color: 'warning.main', fontSize: { xs: '20px', xsm: '24px' } }}>
+        <SvgIcon sx={{ color: '#A5A8B3', fontSize: { xs: '20px', xsm: '24px' } }}>
           <ExclamationCircleIcon />
         </SvgIcon>
       );
     } else {
-      return <NoData variant="main14" sx={{ color: '#fff' }} />;
+      return <NoData variant="main14" sx={{ color: '#A5A8B3' }} />;
     }
   };
 

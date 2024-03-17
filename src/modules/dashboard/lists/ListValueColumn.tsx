@@ -28,14 +28,21 @@ const Content = ({
           value={value}
           variant="secondary12"
           sx={{ mb: !withTooltip && !!subValue ? '2px' : 0 }}
-          color={disabled ? 'text.disabled' : '#fff'}
+          color={'#A5A8B3'}
+          symbolsColor="#A5A8B3"
           data-cy={`nativeAmount`}
         />
         {capsComponent}
       </Box>
 
       {!withTooltip && !!subValue && !disabled && (
-        <FormattedNumber value={subValue} symbol="USD" variant="secondary12" color="#fff" />
+        <FormattedNumber
+          value={subValue}
+          symbol="USD"
+          variant="secondary12"
+          color="#A5A8B3"
+          symbolsColor="#A5A8B3"
+        />
       )}
     </>
   );
@@ -68,14 +75,14 @@ export const ListValueColumn = ({
                 symbol="USD"
                 variant="secondary12"
                 sx={{ mb: '2px' }}
-                symbolsColor="common.white"
+                symbolsColor="#A5A8B3"
                 compact={false}
               />
               <FormattedNumber
                 value={value}
                 variant="secondary12"
                 symbol={symbol}
-                symbolsColor="common.white"
+                symbolsColor="#A5A8B3"
                 compact={false}
               />
             </Box>

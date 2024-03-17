@@ -13,6 +13,7 @@ interface CompactNumberProps {
   visibleDecimals?: number;
   roundDown?: boolean;
   compactThreshold?: number;
+  symbolsColor?: string;
 }
 
 const POSTFIXES = ['', 'K', 'M', 'B', 'T', 'P', 'E', 'Z', 'Y'];
@@ -48,11 +49,11 @@ export const compactNumber = ({
   return { prefix, postfix };
 };
 
-function CompactNumber({ value, visibleDecimals, roundDown }: CompactNumberProps) {
+function CompactNumber({ value, visibleDecimals, roundDown, symbolsColor }: CompactNumberProps) {
   const { prefix, postfix } = compactNumber({ value, visibleDecimals, roundDown });
 
   return (
-    <Box sx={{ color: '#fff' }}>
+    <Box sx={{ color: symbolsColor || '#fff' }}>
       {prefix}
       {postfix}
     </Box>
@@ -150,6 +151,7 @@ export function FormattedNumber({
           visibleDecimals={decimals}
           roundDown={roundDown}
           compactThreshold={compactThreshold}
+          symbolsColor={symbolsColor}
         />
       )}
 

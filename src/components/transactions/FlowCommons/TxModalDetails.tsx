@@ -40,15 +40,16 @@ export const TxModalDetails: React.FC<TxModalDetailsProps> = ({
 }) => {
   return (
     <Box sx={{ pt: 5 }}>
-      <Typography sx={{ mb: 1 }} color="text.secondary">
+      <Typography sx={{ mb: 1, color: '#fff' }}>
         <Trans>Transaction overview</Trans>
       </Typography>
 
       <Box
-        sx={(theme) => ({
+        sx={() => ({
           p: 3,
-          border: `1px solid ${theme.palette.divider}`,
-          borderRadius: '4px',
+          borderRadius: '6px',
+          border: '1px solid rgba(255, 255, 255, 0.07)',
+          background: 'rgba(27, 26, 30, 0.43)',
           '.MuiBox-root:last-of-type': {
             mb: 0,
           },
@@ -87,7 +88,7 @@ export const DetailsNumberLine = ({
   ...rest
 }: DetailsNumberLineProps) => {
   return (
-    <Row caption={description} captionVariant="description" mb={4}>
+    <Row caption={description} captionVariant="description" mb={4} sx={{ color: '#fff' }}>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         {loading ? (
           <Skeleton variant="rectangular" height={20} width={100} sx={{ borderRadius: '4px' }} />
@@ -95,11 +96,11 @@ export const DetailsNumberLine = ({
           <>
             {iconSymbol && <TokenIcon symbol={iconSymbol} sx={{ mr: 1, fontSize: '16px' }} />}
             {numberPrefix && <Typography sx={{ mr: 1 }}>{numberPrefix}</Typography>}
-            <FormattedNumber value={value} variant="secondary14" {...rest} />
+            <FormattedNumber value={value} variant="secondary14" {...rest} color="#FFF" />
             {futureValue && (
               <>
                 {ArrowRightIcon}
-                <FormattedNumber value={futureValue} variant="secondary14" {...rest} />
+                <FormattedNumber value={futureValue} variant="secondary14" {...rest} color="#FFF" />
               </>
             )}
           </>
@@ -191,7 +192,12 @@ export interface DetailsCollateralLine {
 
 export const DetailsCollateralLine = ({ collateralType }: DetailsCollateralLine) => {
   return (
-    <Row caption={<Trans>Collateralization</Trans>} captionVariant="description" mb={4}>
+    <Row
+      caption={<Trans>Collateralization</Trans>}
+      captionVariant="description"
+      mb={4}
+      sx={{ color: '#fff' }}
+    >
       <CollateralState collateralType={collateralType} />
     </Row>
   );
@@ -252,7 +258,13 @@ export const DetailsIncentivesLine = ({
 }: DetailsIncentivesLineProps) => {
   if (!incentives || incentives.filter((i) => i.incentiveAPR !== '0').length === 0) return null;
   return (
-    <Row caption={<Trans>Rewards APR</Trans>} captionVariant="description" mb={4} minHeight={24}>
+    <Row
+      caption={<Trans>Rewards APR</Trans>}
+      captionVariant="description"
+      mb={4}
+      minHeight={24}
+      sx={{ color: '#fff' }}
+    >
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         {loading ? (
           <Skeleton variant="rectangular" height={20} width={100} sx={{ borderRadius: '4px' }} />
@@ -320,7 +332,7 @@ export const DetailsHFLine = ({
           )}
         </Box>
 
-        <Typography variant="helperText" color="text.secondary">
+        <Typography variant="helperText" color="#fff">
           <Trans>Liquidation at</Trans>
           {' <1.0'}
         </Typography>

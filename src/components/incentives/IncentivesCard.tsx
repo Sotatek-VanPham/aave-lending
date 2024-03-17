@@ -46,13 +46,13 @@ export const IncentivesCard = ({
             percent
             variant={variant}
             symbolsVariant={symbolsVariant}
-            color={'#fff'}
-            symbolsColor={color}
+            color={'#A5A8B3'}
+            symbolsColor={'#A5A8B3'}
           />
           {tooltip}
         </Box>
       ) : (
-        <NoData variant={variant} color={color || '#fff'} />
+        <NoData variant={variant} color={color || '#A5A8B3'} />
       )}
 
       <IncentivesButton incentives={incentives} symbol={symbol} />

@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { Button } from '@mui/material';
+import { Button, styled } from '@mui/material';
 import { useAppDataContext } from 'src/hooks/app-data-provider/useAppDataProvider';
 import { useAssetCaps } from 'src/hooks/useAssetCaps';
 import { useModalContext } from 'src/hooks/useModal';
@@ -15,6 +15,24 @@ import { ListButtonsColumn } from '../ListButtonsColumn';
 import { ListItemUsedAsCollateral } from '../ListItemUsedAsCollateral';
 import { ListItemWrapper } from '../ListItemWrapper';
 import { ListValueColumn } from '../ListValueColumn';
+
+export const ButtonWithdrawCustom = styled(Button)(() => ({
+  borderRadius: '4px',
+  background: '#484A77',
+  border: 'none',
+  width: '87px',
+  height: '32px',
+  fontSize: '12px',
+  color: '#C4C8E2',
+  fontWeight: 700,
+  '&:disabled': {
+    background: '#484A77',
+    color: '#C4C8E2',
+    border: 'none',
+    cursor: 'not-allowed',
+    opacity: 0.7,
+  },
+})) as typeof Button;
 
 export const SuppliedPositionsListItem = ({
   reserve,
@@ -88,20 +106,14 @@ export const SuppliedPositionsListItem = ({
       </ListColumn>
 
       <ListButtonsColumn>
-        <Button
+        <ButtonWithdrawCustom
           disabled={disableWithdraw}
-          variant="outlined"
           onClick={() => {
             openWithdraw(underlyingAsset, currentMarket, reserve.name, 'dashboard');
           }}
-          sx={(theme) => ({
-            backgroundColor: theme.palette.background.surface2,
-            color: theme.palette.text.links,
-            '&:hover': { backgroundColor: theme.palette.background.surface2 },
-          })}
         >
           <Trans>Withdraw</Trans>
-        </Button>
+        </ButtonWithdrawCustom>
 
         {isSwapButton ? (
           <Button
@@ -125,11 +137,13 @@ export const SuppliedPositionsListItem = ({
         ) : (
           <Button
             disabled={disableSupply}
-            variant="outlined"
             onClick={() => openSupply(underlyingAsset, currentMarket, reserve.name, 'dashboard')}
             sx={(theme) => ({
-              backgroundColor: theme.palette.background.surface,
-              color: theme.palette.text.links,
+              backgroundColor: '#DA3E3E',
+              color: '#1A1A1C',
+              fontSize: '12px',
+              width: '65.229px',
+              height: '32px',
               '&:hover': { backgroundColor: theme.palette.background.surface },
             })}
           >

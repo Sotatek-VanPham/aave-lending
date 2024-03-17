@@ -29,9 +29,8 @@ export function ReserveSubheader({ value, rightAlign }: ReserveSubheaderProps) {
           compact
           value={value}
           variant="secondary12"
-          color="#fff"
-          symbolsVariant="secondary12"
-          symbolsColor="#fff"
+          color="#A5A8B3"
+          symbolsColor="#A5A8B3"
           symbol="USD"
         />
       )}

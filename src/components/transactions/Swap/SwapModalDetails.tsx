@@ -74,7 +74,12 @@ export const SwapModalDetails = ({
         percent
         loading={loading}
       />
-      <Row caption={<Trans>Collateralization</Trans>} captionVariant="description" mb={4}>
+      <Row
+        caption={<Trans>Collateralization</Trans>}
+        captionVariant="description"
+        mb={4}
+        sx={{ color: '#fff' }}
+      >
         <Box
           sx={{
             display: 'flex',

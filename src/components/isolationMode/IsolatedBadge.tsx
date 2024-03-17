@@ -45,7 +45,7 @@ export const IsolatedEnabledBadge = ({
       }
     >
       <Box sx={contentSx}>
-        <Typography variant="secondary12" color="text.secondary" {...typographyProps}>
+        <Typography variant="secondary12" color="#A5A8B3" {...typographyProps}>
           <Trans>Isolated</Trans>
         </Typography>
         <InfoIcon />
@@ -101,7 +101,7 @@ const IsolationModeTooltipTemplate = ({ content }: { content: ReactNode }) => {
   return (
     <Box>
       <Box sx={{ mb: 4 }}>{content}</Box>
-      <Typography variant="subheader2" color="text.secondary">
+      <Typography variant="subheader2" color="#A5A8B3">
         <Trans>
           Learn more in our{' '}
           <Link href="https://docs.seamlessprotocol.com/overview/faq" fontWeight={500}>

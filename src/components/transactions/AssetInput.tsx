@@ -120,17 +120,18 @@ export const AssetInput = <T extends Asset = Asset>({
   return (
     <Box>
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-        <Typography color="text.secondary">
+        <Typography color="#fff" sx={{ fontSize: '14px' }}>
           {inputTitle ? inputTitle : <Trans>Amount</Trans>}
         </Typography>
         {capType && <AvailableTooltip capType={capType} />}
       </Box>
 
       <Box
-        sx={(theme) => ({
+        sx={() => ({
           p: '8px 12px',
-          border: `1px solid ${theme.palette.divider}`,
+          border: `1px solid rgba(255, 255, 255, 0.20)`,
           borderRadius: '6px',
+          background: '#1B1A1E',
           mb: 1,
         })}
       >
@@ -141,7 +142,7 @@ export const AssetInput = <T extends Asset = Asset>({
             </Box>
           ) : (
             <InputBase
-              sx={{ flex: 1 }}
+              sx={{ flex: 1, color: '#fff' }}
               placeholder="0.00"
               disabled={disabled || disableInput}
               value={value}
@@ -177,9 +178,9 @@ export const AssetInput = <T extends Asset = Asset>({
                 p: 0,
                 left: 8,
                 zIndex: 1,
-                color: 'text.muted',
+                color: '#fff',
                 '&:hover': {
-                  color: 'text.secondary',
+                  color: '#fff',
                 },
               }}
               onClick={() => {
@@ -197,7 +198,11 @@ export const AssetInput = <T extends Asset = Asset>({
                 symbol={asset.iconSymbol || asset.symbol}
                 sx={{ mr: 2, ml: 4 }}
               />
-              <Typography variant="h3" sx={{ lineHeight: '28px' }} data-cy={'inputAsset'}>
+              <Typography
+                variant="h3"
+                sx={{ lineHeight: '28px', color: '#fff' }}
+                data-cy={'inputAsset'}
+              >
                 {symbol}
               </Typography>
             </Box>
@@ -228,7 +233,7 @@ export const AssetInput = <T extends Asset = Asset>({
                   },
                   '&.AssetInput__select .MuiOutlinedInput-notchedOutline': { display: 'none' },
                   '&.AssetInput__select .MuiSelect-icon': {
-                    color: 'text.primary',
+                    color: '#fff',
                     right: '0%',
                   },
                 }}
@@ -247,7 +252,7 @@ export const AssetInput = <T extends Asset = Asset>({
                         aToken={asset.aToken}
                         sx={{ mr: 2, ml: 4 }}
                       />
-                      <Typography variant="main16" color="text.primary">
+                      <Typography variant="main16" color="#fff">
                         {symbol}
                       </Typography>
                     </Box>
@@ -290,28 +295,28 @@ export const AssetInput = <T extends Asset = Asset>({
               compact
               symbol="USD"
               variant="secondary12"
-              color="text.muted"
-              symbolsColor="text.muted"
+              color="#fff"
+              symbolsColor="#fff"
               flexGrow={1}
             />
           )}
 
           {asset.balance && onChange && (
             <>
-              <Typography component="div" variant="secondary12" color="text.secondary">
+              <Typography component="div" variant="secondary12" color="#fff">
                 {balanceText && balanceText !== '' ? balanceText : <Trans>Balance</Trans>}{' '}
                 <FormattedNumber
                   value={asset.balance}
                   compact
                   variant="secondary12"
-                  color="text.secondary"
+                  color="#fff"
                   symbolsColor="text.disabled"
                 />
               </Typography>
               {!disableInput && (
                 <Button
                   size="small"
-                  sx={{ minWidth: 0, ml: '7px', p: 0 }}
+                  sx={{ minWidth: 0, ml: '7px', p: 0, color: '#fff' }}
                   onClick={() => {
                     if (event) {
                       trackEvent(event.eventName, { ...event.eventParams });

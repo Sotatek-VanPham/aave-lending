@@ -66,10 +66,10 @@ export const GasStation: React.FC<GasStationProps> = ({ gasLimit, skipLoad, disa
         <LocalGasStationIcon color="primary" sx={{ fontSize: '16px', mr: 1.5 }} />
 
         {loadingTxns && !skipLoad ? (
-          <CircularProgress color="inherit" size="16px" sx={{ mr: 2 }} />
+          <CircularProgress size="16px" sx={{ mr: 2, color: '#fff' }} />
         ) : totalGasCostsUsd && !disabled ? (
           <>
-            <FormattedNumber value={totalGasCostsUsd} symbol="USD" color="text.secondary" />
+            <FormattedNumber value={totalGasCostsUsd} symbol="USD" color="#fff" />
             <GasTooltip />
           </>
         ) : (

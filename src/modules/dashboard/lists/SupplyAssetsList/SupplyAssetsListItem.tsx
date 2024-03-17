@@ -93,7 +93,7 @@ export const SupplyAssetsListItem = ({
 
       <ListColumn>
         {debtCeiling.isMaxed ? (
-          <NoData variant="main14" sx={{ color: '#fff' }} />
+          <NoData variant="main14" sx={{ color: '#A5A8B3' }} />
         ) : (
           <ListItemCanBeCollateral
             isIsolated={isIsolated}

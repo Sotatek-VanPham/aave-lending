@@ -8,7 +8,9 @@ export type TxModalTitleProps = {
 
 export const TxModalTitle = ({ title, symbol }: TxModalTitleProps) => {
   return (
-    <Typography variant="h2" sx={{ mb: 6 }}>
+    <Typography
+      sx={{ mb: 6, color: '#fff', fontSize: '24px', fontWeight: '500', fontFamily: 'Work sans' }}
+    >
       {title} {symbol ?? ''}
     </Typography>
   );
