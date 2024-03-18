@@ -225,7 +225,7 @@ export const WalletSelector = () => {
         walletType={WalletType.WALLET_LINK}
       /> */}
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 1, padding: '10px 0' }}>
-        <Typography variant="subheader1" color="#fff">
+        <Typography variant="subheader1" color="#fff" sx={{ fontWeight: '500'}}>
           <Trans>Track wallet balance in read-only mode</Trans>
         </Typography>
         <ReadOnlyModeTooltip />
@@ -258,6 +258,7 @@ export const WalletSelector = () => {
             flexDirection: 'row',
             justifyContent: 'center',
             mb: '8px',
+            mt: '12px',
             color: '#1A1A1C',
             backgroundColor: theme.palette.background.surface,
             border: 'none',

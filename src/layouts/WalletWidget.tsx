@@ -181,6 +181,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
       {!md && (
         <Box sx={{ display: 'flex', flexDirection: 'row', padding: '0 16px 10px' }}>
           <Button
+            variant="outlined"
             sx={{
               padding: '0 5px',
               marginRight: '10px',

@@ -65,6 +65,7 @@ export const BorrowAssetsListMobileItem = ({
             variant="description"
           />
         }
+        sx={{ color: '#fff'}}
         align="flex-start"
         captionVariant="description"
         mb={2}
@@ -85,6 +86,7 @@ export const BorrowAssetsListMobileItem = ({
             variant="description"
           />
         }
+        sx={{ color: '#fff'}}
         align="flex-start"
         captionVariant="description"
         mb={2}
@@ -112,7 +114,6 @@ export const BorrowAssetsListMobileItem = ({
           <Trans>Borrow</Trans>
         </Button>
         <Button
-          variant="outlined"
           component={Link}
           href={ROUTES.reserveOverview(underlyingAsset, currentMarket)}
           fullWidth

@@ -62,6 +62,7 @@ export const SupplyInfo = ({
                         valueToBigNumber(reserve.supplyCap).toNumber() -
                         valueToBigNumber(reserve.totalLiquidity).toNumber()
                       }
+                      color="#000"
                       variant="secondary12"
                     />{' '}
                     {reserve.symbol} (
@@ -71,6 +72,7 @@ export const SupplyInfo = ({
                         valueToBigNumber(reserve.totalLiquidityUSD).toNumber()
                       }
                       variant="secondary12"
+                      color="#000"
                       symbol="USD"
                     />
                     ).

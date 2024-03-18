@@ -32,7 +32,12 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
       underlyingAsset={reserve.underlyingAsset}
       currentMarket={currentMarket}
     >
-      <Row caption={<Trans>Total supplied</Trans>} captionVariant="description" mb={3}>
+      <Row
+        caption={<Trans>Total supplied</Trans>}
+        captionVariant="description"
+        mb={3}
+        sx={{ color: 'common.white' }}
+      >
         <Box
           sx={{
             display: 'flex',
@@ -51,6 +56,7 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
         captionVariant="description"
         mb={3}
         align="flex-start"
+        sx={{ color: 'common.white' }}
       >
         <IncentivesCard
           align="flex-end"
@@ -63,7 +69,12 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
 
       <Divider sx={{ mb: 3 }} />
 
-      <Row caption={<Trans>Total borrowed</Trans>} captionVariant="description" mb={3}>
+      <Row
+        caption={<Trans>Total borrowed</Trans>}
+        captionVariant="description"
+        mb={3}
+        sx={{ color: 'common.white' }}
+      >
         <Box
           sx={{
             display: 'flex',
@@ -91,6 +102,7 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
             variant="description"
           />
         }
+        sx={{ color: 'common.white' }}
         captionVariant="description"
         mb={3}
         align="flex-start"
@@ -119,6 +131,7 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
         captionVariant="description"
         mb={4}
         align="flex-start"
+        sx={{ color: 'common.white' }}
       >
         <Box
           sx={{
@@ -143,7 +156,6 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
       </Row>
 
       <Button
-        variant="outlined"
         component={Link}
         href={ROUTES.reserveOverview(reserve.underlyingAsset, currentMarket)}
         fullWidth
@@ -156,7 +168,7 @@ export const MarketAssetsListMobileItem = ({ ...reserve }: ComputedReserveData) 
           });
         }}
         sx={(theme) => ({
-          color: theme.palette.text.links,
+          color: '#1A1A1C',
           bgcolor: theme.palette.background.surface,
           '&:hover': {
             color: theme.palette.text.links,
