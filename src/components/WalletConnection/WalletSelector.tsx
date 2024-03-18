@@ -93,7 +93,7 @@ const WalletRow = ({ walletName, walletType }: WalletRowProps) => {
         '&:hover': {
           bgcolor: theme.palette.background.surface,
           color: '#1A1A1C',
-          opacity: 0.7
+          opacity: 0.7,
         },
       })}
       size="large"
@@ -225,7 +225,7 @@ export const WalletSelector = () => {
         walletType={WalletType.WALLET_LINK}
       /> */}
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 1, padding: '10px 0' }}>
-        <Typography variant="subheader1" color="#fff" sx={{ fontWeight: '500'}}>
+        <Typography variant="subheader1" color="#fff" sx={{ fontWeight: '500' }}>
           <Trans>Track wallet balance in read-only mode</Trans>
         </Typography>
         <ReadOnlyModeTooltip />
@@ -240,7 +240,7 @@ export const WalletSelector = () => {
             mb: 1,
             overflow: 'show',
             fontSize: sm ? '16px' : '14px',
-            color: '#fff'
+            color: '#fff',
           })}
           placeholder="Enter ethereum address or username"
           fullWidth
@@ -269,8 +269,8 @@ export const WalletSelector = () => {
             '&:disabled': {
               border: 'none',
               color: '#1A1A1C',
-              opacity: 0.7
-            }
+              opacity: 0.7,
+            },
           })}
           size="large"
           fullWidth
@@ -289,7 +289,11 @@ export const WalletSelector = () => {
           <Trans>Please enter a valid wallet address.</Trans>
         </Typography>
       )}
-      <Typography variant="description" sx={{ mt: '22px', mb: '30px', alignSelf: 'center' }} color="#fff">
+      <Typography
+        variant="description"
+        sx={{ mt: '22px', mb: '30px', alignSelf: 'center' }}
+        color="#fff"
+      >
         <Trans>
           Need help connecting a wallet?{' '}
           <Link
@@ -297,7 +301,7 @@ export const WalletSelector = () => {
             target="_blank"
             rel="noopener"
             sx={{
-              color: '#fff'
+              color: '#fff',
             }}
           >
             Read our FAQ

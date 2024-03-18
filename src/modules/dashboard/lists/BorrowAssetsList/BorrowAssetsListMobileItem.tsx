@@ -65,7 +65,7 @@ export const BorrowAssetsListMobileItem = ({
             variant="description"
           />
         }
-        sx={{ color: '#fff'}}
+        sx={{ color: '#fff' }}
         align="flex-start"
         captionVariant="description"
         mb={2}
@@ -86,7 +86,7 @@ export const BorrowAssetsListMobileItem = ({
             variant="description"
           />
         }
-        sx={{ color: '#fff'}}
+        sx={{ color: '#fff' }}
         align="flex-start"
         captionVariant="description"
         mb={2}

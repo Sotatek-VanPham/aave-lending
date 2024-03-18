@@ -41,7 +41,7 @@ const Content = ({
           symbol="USD"
           color="#A5A8B3"
           symbolsColor="#A5A8B3"
-          sx={{ fontSize: '10px'}}
+          sx={{ fontSize: '10px' }}
         />
       )}
     </>

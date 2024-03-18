@@ -1,6 +1,7 @@
-import IconClose from '/public/icons/iconClose.svg'
 import { Box, IconButton, Modal, Paper } from '@mui/material';
 import React from 'react';
+
+import IconClose from '/public/icons/iconClose.svg';
 
 export interface BasicModalProps {
   open: boolean;

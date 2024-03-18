@@ -86,7 +86,7 @@ export const CapsCircularStatus = ({ value, tooltipContent, onClick }: CapsCircu
             alignItems: 'center',
             justifyContent: 'center',
             color: '#fff',
-            fontWeight: '500'
+            fontWeight: '500',
           }}
         >
           {determineValueDisplay()}

@@ -49,7 +49,6 @@ export const ButtonConnect = styled(Button)(() => ({
   },
 })) as typeof Button;
 
-
 interface WalletWidgetProps {
   open: boolean;
   setOpen: (value: boolean) => void;
@@ -186,7 +185,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
               padding: '0 5px',
               marginRight: '10px',
               background: '#DA3E3E',
-                color: '#1A1A1C',
+              color: '#1A1A1C',
             }}
             size="small"
             onClick={handleSwitchWallet}
@@ -336,11 +335,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
             >
               Switch wallet
             </ButtonConnect>
-            <ButtonConnect
-              fullWidth
-              size="large"
-              onClick={handleDisconnect}
-            >
+            <ButtonConnect fullWidth size="large" onClick={handleDisconnect}>
               Disconnect
             </ButtonConnect>
           </Box>

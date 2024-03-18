@@ -484,11 +484,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                   arrow
                   placement="top"
                 >
-                  <Typography
-                    variant="secondary14"
-                    color="#fff"
-                    sx={{ display: 'inline-flex' }}
-                  >
+                  <Typography variant="secondary14" color="#fff" sx={{ display: 'inline-flex' }}>
                     {formattedLiquidationColatReserve.symbol}
                   </Typography>
                 </DarkTooltip>
@@ -569,11 +565,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                   arrow
                   placement="top"
                 >
-                  <Typography
-                    variant="secondary14"
-                    color="#fff"
-                    sx={{ display: 'inline-flex' }}
-                  >
+                  <Typography variant="secondary14" color="#fff" sx={{ display: 'inline-flex' }}>
                     {formattedLiquidationBorrowReserve.symbol}
                   </Typography>
                 </DarkTooltip>

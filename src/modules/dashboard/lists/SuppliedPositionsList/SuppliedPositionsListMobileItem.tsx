@@ -109,11 +109,7 @@ export const SuppliedPositionsListMobileItem = ({
           <Trans>Withdraw</Trans>
         </Button>
         {isSwapButton ? (
-          <Button
-            disabled={disableSwap}
-            onClick={() => openSwap(underlyingAsset)}
-            fullWidth
-          >
+          <Button disabled={disableSwap} onClick={() => openSwap(underlyingAsset)} fullWidth>
             <Trans>Switch</Trans>
           </Button>
         ) : (

@@ -173,7 +173,7 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
                     color: 'text.links',
                     fontSize: '12px',
                     fontWeight: '500',
-                    fontFamily: 'Work sans'
+                    fontFamily: 'Work sans',
                   }}
                 >
                   <Trans>Interest rate strategy</Trans>
