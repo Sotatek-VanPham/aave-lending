@@ -8,9 +8,10 @@ import { FormattedNumber } from './primitives/FormattedNumber';
 type ReserveSubheaderProps = {
   value: string;
   rightAlign?: boolean;
+  colorCustom?: string;
 };
 
-export function ReserveSubheader({ value, rightAlign }: ReserveSubheaderProps) {
+export function ReserveSubheader({ value, rightAlign, colorCustom }: ReserveSubheaderProps) {
   return (
     <Box
       sx={{
@@ -28,10 +29,10 @@ export function ReserveSubheader({ value, rightAlign }: ReserveSubheaderProps) {
         <FormattedNumber
           compact
           value={value}
-          variant="secondary12"
-          color="#A5A8B3"
-          symbolsColor="#A5A8B3"
+          color={colorCustom || '#fff'}
+          symbolsColor={colorCustom || '#fff'}
           symbol="USD"
+          sx={{ fontSize: '12px', fontFamily: 'Mulish' }}
         />
       )}
     </Box>

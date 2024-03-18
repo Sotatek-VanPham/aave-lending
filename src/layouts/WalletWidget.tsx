@@ -234,7 +234,11 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
                 borderRadius: '50%',
               }}
             />
-            <Typography color={{ xs: '#F1F1F3', md: 'text.primary' }} variant="subheader1">
+            <Typography
+              color={{ xs: '#F1F1F3', md: 'text.primary' }}
+              variant="subheader1"
+              sx={{ fontFamily: 'Mulish' }}
+            >
               {networkConfig.name}
             </Typography>
           </Box>
@@ -265,7 +269,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
             <ClockIcon />
           </SvgIcon>
         </ListItemIcon>
-        <ListItemText>
+        <ListItemText sx={{ fontFamily: 'Mulish' }}>
           <Trans>Transaction history</Trans>
         </ListItemText>
       </Box>
@@ -289,7 +293,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
             <DuplicateIcon />
           </SvgIcon>
         </ListItemIcon>
-        <ListItemText>
+        <ListItemText sx={{ fontFamily: 'Mulish' }}>
           <Trans>Copy address</Trans>
         </ListItemText>
       </Box>
@@ -315,7 +319,7 @@ export default function WalletWidget({ open, setOpen, headerHeight }: WalletWidg
                 <ExternalLinkIcon />
               </SvgIcon>
             </ListItemIcon>
-            <ListItemText>
+            <ListItemText sx={{ fontFamily: 'Mulish' }}>
               <Trans>View on Explorer</Trans>
             </ListItemText>
           </Box>

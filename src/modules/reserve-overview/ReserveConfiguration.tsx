@@ -147,6 +147,7 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
                     percent
                     variant="main16"
                     compact
+                    sx={{ fontWeight: '500', fontFamily: 'Work sans' }}
                   />
                 </PanelItem>
                 <Button

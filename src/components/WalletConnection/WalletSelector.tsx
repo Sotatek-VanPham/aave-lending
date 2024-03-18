@@ -302,6 +302,8 @@ export const WalletSelector = () => {
             rel="noopener"
             sx={{
               color: '#fff',
+              textDecoration: 'underline',
+              opacity: '0.6',
             }}
           >
             Read our FAQ

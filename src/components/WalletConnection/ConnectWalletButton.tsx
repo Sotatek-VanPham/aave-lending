@@ -27,6 +27,8 @@ export const ConnectWalletButton: React.FC<ConnectWalletProps> = ({ funnel }) =>
           fontWeight: '700',
           borderColor: theme.palette.primary.main,
           fontFamily: 'Mulish',
+          fontSize: '16px',
+          borderRadius: '6px',
           '&:hover': {
             color: '#1A1A1C',
             opacity: '0.8',

@@ -1,8 +1,8 @@
 import {
-  BookOpenIcon,
+  // BookOpenIcon,
   CreditCardIcon,
-  GiftIcon,
-  QuestionMarkCircleIcon,
+  // GiftIcon,
+  // QuestionMarkCircleIcon,
 } from '@heroicons/react/outline';
 import { t } from '@lingui/macro';
 import { ReactNode } from 'react';
@@ -88,21 +88,21 @@ const moreMenuItems: MoreMenuItem[] = [
       </svg>
     ),
   },
-  {
-    link: ROUTES.airdrop,
-    title: t`Claim Airdrop`,
-    icon: <GiftIcon />,
-  },
-  {
-    link: 'https://docs.seamlessprotocol.com/overview/faq',
-    title: t`FAQ`,
-    icon: <QuestionMarkCircleIcon />,
-  },
-  {
-    link: 'https://github.com/seamless-protocol',
-    title: t`Github`,
-    icon: <BookOpenIcon />,
-  },
+  // {
+  //   link: ROUTES.airdrop,
+  //   title: t`Claim Airdrop`,
+  //   icon: <GiftIcon />,
+  // },
+  // {
+  //   link: 'https://docs.seamlessprotocol.com/overview/faq',
+  //   title: t`FAQ`,
+  //   icon: <QuestionMarkCircleIcon />,
+  // },
+  // {
+  //   link: 'https://github.com/seamless-protocol',
+  //   title: t`Github`,
+  //   icon: <BookOpenIcon />,
+  // },
 ];
 
 const fiatEnabled = process.env.NEXT_PUBLIC_FIAT_ON_RAMP;

@@ -159,6 +159,7 @@ export const BorrowInfo = ({
               text={<Trans>APY, variable</Trans>}
               key="APY_res_variable_type"
               variant="description"
+              sx={{ fontSize: '16px', fontFamily: 'Work sans' }}
             />
           }
         >
@@ -188,6 +189,7 @@ export const BorrowInfo = ({
                 text={<Trans>APY, stable</Trans>}
                 key="APY_res_stable_type"
                 variant="description"
+                sx={{ fontSize: '16px', fontFamily: 'Work sans' }}
               />
             }
           >

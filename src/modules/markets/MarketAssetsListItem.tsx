@@ -77,7 +77,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
           color="#A5A8B3"
           symbolsColor="#A5A8B3"
         />
-        <ReserveSubheader value={reserve.totalLiquidityUSD} />
+        <ReserveSubheader value={reserve.totalLiquidityUSD} colorCustom="#A5A8B3" />
       </ListColumn>
 
       <ListColumn>
@@ -100,7 +100,7 @@ export const MarketAssetsListItem = ({ ...reserve }: ComputedReserveData) => {
               color="#A5A8B3"
               symbolsColor="#A5A8B3"
             />{' '}
-            <ReserveSubheader value={reserve.totalDebtUSD} />
+            <ReserveSubheader value={reserve.totalDebtUSD} colorCustom="#A5A8B3" />
           </>
         ) : (
           <NoData variant={'secondary14'} color="#A5A8B3" />
