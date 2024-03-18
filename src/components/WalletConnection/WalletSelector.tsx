@@ -214,12 +214,12 @@ export const WalletSelector = () => {
         walletName="Browser wallet"
         walletType={WalletType.INJECTED}
       />
-      {/* <WalletRow
+      <WalletRow
         key="walletconnect_wallet"
         walletName="WalletConnect"
         walletType={WalletType.WALLET_CONNECT}
       />
-      <WalletRow
+      {/* <WalletRow
         key="walletlink_wallet"
         walletName="Coinbase Wallet"
         walletType={WalletType.WALLET_LINK}
