@@ -60,7 +60,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
     (reserve) => reserve.underlyingAsset === underlyingAsset
   ) as ComputedReserveData;
 
-  const valueTypographyVariant = downToSM ? 'main16' : 'main21';
+  // const valueTypographyVariant = downToSM ? 'main16' : 'main21';
 
   const ReserveIcon = () => {
     return (
