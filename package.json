@@ -58,7 +58,7 @@
     "@visx/legend": "^2.10.0",
     "@visx/mock-data": "^2.15.1",
     "@visx/responsive": "^2.10.0",
-    "@visx/scale": "^2.2.2",
+    "@visx/scale": "^3.5.0",
     "@visx/shape": "^2.12.2",
     "@visx/tooltip": "^2.16.0",
     "@walletconnect/ethereum-provider": "^2.9.0",
