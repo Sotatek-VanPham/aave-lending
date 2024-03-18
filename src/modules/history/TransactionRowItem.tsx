@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro';
 import ArrowOutward from '@mui/icons-material/ArrowOutward';
-import { Box, Button, SvgIcon, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, SvgIcon, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { ListColumn } from 'src/components/lists/ListColumn';
 import { ListItem } from 'src/components/lists/ListItem';
@@ -10,10 +10,11 @@ import { GENERAL } from 'src/utils/mixPanelEvents';
 import { ActionDetails, ActionTextMap } from './actions/ActionDetails';
 import { unixTimestampToFormattedTime } from './helpers';
 import { ActionFields, TransactionHistoryItem } from './types';
+import { ButtonDetailCustom } from '../dashboard/lists/SupplyAssetsList/SupplyAssetsListItem';
 
 function ActionTitle({ action }: { action: string }) {
   return (
-    <Typography sx={{ width: '180px' }}>
+    <Typography sx={{ width: '180px',color: '#fff', fontWeight: '600' }}>
       <ActionTextMap action={action} />
     </Typography>
   );
@@ -54,7 +55,7 @@ function TransactionRowItem({ transaction }: TransactionHistoryItemProps) {
         sx={{
           borderWidth: `1px 0 0 0`,
           borderStyle: `solid`,
-          borderColor: `${theme.palette.divider}`,
+          borderColor: `rgba(255, 255, 255, 0.10)`,
           height: '72px',
         }}
       >
@@ -69,7 +70,7 @@ function TransactionRowItem({ transaction }: TransactionHistoryItemProps) {
           }}
         >
           <ActionTitle action={transaction.action} />
-          <Typography variant="caption" color="text.muted">
+          <Typography variant="caption" color="#fff">
             {unixTimestampToFormattedTime({ unixTimestamp: transaction.timestamp })}
           </Typography>
         </Box>
@@ -80,8 +81,7 @@ function TransactionRowItem({ transaction }: TransactionHistoryItemProps) {
         <ListColumn align="right">
           <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
             {!downToMD && (
-              <Button
-                variant="outlined"
+              <ButtonDetailCustom
                 href={explorerLink}
                 target="_blank"
                 onClick={() =>
@@ -92,13 +92,13 @@ function TransactionRowItem({ transaction }: TransactionHistoryItemProps) {
                 <SvgIcon
                   sx={{
                     marginLeft: '5px',
-                    fontSize: '20px',
-                    color: 'text.secondary',
+                    fontSize: '16px',
+                    color: '#1A1A1C',
                   }}
                 >
                   <ArrowOutward />
                 </SvgIcon>
-              </Button>
+              </ButtonDetailCustom>
             )}
           </Box>
         </ListColumn>

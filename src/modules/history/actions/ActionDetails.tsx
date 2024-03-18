@@ -53,7 +53,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
           <TokenIcon symbol={formattedSupplyReserve.iconSymbol} sx={{ fontSize: iconSize }} />
           <Typography
             variant="secondary14"
-            color="text.primary"
+            color="#fff"
             sx={{ ml: formattedSupplyReserve.iconSymbol.split('_').length > 1 ? 3 : 1, mb: 0.5 }}
           >
             +
@@ -71,6 +71,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                     variant="secondary14"
                     color="common.white"
                     sx={{ mr: 1 }}
+                    symbolsColor="common.white"
                   />
                   <Typography variant="secondary14" color="common.white">
                     {formattedSupplyReserve.symbol}
@@ -85,7 +86,8 @@ export const ActionDetails = <K extends keyof ActionFields>({
               <FormattedNumber
                 value={formattedSupplyAmount}
                 variant="secondary14"
-                color="text.primary"
+                symbolsColor="common.white"
+                color="#fff"
                 compact
                 compactThreshold={100000}
                 sx={{ mr: 1 }}
@@ -101,7 +103,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
             arrow
             placement="top"
           >
-            <Typography variant="secondary14" color="text.primary">
+            <Typography variant="secondary14" color="#fff">
               {formattedSupplyReserve.symbol}
             </Typography>
           </DarkTooltip>
@@ -116,7 +118,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
           <TokenIcon symbol={formattedBorrowReserve.iconSymbol} sx={{ fontSIze: iconSize }} />
           <Typography
             variant="secondary14"
-            color="text.primary"
+            color="#fff"
             sx={{ ml: formattedBorrowReserve.iconSymbol.split('_').length > 1 ? 3 : 1, mb: 0.5 }}
           >
             &minus;
@@ -134,6 +136,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                     variant="secondary14"
                     color="common.white"
                     sx={{ mr: 1 }}
+                    symbolsColor="common.white"
                   />
                   <Typography variant="secondary14" color="common.white">
                     {formattedBorrowReserve.symbol}
@@ -148,7 +151,8 @@ export const ActionDetails = <K extends keyof ActionFields>({
               <FormattedNumber
                 value={formattedBorrowAmount}
                 variant="secondary14"
-                color="text.primary"
+                symbolsColor="common.white"
+                color="#fff"
                 sx={{ mr: 1 }}
                 compact
                 compactThreshold={100000}
@@ -164,7 +168,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
             arrow
             placement="top"
           >
-            <Typography variant="secondary14" color="text.primary">
+            <Typography variant="secondary14" color="#fff">
               {formattedBorrowReserve.symbol}
             </Typography>
           </DarkTooltip>
@@ -179,7 +183,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
           <TokenIcon symbol={formattedWithdrawReserve.iconSymbol} sx={{ fontSIze: iconSize }} />
           <Typography
             variant="secondary14"
-            color="text.primary"
+            color="#fff"
             sx={{ ml: formattedWithdrawReserve.iconSymbol.split('_').length > 1 ? 3 : 1, mb: 0.5 }}
           >
             &minus;
@@ -196,6 +200,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                     value={formattedWithdrawAmount}
                     variant="secondary14"
                     color="common.white"
+                    symbolsColor="common.white"
                     sx={{ mr: 1 }}
                   />
                   <Typography variant="secondary14" color="common.white">
@@ -211,7 +216,8 @@ export const ActionDetails = <K extends keyof ActionFields>({
               <FormattedNumber
                 value={formattedWithdrawAmount}
                 variant="secondary14"
-                color="text.primary"
+                color="#fff"
+                symbolsColor="common.white"
                 sx={{ mr: 1 }}
                 compact
                 compactThreshold={100000}
@@ -227,7 +233,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
             arrow
             placement="top"
           >
-            <Typography variant="secondary14" color="text.primary">
+            <Typography variant="secondary14" color="#fff">
               {formattedWithdrawReserve.symbol}
             </Typography>
           </DarkTooltip>
@@ -242,7 +248,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
           <TokenIcon symbol={formattedRepayReserve.iconSymbol} sx={{ fontSIze: iconSize }} />
           <Typography
             variant="secondary14"
-            color="text.primary"
+            color="#fff"
             sx={{ ml: formattedRepayReserve.iconSymbol.split('_').length > 1 ? 3 : 1, mb: 0.5 }}
           >
             +
@@ -259,6 +265,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                     value={formattedRepayAmount}
                     variant="secondary14"
                     color="common.white"
+                    symbolsColor="common.white"
                     sx={{ mr: 1 }}
                   />
                   <Typography variant="secondary14" color="common.white">
@@ -274,7 +281,8 @@ export const ActionDetails = <K extends keyof ActionFields>({
               <FormattedNumber
                 value={formattedRepayAmount}
                 variant="secondary14"
-                color="text.primary"
+                color="#fff"
+                symbolsColor="#fff"
                 sx={{ mr: 1 }}
                 compact
                 compactThreshold={100000}
@@ -290,7 +298,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
             arrow
             placement="top"
           >
-            <Typography variant="secondary14" color="sucess.main">
+            <Typography variant="secondary14" color="common.white">
               {formattedRepayReserve.symbol}
             </Typography>
           </DarkTooltip>
@@ -305,7 +313,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
       );
       return (
         <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
-          <Typography variant="description" color="text.primary">
+          <Typography variant="description" color="#fff">
             <Trans>Collateralization</Trans>
           </Typography>
           {collateralUsageTx.toState === true ? (
@@ -317,7 +325,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
               <Trans>disabled</Trans>
             </Typography>
           )}
-          <Typography variant="description" color="text.primary" sx={{ mr: 0.5 }}>
+          <Typography variant="description" color="#fff" sx={{ mr: 0.5 }}>
             <Trans>for</Trans>
           </Typography>
           <TokenIcon
@@ -337,7 +345,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
           >
             <Typography
               variant="secondary14"
-              color="text.primary"
+              color="#fff"
               sx={{ ml: formattedCollateralReserve.iconSymbol.split('_').length > 1 ? 3 : 1 }}
             >
               {formattedCollateralReserve.symbol}
@@ -379,7 +387,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
           >
             <Typography
               variant="secondary14"
-              color="text.primary"
+              color="#fff"
               sx={{ ml: formattedSwapReserve.iconSymbol.split('_').length > 1 ? 3 : 1 }}
             >
               {swapBorrowRateTx.reserve.symbol}
@@ -422,7 +430,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
               >
                 <Typography
                   variant="secondary14"
-                  color="text.primary"
+                  color="#fff"
                   sx={{ display: 'inline-flex', mb: 0.5 }}
                 >
                   &minus;
@@ -442,6 +450,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                           value={formattedCollateralAmount}
                           variant="secondary14"
                           color="common.white"
+                          symbolsColor="common.white"
                           sx={{ mr: 1 }}
                         />
                         <Typography variant="secondary14" color="common.white">
@@ -457,7 +466,8 @@ export const ActionDetails = <K extends keyof ActionFields>({
                     <FormattedNumber
                       value={formattedCollateralAmount}
                       variant="secondary14"
-                      color="text.primary"
+                      symbolsColor="common.white"
+                      color="#fff"
                       sx={{ mr: 1 }}
                       compact
                       compactThreshold={100000}
@@ -476,7 +486,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                 >
                   <Typography
                     variant="secondary14"
-                    color="text.primary"
+                    color="#fff"
                     sx={{ display: 'inline-flex' }}
                   >
                     {formattedLiquidationColatReserve.symbol}
@@ -489,7 +499,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
             <ArrowNarrowRightIcon />
           </SvgIcon>
           <Box sx={{ display: 'flex', flexDirection: 'column' }} pl={4.5}>
-            <Typography>
+            <Typography color="#fff">
               <Trans>Covered debt</Trans>
             </Typography>
             <Box sx={{ display: 'inline-flex' }}>
@@ -505,7 +515,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
               >
                 <Typography
                   variant="secondary14"
-                  color="text.primary"
+                  color="#fff"
                   sx={{ display: 'inline-flex', mb: 0.5 }}
                 >
                   +
@@ -525,6 +535,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                           value={formattedLiquidationBorrowAmount}
                           variant="secondary14"
                           color="common.white"
+                          symbolsColor="common.white"
                           sx={{ mr: 1 }}
                         />
                         <Typography variant="secondary14" color="common.white">
@@ -540,7 +551,8 @@ export const ActionDetails = <K extends keyof ActionFields>({
                     <FormattedNumber
                       value={formattedLiquidationBorrowAmount}
                       variant="secondary14"
-                      color="text.primary"
+                      symbolsColor="common.white"
+                      color="#fff"
                       sx={{ mr: 1 }}
                       compact
                       compactThreshold={100000}
@@ -559,7 +571,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
                 >
                   <Typography
                     variant="secondary14"
-                    color="text.primary"
+                    color="#fff"
                     sx={{ display: 'inline-flex' }}
                   >
                     {formattedLiquidationBorrowReserve.symbol}

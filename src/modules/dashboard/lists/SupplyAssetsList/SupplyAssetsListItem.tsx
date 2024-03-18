@@ -49,6 +49,7 @@ export const ButtonDetailCustom = styled(Button)(() => ({
   fontSize: '12px',
   color: '#1A1A1C',
   fontWeight: 700,
+  fontFamily: 'Mulish',
   '&:hover': {
     background: '#DA3E3E',
     opacity: 0.7,
