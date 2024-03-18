@@ -263,7 +263,10 @@ const PaperWrapper = ({ children }: { children: ReactNode }) => {
         backdropFilter: 'blur(100px)',
       }}
     >
-      <Typography variant="h3" sx={{ mb: 6 }} color="#fff">
+      <Typography
+        sx={{ mb: 6, fontSize: '24px', fontWeight: '500', fontFamily: 'Work sans' }}
+        color="#fff"
+      >
         <Trans>Your info</Trans>
       </Typography>
 
@@ -274,7 +277,16 @@ const PaperWrapper = ({ children }: { children: ReactNode }) => {
 
 const ConnectWallet = ({ loading }: { loading: boolean }) => {
   return (
-    <Paper sx={{ pt: 4, pb: { xs: 4, xsm: 6 }, px: { xs: 4, xsm: 6 } }}>
+    <Paper
+      sx={{
+        pt: 4,
+        pb: { xs: 4, xsm: 6 },
+        px: { xs: 4, xsm: 6 },
+        borderRadius: '16px',
+        background: 'rgba(27, 27, 29, 0.50)',
+        backdropFilter: 'blur(100px)',
+      }}
+    >
       {loading ? (
         <CircularProgress />
       ) : (

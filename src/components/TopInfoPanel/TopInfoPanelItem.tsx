@@ -11,6 +11,7 @@ interface TopInfoPanelItemProps {
   variant?: 'light' | 'dark' | undefined; // default dark
   withLine?: boolean;
   loading?: boolean;
+  fontTitle?: boolean;
 }
 
 export const TopInfoPanelItem = ({
@@ -23,6 +24,7 @@ export const TopInfoPanelItem = ({
   withLine,
   loading,
   withoutIconWrapper,
+  fontTitle,
 }: TopInfoPanelItemProps) => {
   const theme = useTheme();
   const upToSM = useMediaQuery(theme.breakpoints.up('sm'));
@@ -72,7 +74,12 @@ export const TopInfoPanelItem = ({
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
           <Typography
-            sx={{ color: '#fff', fontFamily: 'Mulish', fontSize: '12px', fontWeight: 400 }}
+            sx={{
+              color: '#fff',
+              fontFamily: 'Mulish',
+              fontSize: fontTitle ? '13px' : '12px',
+              fontWeight: 400,
+            }}
             variant={upToSM ? 'description' : 'caption'}
             component="div"
           >

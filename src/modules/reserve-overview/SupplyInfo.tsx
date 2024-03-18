@@ -63,6 +63,7 @@ export const SupplyInfo = ({
                         valueToBigNumber(reserve.totalLiquidity).toNumber()
                       }
                       color="#000"
+                      symbolsColor="#000"
                       variant="secondary12"
                     />{' '}
                     {reserve.symbol} (
@@ -73,6 +74,7 @@ export const SupplyInfo = ({
                       }
                       variant="secondary12"
                       color="#000"
+                      symbolsColor="#000"
                       symbol="USD"
                     />
                     ).
@@ -158,7 +160,15 @@ export const SupplyInfo = ({
               </Box>
             }
           >
-            <FormattedNumber value={reserve.totalLiquidity} compact />
+            <FormattedNumber
+              value={reserve.totalLiquidity}
+              compact
+              sx={{
+                fontWeight: 600,
+                fontFamily: 'Work Sans',
+                fontSize: '16px',
+              }}
+            />
             <ReserveSubheader value={reserve.totalLiquidityUSD} />
           </PanelItem>
         )}
@@ -291,6 +301,7 @@ export const SupplyInfo = ({
               percent
               variant="secondary16"
               visibleDecimals={2}
+              sx={{ fontWeight: 500, fontFamily: 'Work sans' }}
             />
           </ReserveOverviewBox>
 
@@ -315,6 +326,7 @@ export const SupplyInfo = ({
               percent
               variant="secondary16"
               visibleDecimals={2}
+              sx={{ fontWeight: 500, fontFamily: 'Work sans' }}
             />
           </ReserveOverviewBox>
 

@@ -50,6 +50,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
           symbolsColor="#fff"
+          sx={{ fontSize: '24px', fontFamily: 'Work sans' }}
         />
       </TopInfoPanelItem>
 
@@ -60,6 +61,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
           symbolsColor="#fff"
+          sx={{ fontSize: '24px', fontFamily: 'Work sans' }}
         />
       </TopInfoPanelItem>
 
@@ -70,6 +72,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
           variant={valueTypographyVariant}
           symbolsVariant={symbolsTypographyVariant}
           symbolsColor="#fff"
+          sx={{ fontSize: '24px', fontFamily: 'Work sans' }}
         />
       </TopInfoPanelItem>
 
@@ -81,6 +84,7 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
             variant={valueTypographyVariant}
             symbolsVariant={symbolsTypographyVariant}
             symbolsColor="#fff"
+            sx={{ fontSize: '24px', fontFamily: 'Work sans' }}
           />
           {loading ? (
             <Skeleton width={16} height={16} sx={{ ml: 1, background: '#383D51' }} />

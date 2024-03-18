@@ -564,10 +564,6 @@ msgstr "Choose how much voting/proposition power to give to someone else by dele
 msgid "Claim"
 msgstr "Claim"
 
-#: src/ui-config/menu-items/index.tsx
-msgid "Claim Airdrop"
-msgstr "Claim Airdrop"
-
 #: src/components/transactions/ClaimRewards/ClaimRewardsActions.tsx
 msgid "Claim all"
 msgstr "Claim all"
@@ -917,7 +913,6 @@ msgstr "Export data to"
 
 #: src/layouts/AppFooter.tsx
 #: src/modules/reserve-overview/Gho/GhoReserveConfiguration.tsx
-#: src/ui-config/menu-items/index.tsx
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -972,10 +967,6 @@ msgstr "Frozen or paused assets"
 #: src/modules/reserve-overview/Gho/GhoReserveConfiguration.tsx
 msgid "GHO is a native decentralized, collateral-backed digital asset pegged to USD. It is created by users via borrowing against multiple collateral. When user repays their GHO borrow position, the protocol burns that user's GHO. All the interest payments accrued by minters of GHO would be directly transferred to the AaveDAO treasury."
 msgstr "GHO is a native decentralized, collateral-backed digital asset pegged to USD. It is created by users via borrowing against multiple collateral. When user repays their GHO borrow position, the protocol burns that user's GHO. All the interest payments accrued by minters of GHO would be directly transferred to the AaveDAO treasury."
-
-#: src/ui-config/menu-items/index.tsx
-msgid "Github"
-msgstr "Github"
 
 #: src/layouts/MobileMenu.tsx
 #: src/layouts/SettingsMenu.tsx

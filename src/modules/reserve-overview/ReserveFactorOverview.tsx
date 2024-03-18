@@ -87,7 +87,7 @@ export const ReserveFactorOverview = ({
             >
               <Trans>View contract</Trans>
             </Typography>
-            <SvgIcon sx={{ ml: 1, fontSize: 14 }}>
+            <SvgIcon sx={{ ml: 1, fontSize: 14, color: '#fff' }}>
               <ExternalLinkIcon />
             </SvgIcon>
           </Box>

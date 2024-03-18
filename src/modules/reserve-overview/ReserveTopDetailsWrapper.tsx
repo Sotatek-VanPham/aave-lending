@@ -38,6 +38,7 @@ export const ButtonBack = styled(Button)(() => ({
   fontSize: '14px',
   fontWeight: 700,
   padding: '8px 10px',
+  fontFamily: 'Mulish',
 })) as typeof Button;
 
 interface ReserveTopDetailsProps {
@@ -59,7 +60,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
     (reserve) => reserve.underlyingAsset === underlyingAsset
   ) as ComputedReserveData;
 
-  const valueTypographyVariant = downToSM ? 'main16' : 'main21';
+  // const valueTypographyVariant = downToSM ? 'main16' : 'main21';
 
   const ReserveIcon = () => {
     return (
@@ -90,7 +91,9 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
     return loading ? (
       <Skeleton width={60} height={28} sx={{ background: '#383D51' }} />
     ) : (
-      <Typography variant={valueTypographyVariant}>{poolReserve.name || 'Unknow'}</Typography>
+      <Typography sx={{ fontSize: '24px', fontWeight: '600', fontFamily: 'Work sans' }}>
+        {poolReserve.name || 'Unknow'}
+      </Typography>
     );
   };
 
@@ -139,7 +142,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               <ReserveIcon />
               <Box>
                 {!loading && (
-                  <Typography sx={{ color: '#fff' }} variant="caption">
+                  <Typography sx={{ color: '#fff', fontSize: '24px' }} variant="caption">
                     {poolReserve.symbol || 'Unknow'}
                   </Typography>
                 )}
@@ -181,6 +184,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
             withoutIconWrapper
             icon={<ReserveIcon />}
             loading={loading}
+            fontTitle
           >
             <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
               <ReserveName />

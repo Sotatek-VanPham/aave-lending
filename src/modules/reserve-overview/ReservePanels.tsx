@@ -61,7 +61,11 @@ export const PanelItem: React.FC<PanelItemProps> = ({ title, children, className
       }}
       className={className}
     >
-      <Typography color="#fff" component="span" sx={{ fontSize: '16px', fontFamily: 'Work Sans' }}>
+      <Typography
+        color="#fff"
+        component="span"
+        sx={{ fontSize: '16px', fontFamily: 'Work Sans', fontWeight: '500' }}
+      >
         {title}
       </Typography>
       <Box

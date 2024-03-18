@@ -45,7 +45,7 @@ export const UserDisplay: React.FC<UserDisplayProps> = ({
       <Avatar
         fallbackImage={fallbackImage}
         loading={loading}
-        badge={<ExclamationBadge size={BadgeSize.SM} />}
+        badge={<ExclamationBadge size={BadgeSize.MD} />}
         invisibleBadge={!readOnlyMode}
         {...avatarProps}
       />
