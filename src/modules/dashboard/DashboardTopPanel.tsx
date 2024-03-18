@@ -152,7 +152,7 @@ export const DashboardTopPanel = () => {
               visibleDecimals={2}
               compact
               symbolsColor="#fff"
-              symbolsVariant={noDataTypographyVariant}
+              sx={{ fontSize: '24px', fontFamily: 'Work Sans'}}
             />
           ) : (
             <NoData variant={noDataTypographyVariant} sx={{ opacity: '0.7' }} />
@@ -181,7 +181,7 @@ export const DashboardTopPanel = () => {
               visibleDecimals={2}
               percent
               symbolsColor="#fff"
-              symbolsVariant={noDataTypographyVariant}
+              sx={{ fontSize: '24px', fontFamily: 'Work Sans'}}
             />
           ) : (
             <NoData variant={noDataTypographyVariant} sx={{ opacity: '0.7' }} />

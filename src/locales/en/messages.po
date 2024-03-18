@@ -927,7 +927,6 @@ msgstr "FAQ"
 #: src/modules/faucet/FaucetAssetsList.tsx
 #: src/modules/faucet/FaucetItemLoader.tsx
 #: src/modules/faucet/FaucetMobileItemLoader.tsx
-#: src/ui-config/menu-items/index.tsx
 msgid "Faucet"
 msgstr "Faucet"
 
@@ -991,10 +990,6 @@ msgstr "Go Back"
 #: src/components/transactions/MigrateV3/MigrateV3ModalContent.tsx
 msgid "Go to V3 Dashboard"
 msgstr "Go to V3 Dashboard"
-
-#: src/ui-config/menu-items/index.tsx
-msgid "Governance"
-msgstr "Governance"
 
 #: src/components/transactions/GovVote/GovVoteModalContent.tsx
 msgid "Governor long"
