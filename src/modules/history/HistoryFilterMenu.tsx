@@ -197,7 +197,7 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
             boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.2), 0px 2px 10px rgba(0, 0, 0, 0.1)',
             border: '1px solid #EAEBEF',
             borderRadius: '4px',
-            background: '#1B1A1E'
+            background: '#1B1A1E',
           },
         }}
       >
@@ -209,7 +209,7 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
             justifyContent: 'space-between',
             '&:hover': {
               background: '#DA3E3E',
-            }
+            },
           }}
         >
           <Typography variant="subheader1" color="#fff">
@@ -242,14 +242,12 @@ export const HistoryFilterMenu: React.FC<HistoryFilterMenuProps> = ({
                   key={optionKey}
                   onClick={() => handleFilterClick(option)}
                   sx={{
-                    background: currentFilter.includes(option)
-                      ? '#DA3E3E'
-                      : undefined,
+                    background: currentFilter.includes(option) ? '#DA3E3E' : undefined,
                     display: 'flex',
                     justifyContent: 'space-between',
                     '&:hover': {
                       background: '#DA3E3E',
-                    }
+                    },
                   }}
                 >
                   <Typography variant="subheader1" color="#fff">

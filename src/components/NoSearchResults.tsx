@@ -25,7 +25,9 @@ export const NoSearchResults: React.FC<NoSearchResultsProps> = ({ searchTerm, su
     >
       {sm ? (
         <Box sx={{ textAlign: 'center', maxWidth: '300px' }}>
-          <Typography variant="h2" color="#fff">{t`No search results${searchTerm && ' for'}`}</Typography>
+          <Typography variant="h2" color="#fff">{t`No search results${
+            searchTerm && ' for'
+          }`}</Typography>
           {searchTerm && (
             <Typography sx={{ overflowWrap: 'anywhere' }} variant="h2" color="#fff">
               &apos;{searchTerm}&apos;

@@ -62,6 +62,7 @@ export const SuppliedPositionsListMobileItem = ({
         align="flex-start"
         captionVariant="description"
         mb={2}
+        sx={{ color: '#fff' }}
       >
         <IncentivesCard
           value={Number(supplyAPY)}
@@ -76,6 +77,7 @@ export const SuppliedPositionsListMobileItem = ({
         align={isIsolated ? 'flex-start' : 'center'}
         captionVariant="description"
         mb={2}
+        sx={{ color: '#fff' }}
       >
         <ListItemUsedAsCollateral
           isIsolated={isIsolated}
@@ -96,7 +98,6 @@ export const SuppliedPositionsListMobileItem = ({
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mt: 5 }}>
         <Button
           disabled={disableWithdraw}
-          variant="contained"
           onClick={() => openWithdraw(underlyingAsset, currentMarket, reserve.name, 'dashboard')}
           sx={(theme) => ({
             backgroundColor: theme.palette.background.surface2,
@@ -108,18 +109,12 @@ export const SuppliedPositionsListMobileItem = ({
           <Trans>Withdraw</Trans>
         </Button>
         {isSwapButton ? (
-          <Button
-            disabled={disableSwap}
-            variant="outlined"
-            onClick={() => openSwap(underlyingAsset)}
-            fullWidth
-          >
+          <Button disabled={disableSwap} onClick={() => openSwap(underlyingAsset)} fullWidth>
             <Trans>Switch</Trans>
           </Button>
         ) : (
           <Button
             disabled={disableSupply}
-            variant="outlined"
             onClick={() => openSupply(underlyingAsset, currentMarket, reserve.name, 'dashboard')}
             sx={(theme) => ({
               backgroundColor: theme.palette.background.surface,

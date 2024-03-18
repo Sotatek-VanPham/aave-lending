@@ -183,7 +183,7 @@ export const HistoryWrapperMobile = () => {
                 >
                   <ListItemIcon>
                     <SvgIcon>
-                      <DocumentDownloadIcon width={22} height={22}/>
+                      <DocumentDownloadIcon width={22} height={22} />
                     </SvgIcon>
                   </ListItemIcon>
                   <ListItemText primaryTypographyProps={{ variant: 'subheader1' }}>
@@ -198,10 +198,10 @@ export const HistoryWrapperMobile = () => {
                 >
                   <ListItemIcon>
                     <SvgIcon>
-                      <DocumentDownloadIcon width={22} height={22}/>
+                      <DocumentDownloadIcon width={22} height={22} />
                     </SvgIcon>
                   </ListItemIcon>
-                  <ListItemText primaryTypographyProps={{ variant: 'subheader1' }} color='#fff'>
+                  <ListItemText primaryTypographyProps={{ variant: 'subheader1' }} color="#fff">
                     <Trans>.CSV</Trans>
                   </ListItemText>
                 </MenuItem>
@@ -293,8 +293,8 @@ export const HistoryWrapperMobile = () => {
               color: '#1A1A1C',
               '&:hover': {
                 background: '#DA3E3E',
-                opacity: 0.7
-              }
+                opacity: 0.7,
+              },
             }}
           >
             Reset Filters

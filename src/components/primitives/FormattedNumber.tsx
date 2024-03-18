@@ -158,10 +158,9 @@ export function FormattedNumber({
       {percent && (
         <Typography
           component="span"
-          sx={{ ml: 0.5, fontWeight: '400', fontFamily: 'Mulish', ...rest.sx  }}
+          sx={{ ml: 0.5, fontWeight: '400', fontFamily: 'Mulish', ...rest.sx }}
           variant={symbolsVariant || rest.variant}
           color={symbolsColor || '#fff'}
-          
         >
           %
         </Typography>

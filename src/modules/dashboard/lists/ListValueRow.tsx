@@ -20,14 +20,16 @@ export const ListValueRow = ({
   disabled,
 }: ListValueRowProps) => {
   return (
-    <Row caption={title} captionVariant="description" align="flex-start" mb={2}>
+    <Row
+      caption={title}
+      captionVariant="description"
+      align="flex-start"
+      mb={2}
+      sx={{ color: '#fff' }}
+    >
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
         <Box sx={{ display: 'flex', alignItems: 'center', mb: 0.5 }}>
-          <FormattedNumber
-            value={value}
-            variant="secondary14"
-            color={disabled ? 'text.disabled' : 'text.primary'}
-          />
+          <FormattedNumber value={value} variant="secondary14" color={'#fff'} />
           {capsComponent}
         </Box>
 
@@ -35,7 +37,7 @@ export const ListValueRow = ({
           <FormattedNumber
             value={subValue}
             variant="secondary12"
-            color="text.secondary"
+            color={'#fff'}
             symbol="USD"
             mb={0.5}
           />

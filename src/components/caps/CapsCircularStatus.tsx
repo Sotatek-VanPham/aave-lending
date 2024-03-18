@@ -52,7 +52,7 @@ export const CapsCircularStatus = ({ value, tooltipContent, onClick }: CapsCircu
         <CircularProgress
           variant="determinate"
           sx={{
-            color: (theme) => theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
+            color: '#fff',
             position: 'absolute',
             left: 1.25,
             top: 1.25,
@@ -85,6 +85,8 @@ export const CapsCircularStatus = ({ value, tooltipContent, onClick }: CapsCircu
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            color: '#fff',
+            fontWeight: '500',
           }}
         >
           {determineValueDisplay()}

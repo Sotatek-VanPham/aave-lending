@@ -1,14 +1,6 @@
 import { BigNumberValue, USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
-import {
-  Box,
-  CircularProgress,
-  Divider,
-  Paper,
-  Skeleton,
-  Stack,
-  Typography,
-} from '@mui/material';
+import { Box, CircularProgress, Divider, Paper, Skeleton, Stack, Typography } from '@mui/material';
 import BigNumber from 'bignumber.js';
 import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import React, { ReactNode, useState } from 'react';

@@ -21,7 +21,7 @@ export const ListTopInfoItem = ({ title, value, percent, tooltip }: ListTopInfoI
         alignItems: 'center',
         boxShadow: 'none',
         bgcolor: 'rgba(27, 27, 29, 0.42)',
-        borderColor: 'rgba(255, 255, 255, 0.20)'
+        borderColor: 'rgba(255, 255, 255, 0.20)',
       }}
     >
       <Typography color="#FFF" sx={{ mr: 1, fontSize: '12px' }} noWrap>

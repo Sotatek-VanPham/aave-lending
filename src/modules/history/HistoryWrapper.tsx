@@ -190,7 +190,7 @@ export const HistoryWrapper = () => {
             onClick={handleCsvDownload}
           >
             <SvgIcon>
-              <DocumentDownloadIcon width={22} height={22} stroke='#fff'/>
+              <DocumentDownloadIcon width={22} height={22} stroke="#fff" />
             </SvgIcon>
             <Typography variant="buttonM" color="#fff">
               <Trans>.CSV</Trans>
@@ -208,7 +208,7 @@ export const HistoryWrapper = () => {
             onClick={handleJsonDownload}
           >
             <SvgIcon>
-              <DocumentDownloadIcon width={22} height={22} stroke='#fff'/>
+              <DocumentDownloadIcon width={22} height={22} stroke="#fff" />
             </SvgIcon>
             <Typography variant="buttonM" color="#fff">
               <Trans>.JSON</Trans>
@@ -274,8 +274,8 @@ export const HistoryWrapper = () => {
               color: '#1A1A1C',
               '&:hover': {
                 background: '#DA3E3E',
-                opacity: 0.7
-              }
+                opacity: 0.7,
+              },
             }}
           >
             Reset Filters

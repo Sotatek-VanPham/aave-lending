@@ -1,6 +1,7 @@
-import { XIcon } from '@heroicons/react/outline';
-import { Box, IconButton, Modal, Paper, SvgIcon } from '@mui/material';
+import { Box, IconButton, Modal, Paper } from '@mui/material';
 import React from 'react';
+
+import IconClose from '/public/icons/iconClose.svg';
 
 export interface BasicModalProps {
   open: boolean;
@@ -58,7 +59,7 @@ export const BasicModal = ({
         {children}
 
         {withCloseButton && (
-          <Box sx={{ position: 'absolute', top: '24px', right: '34px', zIndex: 5 }}>
+          <Box sx={{ position: 'absolute', top: '32px', right: '40px', zIndex: 5 }}>
             <IconButton
               sx={{
                 borderRadius: '50%',
@@ -69,9 +70,7 @@ export const BasicModal = ({
               onClick={handleClose}
               data-cy={'close-button'}
             >
-              <SvgIcon sx={{ fontSize: '18px', color: '#999EBA' }}>
-                <XIcon data-cy={'CloseModalIcon'} />
-              </SvgIcon>
+              <IconClose />
             </IconButton>
           </Box>
         )}

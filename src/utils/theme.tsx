@@ -361,7 +361,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         fontSize: pxToRem(16),
       },
       secondary16: {
-        fontFamily: FONT_MULISH,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(24),
@@ -375,7 +375,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         fontSize: pxToRem(14),
       },
       secondary14: {
-        fontFamily: FONT_MULISH,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         letterSpacing: pxToRem(0.15),
         lineHeight: pxToRem(20),
@@ -389,7 +389,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         fontSize: pxToRem(12),
       },
       secondary12: {
-        fontFamily: FONT_MULISH,
+        fontFamily: FONT_WORK_SANS,
         fontWeight: 500,
         letterSpacing: pxToRem(0.1),
         lineHeight: pxToRem(16),

@@ -7,14 +7,14 @@ import { ListItem } from 'src/components/lists/ListItem';
 import { useRootStore } from 'src/store/root';
 import { GENERAL } from 'src/utils/mixPanelEvents';
 
+import { ButtonDetailCustom } from '../dashboard/lists/SupplyAssetsList/SupplyAssetsListItem';
 import { ActionDetails, ActionTextMap } from './actions/ActionDetails';
 import { unixTimestampToFormattedTime } from './helpers';
 import { ActionFields, TransactionHistoryItem } from './types';
-import { ButtonDetailCustom } from '../dashboard/lists/SupplyAssetsList/SupplyAssetsListItem';
 
 function ActionTitle({ action }: { action: string }) {
   return (
-    <Typography sx={{ width: '180px',color: '#fff', fontWeight: '600' }}>
+    <Typography sx={{ width: '180px', color: '#fff', fontWeight: '600' }}>
       <ActionTextMap action={action} />
     </Typography>
   );

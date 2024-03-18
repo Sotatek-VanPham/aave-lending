@@ -46,7 +46,7 @@ export const MarketsTopPanel = () => {
           compact
           symbolsColor="#fff"
           symbolsVariant={symbolsVariant}
-          sx={{ fontSize: '24px'}}
+          sx={{ fontSize: '24px' }}
         />
       </TopInfoPanelItem>
       <TopInfoPanelItem hideIcon title={<Trans>Total available</Trans>} loading={loading}>
@@ -58,7 +58,7 @@ export const MarketsTopPanel = () => {
           compact
           symbolsColor="#fff"
           symbolsVariant={symbolsVariant}
-          sx={{ fontSize: '24px'}}
+          sx={{ fontSize: '24px' }}
         />
       </TopInfoPanelItem>
       <TopInfoPanelItem hideIcon title={<Trans>Total borrows</Trans>} loading={loading}>

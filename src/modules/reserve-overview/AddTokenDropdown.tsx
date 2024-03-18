@@ -160,7 +160,7 @@ export const AddTokenDropdown = ({
               cursor: 'pointer',
             }}
           >
-            <WalletIcon sx={{ width: '14px', height: '14px',  stroke: '#fff' }} />
+            <WalletIcon sx={{ width: '14px', height: '14px', stroke: '#fff' }} />
           </Box>
         </CircleIcon>
       </Box>
