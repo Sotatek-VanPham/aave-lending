@@ -13,7 +13,7 @@ import { AssetCapsProvider } from 'src/hooks/useAssetCaps';
 import { fetchIconSymbolAndName, RESTRICTED_MARKETS } from 'src/ui-config/reservePatches';
 
 import { ListWrapper } from '../../../../components/lists/ListWrapper';
-import { Link, ROUTES } from '../../../../components/primitives/Link';
+// import { Link, ROUTES } from '../../../../components/primitives/Link';
 import {
   ComputedReserveData,
   useAppDataContext,
@@ -30,7 +30,7 @@ import { ListButtonsColumn } from '../ListButtonsColumn';
 import { ListLoader } from '../ListLoader';
 import { SupplyAssetsListItem } from './SupplyAssetsListItem';
 import { SupplyAssetsListMobileItem } from './SupplyAssetsListMobileItem';
-import { WalletEmptyInfo } from './WalletEmptyInfo';
+// import { WalletEmptyInfo } from './WalletEmptyInfo';
 
 const head = [
   { title: <Trans key="assets">Assets</Trans>, sortKey: 'symbol' },
