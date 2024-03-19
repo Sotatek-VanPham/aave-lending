@@ -157,15 +157,6 @@ export const BorrowAssetsList = () => {
           //     currentMarket,
           //   })
         );
-
-  console.log(
-    'user111',
-    reserves,
-    user,
-    maxBorrowAmount.toString(),
-    tokensToBorrow,
-    borrowReserves
-  );
   const { value: ghoReserve, filtered: filteredReserves } = findAndFilterGhoReserve(borrowReserves);
   const sortedReserves = handleSortDashboardReserves(
     sortDesc,

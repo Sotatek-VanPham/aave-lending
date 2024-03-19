@@ -1,5 +1,4 @@
 import { Trans } from '@lingui/macro';
-import { Button } from '@mui/material';
 import { useModalContext } from 'src/hooks/useModal';
 import { useProtocolDataContext } from 'src/hooks/useProtocolDataContext';
 import { useRootStore } from 'src/store/root';
@@ -13,7 +12,7 @@ import { ListAPRColumn } from '../ListAPRColumn';
 import { ListButtonsColumn } from '../ListButtonsColumn';
 import { ListItemWrapper } from '../ListItemWrapper';
 import { ListValueColumn } from '../ListValueColumn';
-import { ButtonSupplyCustom } from '../SupplyAssetsList/SupplyAssetsListItem';
+import { ButtonDetailCustom, ButtonSupplyCustom } from '../SupplyAssetsList/SupplyAssetsListItem';
 
 export const BorrowAssetsListItem = ({
   symbol,
@@ -81,7 +80,7 @@ export const BorrowAssetsListItem = ({
         >
           <Trans>Borrow</Trans>
         </ButtonSupplyCustom>
-        <Button
+        <ButtonDetailCustom
           component={Link}
           href={ROUTES.reserveOverview(underlyingAsset, currentMarket)}
           onClick={() => {
@@ -92,17 +91,9 @@ export const BorrowAssetsListItem = ({
               asset: underlyingAsset,
             });
           }}
-          sx={(theme) => ({
-            backgroundColor: '#DA3E3E',
-            color: '#1A1A1C',
-            fontSize: '12px',
-            width: '65.229px',
-            height: '32px',
-            '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-          })}
         >
           <Trans>Details</Trans>
-        </Button>
+        </ButtonDetailCustom>
       </ListButtonsColumn>
     </ListItemWrapper>
   );

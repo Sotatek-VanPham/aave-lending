@@ -285,7 +285,7 @@ export const WalletSelector = () => {
         </Button>
       </form>
       {validAddressError && (
-        <Typography variant="helperText" color="error.main">
+        <Typography variant="helperText" color="#FF4228" sx={{ fontSize: '12px' }}>
           <Trans>Please enter a valid wallet address.</Trans>
         </Typography>
       )}

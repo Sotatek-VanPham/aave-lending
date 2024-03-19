@@ -1,6 +1,6 @@
 import { ReserveIncentiveResponse } from '@aave/math-utils/dist/esm/formatters/incentive/calculate-reserve-incentives';
 import { Trans } from '@lingui/macro';
-import { Box, Button, useMediaQuery, useTheme } from '@mui/material';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
 import { InterestRate } from 'colend-contract-helpers';
 import { IncentivesCard } from 'src/components/incentives/IncentivesCard';
 import { APYTypeTooltip } from 'src/components/infoTooltips/APYTypeTooltip';
@@ -20,6 +20,7 @@ import { ListMobileItemWrapper } from '../ListMobileItemWrapper';
 import { ListValueColumn } from '../ListValueColumn';
 import { ListValueRow } from '../ListValueRow';
 import { ButtonWithdrawCustom } from '../SuppliedPositionsList/SuppliedPositionsListItem';
+import { ButtonDetailCustom } from '../SupplyAssetsList/SupplyAssetsListItem';
 
 export const BorrowedPositionsListItem = ({ item }: { item: DashboardReserve }) => {
   const { borrowCap } = useAssetCaps();
@@ -34,8 +35,6 @@ export const BorrowedPositionsListItem = ({ item }: { item: DashboardReserve }) 
     !reserve.isActive || !reserve.borrowingEnabled || reserve.isFrozen || borrowCap.isMaxed;
 
   const showSwitchButton = isFeatureEnabled.debtSwitch(currentMarketData) || false;
-
-  console.log('currentMarketData', currentMarketData);
 
   const disableSwitch = !reserve.isActive || reserve.symbol == 'stETH';
 
@@ -151,36 +150,20 @@ const BorrowedPositionsListItemDesktop = ({
           <Trans>Repay</Trans>
         </ButtonWithdrawCustom>
         {showSwitchButton ? (
-          <Button
+          <ButtonDetailCustom
             disabled={disableSwitch}
             onClick={onDetbSwitchClick}
             data-cy={`swapButton`}
-            sx={(theme) => ({
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-              fontSize: '12px',
-              width: '65.229px',
-              height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-            })}
           >
             <Trans>Switch</Trans>
-          </Button>
+          </ButtonDetailCustom>
         ) : (
-          <Button
+          <ButtonDetailCustom
             disabled={disableBorrow}
             onClick={onOpenBorrow}
-            sx={(theme) => ({
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-              fontSize: '12px',
-              width: '65.229px',
-              height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-            })}
           >
             <Trans>Borrow</Trans>
-          </Button>
+          </ButtonDetailCustom>
         )}
       </ListButtonsColumn>
     </ListItemWrapper>
@@ -273,38 +256,22 @@ const BorrowedPositionsListItemMobile = ({
           <Trans>Repay</Trans>
         </ButtonWithdrawCustom>
         {showSwitchButton ? (
-          <Button
+          <ButtonDetailCustom
             disabled={disableSwitch}
             fullWidth
             onClick={onDetbSwitchClick}
             data-cy={`swapButton`}
-            sx={(theme) => ({
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-              fontSize: '12px',
-              width: '65.229px',
-              height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-            })}
           >
             <Trans>Switch</Trans>
-          </Button>
+          </ButtonDetailCustom>
         ) : (
-          <Button
+          <ButtonDetailCustom
             disabled={disableBorrow}
             onClick={onOpenBorrow}
             fullWidth
-            sx={(theme) => ({
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-              fontSize: '12px',
-              width: '65.229px',
-              height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-            })}
           >
             <Trans>Borrow</Trans>
-          </Button>
+          </ButtonDetailCustom>
         )}
       </Box>
     </ListMobileItemWrapper>
