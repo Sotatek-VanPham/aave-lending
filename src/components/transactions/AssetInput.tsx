@@ -200,7 +200,7 @@ export const AssetInput = <T extends Asset = Asset>({
               />
               <Typography
                 variant="h3"
-                sx={{ lineHeight: '28px', color: '#fff' }}
+                sx={{ lineHeight: '28px', color: '#fff', fontSize: '20px' }}
                 data-cy={'inputAsset'}
               >
                 {symbol}

@@ -219,7 +219,7 @@ export const CollateralState = ({ collateralType }: CollateralStateProps) => {
       {
         {
           [CollateralType.ENABLED]: (
-            <Typography variant="description" color="success.main">
+            <Typography variant="description" sx={{ color: '#3692FF'}}>
               <Trans>Enabled</Trans>
             </Typography>
           ),

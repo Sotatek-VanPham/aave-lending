@@ -317,7 +317,7 @@ export const ActionDetails = <K extends keyof ActionFields>({
             <Trans>Collateralization</Trans>
           </Typography>
           {collateralUsageTx.toState === true ? (
-            <Typography variant="subheader1" color="success.main" sx={{ px: 0.75 }}>
+            <Typography variant="subheader1" sx={{ px: 0.75, color: '#3692FF'}}>
               <Trans>enabled</Trans>
             </Typography>
           ) : (
