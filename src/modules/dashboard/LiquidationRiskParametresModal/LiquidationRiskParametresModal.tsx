@@ -45,10 +45,15 @@ export const LiquidationRiskParametresInfoModal = ({
 
   return (
     <BasicModal open={open} setOpen={setOpen}>
-      <Typography variant="h2" mb={6}>
+      <Typography
+        variant="h2"
+        mb={6}
+        sx={{ fontSize: '24px', fontFamily: 'Work sans', fontWeight: '500' }}
+        color="#fff"
+      >
         <Trans>Liquidation risk parameters</Trans>
       </Typography>
-      <Typography mb={6}>
+      <Typography mb={6} color="#fff">
         <Trans>
           Your health factor and loan to value determine the assurance of your collateral. To avoid
           liquidations you can supply more collateral or repay borrow positions.

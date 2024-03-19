@@ -291,10 +291,10 @@ export const BorrowAssetsList = () => {
                 {user?.totalCollateralMarketReferenceCurrency === '0' && (
                   <Box
                     sx={{
-                      background: 'transparent',
-                      border: ' 2px solid rgba(255, 66, 40, 0.30)',
                       borderRadius: '6px',
-                      color: '#FF4228',
+                      background: 'rgba(90, 95, 128, 0.50)',
+                      backdropFilter: 'blur(100px)',
+                      color: '#FFF',
                       fontFamily: 'Mulish',
                       padding: '10px 16px',
                       display: 'flex',
@@ -303,7 +303,7 @@ export const BorrowAssetsList = () => {
                       fontSize: '12px',
                     }}
                   >
-                    <img src="/icons/warning.svg" />
+                    <img src="/icons/iconInfo.svg" />
                     <Trans>To borrow you need to supply any asset to be used as collateral.</Trans>
                   </Box>
                 )}

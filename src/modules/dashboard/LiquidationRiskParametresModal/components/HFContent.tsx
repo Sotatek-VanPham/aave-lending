@@ -69,7 +69,12 @@ export const HFContent = ({ healthFactor }: HFContentProps) => {
               bottom: 'calc(100% + 2px)',
             }}
           >
-            <FormattedNumber value={formattedHealthFactor} variant="main12" visibleDecimals={2} />
+            <FormattedNumber
+              value={formattedHealthFactor}
+              variant="main12"
+              visibleDecimals={2}
+              sx={{ fontSize: '14px', color: '#fff' }}
+            />
           </Box>
         </Box>
       </Box>

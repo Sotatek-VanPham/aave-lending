@@ -13,7 +13,7 @@ import { AssetCapsProvider } from 'src/hooks/useAssetCaps';
 import { fetchIconSymbolAndName, RESTRICTED_MARKETS } from 'src/ui-config/reservePatches';
 
 import { ListWrapper } from '../../../../components/lists/ListWrapper';
-import { Link, ROUTES } from '../../../../components/primitives/Link';
+// import { Link, ROUTES } from '../../../../components/primitives/Link';
 import {
   ComputedReserveData,
   useAppDataContext,
@@ -30,7 +30,7 @@ import { ListButtonsColumn } from '../ListButtonsColumn';
 import { ListLoader } from '../ListLoader';
 import { SupplyAssetsListItem } from './SupplyAssetsListItem';
 import { SupplyAssetsListMobileItem } from './SupplyAssetsListMobileItem';
-import { WalletEmptyInfo } from './WalletEmptyInfo';
+// import { WalletEmptyInfo } from './WalletEmptyInfo';
 
 const head = [
   { title: <Trans key="assets">Assets</Trans>, sortKey: 'symbol' },
@@ -43,7 +43,7 @@ const head = [
 ];
 
 export const SupplyAssetsList = () => {
-  const { currentNetworkConfig, currentChainId, currentMarketData } = useProtocolDataContext();
+  const { currentNetworkConfig, currentMarketData } = useProtocolDataContext();
   const {
     user,
     reserves,
@@ -57,7 +57,7 @@ export const SupplyAssetsList = () => {
   const [sortName, setSortName] = useState('');
   const [sortDesc, setSortDesc] = useState(false);
 
-  const { bridge, isTestnet, baseAssetSymbol, name: networkName } = currentNetworkConfig;
+  const { bridge, baseAssetSymbol } = currentNetworkConfig;
 
   const localStorageName = 'showSupplyZeroAssets';
   const [isShowZeroAssets, setIsShowZeroAssets] = useState(
@@ -257,36 +257,37 @@ export const SupplyAssetsList = () => {
                 <Trans>Collateral usage is limited because of isolation mode.</Trans>
               </Warning>
             ) : (
-              filteredSupplyReserves.length === 0 &&
-              (isTestnet ? (
-                <Box
-                  sx={{
-                    background: 'transparent',
-                    border: ' 2px solid rgba(255, 66, 40, 0.30)',
-                    borderRadius: '6px',
-                    color: '#FF4228',
-                    fontFamily: 'Mulish',
-                    padding: '10px 16px',
-                    display: 'flex',
-                    gap: '13px',
-                    alignItems: 'center',
-                    fontSize: '12px',
-                  }}
-                >
-                  <img src="/icons/warning.svg" />
-                  <Box>
-                    <Trans>Your {networkName} wallet is empty. Get free test assets at </Trans>{' '}
-                    <Link
-                      href={ROUTES.faucet}
-                      style={{ fontWeight: 400, color: '#FF4228', fontFamily: 'Mulish' }}
-                    >
-                      <Trans>{networkName} Faucet</Trans>
-                    </Link>
-                  </Box>
-                </Box>
-              ) : (
-                <WalletEmptyInfo name={networkName} bridge={bridge} chainId={currentChainId} />
-              ))
+              // filteredSupplyReserves.length === 0 &&
+              // (isTestnet ? (
+              //   <Box
+              //     sx={{
+              //       background: 'transparent',
+              //       border: ' 2px solid rgba(255, 66, 40, 0.30)',
+              //       borderRadius: '6px',
+              //       color: '#FF4228',
+              //       fontFamily: 'Mulish',
+              //       padding: '10px 16px',
+              //       display: 'flex',
+              //       gap: '13px',
+              //       alignItems: 'center',
+              //       fontSize: '12px',
+              //     }}
+              //   >
+              //     <img src="/icons/warning.svg" />
+              //     <Box>
+              //       <Trans>Your {networkName} wallet is empty. Get free test assets at </Trans>{' '}
+              //       <Link
+              //         href={ROUTES.faucet}
+              //         style={{ fontWeight: 400, color: '#FF4228', fontFamily: 'Mulish' }}
+              //       >
+              //         <Trans>{networkName} Faucet</Trans>
+              //       </Link>
+              //     </Box>
+              //   </Box>
+              // ) : (
+              //   <WalletEmptyInfo name={networkName} bridge={bridge} chainId={currentChainId} />
+              // ))
+              <></>
             )}
           </Box>
 
