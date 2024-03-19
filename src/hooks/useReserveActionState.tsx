@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { Button, Stack, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
 import { Link, ROUTES } from 'src/components/primitives/Link';
 import { Warning } from 'src/components/primitives/Warning';
 import { getEmodeMessage } from 'src/components/transactions/Emode/EmodeNaming';
@@ -12,7 +12,7 @@ import { WalletEmptyInfo } from 'src/modules/dashboard/lists/SupplyAssetsList/Wa
 import { useRootStore } from 'src/store/root';
 import { assetCanBeBorrowedByUser } from 'src/utils/getMaxAmountAvailableToBorrow';
 
-import { useModalContext } from './useModal';
+// import { useModalContext } from './useModal';
 
 interface ReserveActionStateProps {
   balance: string;
@@ -37,7 +37,7 @@ export const useReserveActionState = ({
       store.displayGho,
     ]
   );
-  const { openFaucet } = useModalContext();
+  // const { openFaucet } = useModalContext();
 
   const { bridge, name: networkName } = currentNetworkConfig;
 
@@ -64,18 +64,15 @@ export const useReserveActionState = ({
             {currentNetworkConfig.isTestnet ? (
               <Warning sx={{ mb: 0 }} severity="info" icon={false}>
                 <Trans>
-                  Your {networkName} wallet is empty. Get free test {reserve.name} at
-                </Trans>{' '}
-                <Button
-                  variant="text"
-                  sx={{ verticalAlign: 'top' }}
-                  onClick={() => openFaucet(reserve.underlyingAsset)}
-                  disableRipple
-                >
-                  <Typography variant="caption">
-                    <Trans>{networkName} Fauceta</Trans>
-                  </Typography>
-                </Button>
+                  Your Coredao wallet is empty. Purchase or transfer assets or use{' '}
+                  <Link
+                    href="https://bridge.coredao.org/"
+                    sx={{ '&:hover': { textDecoration: 'underline !important', opacity: '0.6' } }}
+                  >
+                    Base Bridge
+                  </Link>{' '}
+                  to transfer your Ethereum assets
+                </Trans>
               </Warning>
             ) : (
               <WalletEmptyInfo

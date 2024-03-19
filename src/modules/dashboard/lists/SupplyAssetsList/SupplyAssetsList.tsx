@@ -269,6 +269,8 @@ export const SupplyAssetsList = () => {
                     padding: '10px 16px',
                     display: 'flex',
                     gap: '13px',
+                    alignItems: 'center',
+                    fontSize: '12px',
                   }}
                 >
                   <img src="/icons/warning.svg" />
