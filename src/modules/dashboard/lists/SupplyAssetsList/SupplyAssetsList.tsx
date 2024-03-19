@@ -257,36 +257,37 @@ export const SupplyAssetsList = () => {
                 <Trans>Collateral usage is limited because of isolation mode.</Trans>
               </Warning>
             ) : (
-              filteredSupplyReserves.length === 0 &&
-              (isTestnet ? (
-                <Box
-                  sx={{
-                    background: 'transparent',
-                    border: ' 2px solid rgba(255, 66, 40, 0.30)',
-                    borderRadius: '6px',
-                    color: '#FF4228',
-                    fontFamily: 'Mulish',
-                    padding: '10px 16px',
-                    display: 'flex',
-                    gap: '13px',
-                    alignItems: 'center',
-                    fontSize: '12px',
-                  }}
-                >
-                  <img src="/icons/warning.svg" />
-                  <Box>
-                    <Trans>Your {networkName} wallet is empty. Get free test assets at </Trans>{' '}
-                    <Link
-                      href={ROUTES.faucet}
-                      style={{ fontWeight: 400, color: '#FF4228', fontFamily: 'Mulish' }}
-                    >
-                      <Trans>{networkName} Faucet</Trans>
-                    </Link>
-                  </Box>
-                </Box>
-              ) : (
-                <WalletEmptyInfo name={networkName} bridge={bridge} chainId={currentChainId} />
-              ))
+              // filteredSupplyReserves.length === 0 &&
+              // (isTestnet ? (
+              //   <Box
+              //     sx={{
+              //       background: 'transparent',
+              //       border: ' 2px solid rgba(255, 66, 40, 0.30)',
+              //       borderRadius: '6px',
+              //       color: '#FF4228',
+              //       fontFamily: 'Mulish',
+              //       padding: '10px 16px',
+              //       display: 'flex',
+              //       gap: '13px',
+              //       alignItems: 'center',
+              //       fontSize: '12px',
+              //     }}
+              //   >
+              //     <img src="/icons/warning.svg" />
+              //     <Box>
+              //       <Trans>Your {networkName} wallet is empty. Get free test assets at </Trans>{' '}
+              //       <Link
+              //         href={ROUTES.faucet}
+              //         style={{ fontWeight: 400, color: '#FF4228', fontFamily: 'Mulish' }}
+              //       >
+              //         <Trans>{networkName} Faucet</Trans>
+              //       </Link>
+              //     </Box>
+              //   </Box>
+              // ) : (
+              //   <WalletEmptyInfo name={networkName} bridge={bridge} chainId={currentChainId} />
+              // ))
+              <></>
             )}
           </Box>
 

@@ -84,16 +84,17 @@ export const LTVContent = ({
             <FormattedNumber
               value={currentLiquidationThreshold}
               visibleDecimals={2}
-              color="error.main"
+              color="#FD3D61"
               variant="subheader2"
               percent
-              symbolsColor="error.main"
+              symbolsColor="#FD3D61"
+              sx={{ fontSize: '10px' }}
             />
             <Typography
-              sx={{ display: 'flex' }}
+              sx={{ display: 'flex', fontSize: '8px' }}
               variant="helperText"
               lineHeight="12px"
-              color="error.main"
+              color="#FD3D61"
             >
               <Trans>
                 Liquidation <br /> threshold
@@ -112,7 +113,7 @@ export const LTVContent = ({
         }}
       >
         <Box
-          sx={(theme) => ({
+          sx={() => ({
             position: 'relative',
             whiteSpace: 'nowrap',
             '&:after': {
@@ -120,7 +121,7 @@ export const LTVContent = ({
               height: 0,
               borderStyle: 'solid',
               borderWidth: '6px 4px 0 4px',
-              borderColor: `${theme.palette.primary.main} transparent transparent transparent`,
+              borderColor: `#fff transparent transparent transparent`,
               content: "''",
               position: 'absolute',
               left: LTVLineWidth > 75 ? 'auto' : '50%',
@@ -144,9 +145,16 @@ export const LTVContent = ({
               bottom: 'calc(100% + 2px)',
             }}
           >
-            <FormattedNumber value={loanToValue} percent visibleDecimals={2} variant="main12" />
+            <FormattedNumber
+              value={loanToValue}
+              percent
+              visibleDecimals={2}
+              variant="main12"
+              color="#A5A8B3"
+              symbolsColor="#A5A8B3"
+            />
             <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
-              <Typography variant="helperText" color="text.muted" mr={0.5}>
+              <Typography variant="helperText" color="#A5A8B3" mr={0.5}>
                 <Trans>MAX</Trans>
               </Typography>
               <FormattedNumber
@@ -154,8 +162,8 @@ export const LTVContent = ({
                 percent
                 visibleDecimals={2}
                 variant="helperText"
-                color="text.muted"
-                symbolsColor="text.muted"
+                color="#A5A8B3"
+                symbolsColor="#A5A8B3"
               />
             </Box>
           </Box>

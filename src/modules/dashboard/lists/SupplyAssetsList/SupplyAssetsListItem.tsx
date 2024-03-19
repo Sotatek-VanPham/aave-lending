@@ -31,7 +31,7 @@ export const ButtonSupplyCustom = styled(Button)(() => ({
   '&:hover': {
     background: '#484A77',
     opacity: 0.7,
-    border: 'none'
+    border: 'none',
   },
   '&:disabled': {
     background: '#484A77',

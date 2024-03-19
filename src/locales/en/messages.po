@@ -1046,8 +1046,8 @@ msgid "In E-Mode some assets are not borrowable. Exit E-Mode to get access to al
 msgstr "In E-Mode some assets are not borrowable. Exit E-Mode to get access to all assets"
 
 #: src/components/transactions/Warnings/IsolationModeWarning.tsx
-msgid "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset. Read more in our <0>FAQ</0>"
-msgstr "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset. Read more in our <0>FAQ</0>"
+msgid "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset."
+msgstr "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset."
 
 #: src/ui-config/errorMapping.tsx
 msgid "Inconsistent flashloan parameters"
@@ -2166,8 +2166,8 @@ msgid "To borrow you need to supply any asset to be used as collateral."
 msgstr "To borrow you need to supply any asset to be used as collateral."
 
 #: src/components/infoTooltips/ApprovalTooltip.tsx
-msgid "To continue, you need to grant Colend smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
-msgstr "To continue, you need to grant Colend smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
+msgid "To continue, you need to grant Colend smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas)."
+msgstr "To continue, you need to grant Colend smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas)."
 
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 msgid "To enable E-mode for the {0} category, all borrow positions outside of this category must be closed."
@@ -2564,10 +2564,6 @@ msgstr "Your {name} wallet is empty. <0>Purchase or transfer assets</0> or use <
 msgid "Your {name} wallet is empty. Purchase or transfer assets."
 msgstr "Your {name} wallet is empty. Purchase or transfer assets."
 
-#: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsList.tsx
-msgid "Your {networkName} wallet is empty. Get free test assets at"
-msgstr "Your {networkName} wallet is empty. Get free test assets at"
-
 #: src/ui-config/errorMapping.tsx
 msgid "Zero address not valid"
 msgstr "Zero address not valid"
@@ -2676,10 +2672,6 @@ msgstr "{0} Faucet"
 #: src/components/transactions/FlowCommons/ApprovalMethodToggleButton.tsx
 msgid "{currentMethod}"
 msgstr "{currentMethod}"
-
-#: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsList.tsx
-msgid "{networkName} Faucet"
-msgstr "{networkName} Faucet"
 
 #: src/layouts/TopBarNotify.tsx
 msgid "{notifyText}"

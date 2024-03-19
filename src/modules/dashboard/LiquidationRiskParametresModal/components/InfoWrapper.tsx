@@ -20,8 +20,8 @@ export const InfoWrapper = ({
 }: InfoWrapperProps) => {
   return (
     <Box
-      sx={(theme) => ({
-        border: `1px solid ${theme.palette.divider}`,
+      sx={() => ({
+        border: `1px solid rgba(255, 255, 255, 0.07)`,
         mb: 6,
         borderRadius: '6px',
         px: 4,
@@ -34,7 +34,7 @@ export const InfoWrapper = ({
     >
       <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Box sx={{ width: 'calc(100% - 72px)' }}>
-          <Typography variant="subheader1" mb={1}>
+          <Typography variant="subheader1" mb={1} color="#fff">
             {topTitle}
           </Typography>
           <Typography variant="caption" color="text.secondary">
@@ -44,13 +44,14 @@ export const InfoWrapper = ({
 
         <Box
           sx={{
-            width: '56px',
-            height: '56px',
+            width: '60px',
+            height: '60px',
             borderRadius: '50%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             bgcolor: `${color}.main`,
+            fontSize: '14px',
           }}
         >
           {topValue}

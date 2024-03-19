@@ -130,6 +130,7 @@ export const SupplyInfo = ({
                 </Typography>
                 <FormattedNumber
                   value={reserve.supplyCap}
+                  color="#fff"
                   sx={{
                     fontWeight: 600,
                     fontFamily: 'Work Sans',

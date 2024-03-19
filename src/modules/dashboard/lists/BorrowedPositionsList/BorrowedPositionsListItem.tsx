@@ -158,10 +158,7 @@ const BorrowedPositionsListItemDesktop = ({
             <Trans>Switch</Trans>
           </ButtonDetailCustom>
         ) : (
-          <ButtonDetailCustom
-            disabled={disableBorrow}
-            onClick={onOpenBorrow}
-          >
+          <ButtonDetailCustom disabled={disableBorrow} onClick={onOpenBorrow}>
             <Trans>Borrow</Trans>
           </ButtonDetailCustom>
         )}
@@ -265,11 +262,7 @@ const BorrowedPositionsListItemMobile = ({
             <Trans>Switch</Trans>
           </ButtonDetailCustom>
         ) : (
-          <ButtonDetailCustom
-            disabled={disableBorrow}
-            onClick={onOpenBorrow}
-            fullWidth
-          >
+          <ButtonDetailCustom disabled={disableBorrow} onClick={onOpenBorrow} fullWidth>
             <Trans>Borrow</Trans>
           </ButtonDetailCustom>
         )}

@@ -267,19 +267,11 @@ const GhoBorrowedPositionsListItemMobile = ({
           <Trans>Repay</Trans>
         </Button>
         {showSwitchButton ? (
-          <ButtonDetailCustom
-            disabled={disableSwitch}
-            fullWidth
-            onClick={onSwitchClick}
-          >
+          <ButtonDetailCustom disabled={disableSwitch} fullWidth onClick={onSwitchClick}>
             <Trans>Switch</Trans>
           </ButtonDetailCustom>
         ) : (
-          <ButtonDetailCustom
-            disabled={borrowDisabled}
-            onClick={onBorrowClick}
-            fullWidth
-          >
+          <ButtonDetailCustom disabled={borrowDisabled} onClick={onBorrowClick} fullWidth>
             <Trans>Borrow</Trans>
           </ButtonDetailCustom>
         )}
