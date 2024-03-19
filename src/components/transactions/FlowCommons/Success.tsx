@@ -140,7 +140,7 @@ export const TxSuccessView = ({
               />
               <Typography variant="description" color="#fff" sx={{ mx: '24px' }}>
                 <Trans>
-                  Add {addToken && addToken.sToken ? 'sToken ' : 'token '} to wallet to track your
+                  Add {addToken && addToken.sToken ? 'aToken ' : 'token '} to wallet to track your
                   balance.
                 </Trans>
               </Typography>
