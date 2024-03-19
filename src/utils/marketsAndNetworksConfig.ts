@@ -189,9 +189,9 @@ export const getProvider = (chainId: any): ethersProviders.Provider => {
 };
 
 export const getENSProvider = () => {
-  const chainId = CHAIN_SUPPORT.core_mainnet;
-  const config = getNetworkConfig(chainId);
-  return new StaticJsonRpcProvider(config.publicJsonRPCUrl[0], chainId);
+  const chainId = 1;
+  // const config = getNetworkConfig(chainId);
+  return new StaticJsonRpcProvider('https://rpc.ankr.com/eth', chainId);
 };
 
 export const frozenProposalMap: Record<string, string> = {};

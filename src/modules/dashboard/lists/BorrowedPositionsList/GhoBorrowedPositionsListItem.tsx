@@ -26,6 +26,7 @@ import { ListItemWrapper } from '../ListItemWrapper';
 import { ListMobileItemWrapper } from '../ListMobileItemWrapper';
 import { ListValueColumn } from '../ListValueColumn';
 import { ListValueRow } from '../ListValueRow';
+import { ButtonDetailCustom } from '../SupplyAssetsList/SupplyAssetsListItem';
 
 export const GhoBorrowedPositionsListItem = ({
   reserve,
@@ -266,39 +267,21 @@ const GhoBorrowedPositionsListItemMobile = ({
           <Trans>Repay</Trans>
         </Button>
         {showSwitchButton ? (
-          <Button
+          <ButtonDetailCustom
             disabled={disableSwitch}
-            variant="outlined"
             fullWidth
             onClick={onSwitchClick}
-            sx={(theme) => ({
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-              fontSize: '12px',
-              width: '65.229px',
-              height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-            })}
           >
             <Trans>Switch</Trans>
-          </Button>
+          </ButtonDetailCustom>
         ) : (
-          <Button
+          <ButtonDetailCustom
             disabled={borrowDisabled}
-            variant="outlined"
             onClick={onBorrowClick}
             fullWidth
-            sx={(theme) => ({
-              backgroundColor: '#DA3E3E',
-              color: '#1A1A1C',
-              fontSize: '12px',
-              width: '65.229px',
-              height: '32px',
-              '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },
-            })}
           >
             <Trans>Borrow</Trans>
-          </Button>
+          </ButtonDetailCustom>
         )}
       </Box>
     </ListMobileItemWrapper>

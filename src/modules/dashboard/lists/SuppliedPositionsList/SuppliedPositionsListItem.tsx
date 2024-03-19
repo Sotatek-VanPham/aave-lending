@@ -25,6 +25,7 @@ export const ButtonWithdrawCustom = styled(Button)(() => ({
   fontSize: '12px',
   color: '#C4C8E2',
   fontWeight: 700,
+  fontFamily: 'Mulish',
   '&:hover': {
     background: '#484A77',
     opacity: 0.7,

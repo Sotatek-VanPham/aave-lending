@@ -590,6 +590,11 @@ msgstr "Claiming"
 msgid "Close"
 msgstr "Close"
 
+#: src/modules/reserve-overview/AddTokenDropdown.tsx
+#: src/modules/reserve-overview/TokenLinkDropdown.tsx
+msgid "Colend aCoreToken"
+msgstr "Colend aCoreToken"
+
 #: src/modules/reserve-overview/TokenLinkDropdown.tsx
 msgid "Colend debt token"
 msgstr "Colend debt token"
@@ -597,11 +602,6 @@ msgstr "Colend debt token"
 #: src/modules/governance/GovernanceTopPanel.tsx
 msgid "Colend is a fully decentralized, community governed protocol by the SEAM token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades to the protocol. SEAM token-holders (Base network only) can either vote themselves on new proposals or delegate to an address of choice."
 msgstr "Colend is a fully decentralized, community governed protocol by the SEAM token-holders. SEAM token-holders collectively discuss, propose, and vote on upgrades to the protocol. SEAM token-holders (Base network only) can either vote themselves on new proposals or delegate to an address of choice."
-
-#: src/modules/reserve-overview/AddTokenDropdown.tsx
-#: src/modules/reserve-overview/TokenLinkDropdown.tsx
-msgid "Colend sToken"
-msgstr "Colend sToken"
 
 #: src/components/transactions/Repay/RepayTypeSelector.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsList.tsx

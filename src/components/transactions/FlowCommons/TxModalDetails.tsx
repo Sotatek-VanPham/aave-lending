@@ -339,7 +339,7 @@ export const DetailsHFLine = ({
           )}
         </Box>
 
-        <Typography variant="helperText" color="#fff">
+        <Typography variant="helperText" color="#fff" sx={{ fontSize: '12px'}}>
           <Trans>Liquidation at</Trans>
           {' <1.0'}
         </Typography>

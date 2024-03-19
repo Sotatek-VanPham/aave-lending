@@ -140,8 +140,8 @@ export const TxSuccessView = ({
               />
               <Typography variant="description" color="#fff" sx={{ mx: '24px' }}>
                 <Trans>
-                  Add {addToken && addToken.sToken ? 'aToken ' : 'token '} to wallet to track your
-                  balance.
+                  Add {addToken && addToken.sToken ? 'aCoreToken ' : 'token '} to wallet to track
+                  your balance.
                 </Trans>
               </Typography>
               <Button
@@ -149,13 +149,21 @@ export const TxSuccessView = ({
                   addERC20Token({
                     address: addToken.address,
                     decimals: addToken.decimals,
-                    symbol: addToken.sToken ? `s${addToken.symbol}` : addToken.symbol,
+                    symbol: addToken.sToken ? `aCore${addToken.symbol}` : addToken.symbol,
                     image: !/_/.test(addToken.symbol) ? base64 : undefined,
                   });
                 }}
                 variant={theme.palette.mode === 'dark' ? 'outlined' : 'contained'}
                 size="medium"
-                sx={{ mt: '8px', mb: '12px', background: '#DA3E3E' }}
+                sx={{
+                  mt: '8px',
+                  mb: '12px',
+                  background: '#DA3E3E',
+                  '&:hover': {
+                    background: '#DA3E3E',
+                    opacity: 0.7,
+                  },
+                }}
               >
                 {addToken.symbol && !/_/.test(addToken.symbol) && (
                   <Base64Token
