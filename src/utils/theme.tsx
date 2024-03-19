@@ -389,7 +389,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         fontSize: pxToRem(12),
       },
       secondary12: {
-        fontFamily: FONT_WORK_SANS,
+        fontFamily: FONT_MULISH,
         fontWeight: 500,
         letterSpacing: pxToRem(0.1),
         lineHeight: pxToRem(16),

@@ -55,6 +55,7 @@ const head = [
         text={<Trans>Available</Trans>}
         key="availableBorrows"
         variant="subheader2"
+        sx={{ fontFamily: 'Mulish', fontWeight: '400' }}
       />
     ),
     sortKey: 'availableBorrows',
@@ -266,6 +267,8 @@ export const BorrowAssetsList = () => {
                       padding: '10px 16px',
                       display: 'flex',
                       gap: '13px',
+                      alignItems: 'center',
+                      fontSize: '12px',
                     }}
                   >
                     <img src="/icons/warning.svg" />
@@ -283,6 +286,8 @@ export const BorrowAssetsList = () => {
                       padding: '10px 16px',
                       display: 'flex',
                       gap: '13px',
+                      alignItems: 'center',
+                      fontSize: '12px',
                     }}
                   >
                     <img src="/icons/warning.svg" />
@@ -302,7 +307,9 @@ export const BorrowAssetsList = () => {
                       fontFamily: 'Mulish',
                       padding: '10px 16px',
                       display: 'flex',
+                      alignItems: 'center',
                       gap: '13px',
+                      fontSize: '12px',
                     }}
                   >
                     <img src="/icons/warning.svg" />

@@ -2518,6 +2518,10 @@ msgstr "You {action} <0/> {symbol}"
 msgid "You've successfully switched borrow position."
 msgstr "You've successfully switched borrow position."
 
+#: src/hooks/useReserveActionState.tsx
+msgid "Your Coredao wallet is empty. Purchase or transfer assets or use <0>Base Bridge</0> to transfer your Ethereum assets"
+msgstr "Your Coredao wallet is empty. Purchase or transfer assets or use <0>Base Bridge</0> to transfer your Ethereum assets"
+
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsList.tsx
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsList.tsx
 msgid "Your borrows"
@@ -2563,10 +2567,6 @@ msgstr "Your {name} wallet is empty. Purchase or transfer assets."
 #: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsList.tsx
 msgid "Your {networkName} wallet is empty. Get free test assets at"
 msgstr "Your {networkName} wallet is empty. Get free test assets at"
-
-#: src/hooks/useReserveActionState.tsx
-msgid "Your {networkName} wallet is empty. Get free test {0} at"
-msgstr "Your {networkName} wallet is empty. Get free test {0} at"
 
 #: src/ui-config/errorMapping.tsx
 msgid "Zero address not valid"
@@ -2680,10 +2680,6 @@ msgstr "{currentMethod}"
 #: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsList.tsx
 msgid "{networkName} Faucet"
 msgstr "{networkName} Faucet"
-
-#: src/hooks/useReserveActionState.tsx
-msgid "{networkName} Fauceta"
-msgstr "{networkName} Fauceta"
 
 #: src/layouts/TopBarNotify.tsx
 msgid "{notifyText}"
