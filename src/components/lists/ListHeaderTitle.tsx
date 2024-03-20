@@ -54,7 +54,7 @@ export const ListHeaderTitle = ({
       {children}
 
       {!!sortKey && (
-        <Box sx={{ display: 'inline-flex', flexDirection: 'column', ml: 1, width: '6px' }}>
+        <Box sx={{ display: 'inline-flex', flexDirection: 'column', ml: 2, width: '6px' }}>
           <Box
             component="span"
             sx={() => ({
