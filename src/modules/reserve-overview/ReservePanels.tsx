@@ -1,4 +1,4 @@
-import { Box, BoxProps, Typography, TypographyProps, useMediaQuery, useTheme } from '@mui/material';
+import { Box, BoxProps, Typography, TypographyProps } from '@mui/material';
 import type { ReactNode } from 'react';
 
 export const PanelRow: React.FC<BoxProps> = (props) => (
@@ -35,8 +35,8 @@ interface PanelItemProps {
 }
 
 export const PanelItem: React.FC<PanelItemProps> = ({ title, children, className }) => {
-  const theme = useTheme();
-  const mdUp = useMediaQuery(theme.breakpoints.up('md'));
+  // const theme = useTheme();
+  // const mdUp = useMediaQuery(theme.breakpoints.up('md'));
 
   return (
     <Box
@@ -46,18 +46,18 @@ export const PanelItem: React.FC<PanelItemProps> = ({ title, children, className
           pr: 4,
           mr: 4,
         },
-        ...(mdUp
-          ? {
-              '&:not(:last-child):not(.borderless)::after': {
-                content: '""',
-                height: '32px',
-                position: 'absolute',
-                right: 4,
-                top: 'calc(50% - 17px)',
-                borderRight: (theme) => `1px solid ${theme.palette.divider}`,
-              },
-            }
-          : {}),
+        // ...(mdUp
+        //   ? {
+        //       '&:not(:last-child):not(.borderless)::after': {
+        //         content: '""',
+        //         height: '32px',
+        //         position: 'absolute',
+        //         right: 4,
+        //         top: 'calc(50% - 17px)',
+        //         borderRight: (theme) => `1px solid ${theme.palette.divider}`,
+        //       },
+        //     }
+        //   : {}),
       }}
       className={className}
     >

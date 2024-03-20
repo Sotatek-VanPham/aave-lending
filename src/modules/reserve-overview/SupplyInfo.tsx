@@ -115,6 +115,7 @@ export const SupplyInfo = ({
                     fontFamily: 'Work Sans',
                     fontSize: '16px',
                   }}
+                  color="#fff"
                 />
                 <Typography
                   component="span"

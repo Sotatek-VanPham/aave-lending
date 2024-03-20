@@ -122,7 +122,7 @@ export function FormattedNumber({
       {isSmallerThanMin && (
         <Typography
           component="span"
-          sx={{ mr: 0.5, fontWeight: '400', fontFamily: 'Mulish' }}
+          sx={{ mr: 0.5, fontWeight: '400', fontFamily: 'Mulish', ...rest.sx }}
           variant={symbolsVariant || rest.variant}
           color={symbolsColor || '#fff'}
         >

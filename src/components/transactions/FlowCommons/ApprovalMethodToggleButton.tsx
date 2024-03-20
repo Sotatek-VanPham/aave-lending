@@ -38,10 +38,10 @@ export const ApprovalMethodToggleButton = ({
         sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
         data-cy={`approveButtonChange`}
       >
-        <Typography variant="subheader2" color="info.main">
+        <Typography variant="subheader2" color="#3692FF">
           <Trans>{currentMethod}</Trans>
         </Typography>
-        <SvgIcon sx={{ fontSize: 16, ml: 1, color: 'info.main' }}>
+        <SvgIcon sx={{ fontSize: 16, ml: 1, color: '#3692FF' }}>
           <CogIcon />
         </SvgIcon>
       </Box>

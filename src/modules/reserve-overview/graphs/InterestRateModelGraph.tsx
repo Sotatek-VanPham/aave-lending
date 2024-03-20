@@ -245,7 +245,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               scale={yValueScale}
               width={innerWidth}
               strokeDasharray="3,3"
-              stroke={theme.palette.divider}
+              stroke={'#5A5F80'}
               pointerEvents="none"
               numTicks={3}
             />
@@ -278,10 +278,9 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               scale={dateScale}
               tickValues={[0, 25, 50, 75, 100]}
               strokeWidth={0}
-              tickStroke={theme.palette.text.secondary}
               tickLabelProps={() => ({
-                fill: theme.palette.text.muted,
-                fontSize: 10,
+                fill: '#A5A8B3',
+                fontSize: 11,
                 textAnchor: 'middle',
               })}
               tickFormat={(n) => `${n}%`}
@@ -292,8 +291,8 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               scale={yValueScale}
               strokeWidth={0}
               tickLabelProps={() => ({
-                fill: theme.palette.text.muted,
-                fontSize: 8,
+                fill: '#A5A8B3',
+                fontSize: 9,
                 dx: -margin.left + 10,
               })}
               numTicks={2}
@@ -315,7 +314,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
             <Line
               from={{ x: dateScale(ticks[1].value), y: margin.top + 24 }}
               to={{ x: dateScale(ticks[1].value), y: innerHeight }}
-              stroke="#0062D2"
+              stroke="#3692FF"
               strokeWidth={1}
               pointerEvents="none"
               strokeDasharray="5,2"
@@ -327,7 +326,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               textAnchor="middle"
               verticalAnchor="middle"
               fontSize="10px"
-              fill="#62677B"
+              fill="#fff"
             >
               {`Current ${formattedCurrentUtilizationRate}%`}
             </Text>
@@ -336,7 +335,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
             <Line
               from={{ x: dateScale(ticks[0].value), y: margin.top + 8 }}
               to={{ x: dateScale(ticks[0].value), y: innerHeight }}
-              stroke="#0062D2"
+              stroke="#3692FF"
               strokeWidth={1}
               pointerEvents="none"
               strokeDasharray="5,2"
@@ -348,7 +347,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               textAnchor="middle"
               verticalAnchor="middle"
               fontSize="10px"
-              fill="#62677B"
+              fill="#fff"
             >
               {`Optimal ${formattedOptimalUtilizationRate}%`}
             </Text>

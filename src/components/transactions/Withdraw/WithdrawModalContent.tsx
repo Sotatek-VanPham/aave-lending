@@ -226,7 +226,9 @@ export const WithdrawModalContent = ({
           unwrapped={withdrawUnWrapped}
           setUnWrapped={setWithdrawUnWrapped}
           label={
-            <Typography>{`Unwrap ${poolReserve.symbol} (to withdraw ${currentNetworkConfig.baseAssetSymbol})`}</Typography>
+            <Typography
+              sx={{ color: '#fff' }}
+            >{`Unwrap ${poolReserve.symbol} (to withdraw ${currentNetworkConfig.baseAssetSymbol})`}</Typography>
           }
         />
       )}

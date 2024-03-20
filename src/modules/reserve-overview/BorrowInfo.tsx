@@ -58,6 +58,8 @@ export const BorrowInfo = ({
                         valueToBigNumber(reserve.totalDebt).toNumber()
                       }
                       variant="secondary12"
+                      color="#000"
+                      symbolsColor="#000"
                     />{' '}
                     {reserve.symbol} (
                     <FormattedNumber
@@ -67,6 +69,8 @@ export const BorrowInfo = ({
                       }
                       variant="secondary12"
                       symbol="USD"
+                      color="#000"
+                      symbolsColor="#000"
                     />
                     ).
                   </Trans>
