@@ -213,6 +213,7 @@ export const DashboardTopPanel = () => {
                   />
                 )
               }
+              sx={{ fontSize: '24px', fontFamily: 'Work Sans' }}
             />
           </TopInfoPanelItem>
         )}

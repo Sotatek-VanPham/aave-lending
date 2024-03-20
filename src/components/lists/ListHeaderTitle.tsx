@@ -54,34 +54,30 @@ export const ListHeaderTitle = ({
       {children}
 
       {!!sortKey && (
-        <Box sx={{ display: 'inline-flex', flexDirection: 'column', ml: 1 }}>
+        <Box sx={{ display: 'inline-flex', flexDirection: 'column', ml: 1, width: '6px' }}>
           <Box
             component="span"
-            sx={(theme) => ({
-              width: 0,
-              height: 0,
+            sx={() => ({
+              width: '5px',
+              height: '5px',
               borderStyle: 'solid',
-              borderWidth: '0 4px 4px 4px',
-              borderColor: `transparent transparent ${
-                sortName === sortKey && sortDesc
-                  ? theme.palette.text.secondary
-                  : theme.palette.divider
-              } transparent`,
-              mb: 0.5,
+              borderWidth: '0px 1px 1px 0px',
+              marginBottom: '-1px',
+              borderColor: sortName === sortKey && sortDesc ? '#fff' : '#5A5F80',
+              transform: 'rotate(225deg)',
+              transition: 'border-width 150ms ease-in-out',
             })}
           />
           <Box
             component="span"
-            sx={(theme) => ({
-              width: 0,
-              height: 0,
+            sx={() => ({
+              width: '5px',
+              height: '5px',
               borderStyle: 'solid',
-              borderWidth: '4px 4px 0 4px',
-              borderColor: `${
-                sortName === sortKey && !sortDesc
-                  ? theme.palette.text.secondary
-                  : theme.palette.divider
-              } transparent transparent transparent`,
+              borderWidth: '0px 1px 1px 0px',
+              borderColor: sortName === sortKey && !sortDesc ? '#fff' : '#5A5F80',
+              transform: 'rotate(45deg)',
+              transition: 'border-width 150ms ease-in-out',
             })}
           />
         </Box>
