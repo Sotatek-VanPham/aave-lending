@@ -96,7 +96,13 @@ export const DetailsNumberLine = ({
           <>
             {iconSymbol && <TokenIcon symbol={iconSymbol} sx={{ mr: 1, fontSize: '16px' }} />}
             {numberPrefix && <Typography sx={{ mr: 1 }}>{numberPrefix}</Typography>}
-            <FormattedNumber value={value} variant="secondary14" {...rest} color="#FFF" />
+            <FormattedNumber
+              value={value}
+              variant="secondary14"
+              {...rest}
+              color="#FFF"
+              sx={{ fontFamily: 'Mulish' }}
+            />
             {futureValue && (
               <>
                 {ArrowRightIcon}
@@ -366,6 +372,7 @@ export const DetailsHFLine = ({
                   <HealthFactorNumber
                     value={isNaN(Number(futureHealthFactor)) ? healthFactor : futureHealthFactor}
                     variant="secondary14"
+                    sx={{ fontWeight: '400', fontFamily: 'Mulish' }}
                   />
                 </>
               )}
