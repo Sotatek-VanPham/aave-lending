@@ -1,6 +1,6 @@
 import { USD_DECIMALS, valueToBigNumber } from '@aave/math-utils';
 import { Trans } from '@lingui/macro';
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, styled, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { API_ETH_MOCK_ADDRESS, InterestRate } from 'colend-contract-helpers';
 import { Fragment, useState } from 'react';
 import { StableAPYTooltip } from 'src/components/infoTooltips/StableAPYTooltip';
@@ -8,7 +8,6 @@ import { VariableAPYTooltip } from 'src/components/infoTooltips/VariableAPYToolt
 import { ListColumn } from 'src/components/lists/ListColumn';
 import { ListHeaderTitle } from 'src/components/lists/ListHeaderTitle';
 import { ListHeaderWrapper } from 'src/components/lists/ListHeaderWrapper';
-import { Warning } from 'src/components/primitives/Warning';
 import { MarketWarning } from 'src/components/transactions/Warnings/MarketWarning';
 import { AssetCapsProvider } from 'src/hooks/useAssetCaps';
 import { useRootStore } from 'src/store/root';
@@ -38,6 +37,19 @@ import { ListLoader } from '../ListLoader';
 import { BorrowAssetsListItem } from './BorrowAssetsListItem';
 import { BorrowAssetsListMobileItem } from './BorrowAssetsListMobileItem';
 import { GhoBorrowAssetsListItem } from './GhoBorrowAssetsListItem';
+
+const BoxWarning = styled(Box)(() => ({
+  background: 'transparent',
+  border: ' 2px solid rgba(255, 66, 40, 0.30)',
+  borderRadius: '6px',
+  color: '#FF4228',
+  fontFamily: 'Mulish',
+  padding: '10px 16px',
+  display: 'flex',
+  gap: '13px',
+  alignItems: 'center',
+  fontSize: '12px',
+})) as typeof Box;
 
 const head = [
   {
@@ -237,56 +249,31 @@ export const BorrowAssetsList = () => {
             )}
 
             {+collateralUsagePercent >= 0.98 && (
-              <Warning severity="error">
+              <BoxWarning>
+                <img src="/icons/warning.svg" />
                 <Trans>
                   Be careful - You are very close to liquidation. Consider depositing more
                   collateral or paying down some of your borrowed positions
                 </Trans>
-              </Warning>
+              </BoxWarning>
             )}
 
             {!borrowDisabled && (
               <>
                 {user?.isInIsolationMode && (
-                  <Box
-                    sx={{
-                      background: 'transparent',
-                      border: ' 2px solid rgba(255, 66, 40, 0.30)',
-                      borderRadius: '6px',
-                      color: '#FF4228',
-                      fontFamily: 'Mulish',
-                      padding: '10px 16px',
-                      display: 'flex',
-                      gap: '13px',
-                      alignItems: 'center',
-                      fontSize: '12px',
-                    }}
-                  >
+                  <BoxWarning>
                     <img src="/icons/warning.svg" />
                     <Trans>Borrowing power and assets are limited due to Isolation mode. </Trans>
-                  </Box>
+                  </BoxWarning>
                 )}
                 {user?.isInEmode && (
-                  <Box
-                    sx={{
-                      background: 'transparent',
-                      border: ' 2px solid rgba(255, 66, 40, 0.30)',
-                      borderRadius: '6px',
-                      color: '#FF4228',
-                      fontFamily: 'Mulish',
-                      padding: '10px 16px',
-                      display: 'flex',
-                      gap: '13px',
-                      alignItems: 'center',
-                      fontSize: '12px',
-                    }}
-                  >
+                  <BoxWarning>
                     <img src="/icons/warning.svg" />
                     <Trans>
                       In E-Mode some assets are not borrowable. Exit E-Mode to get access to all
                       assets
                     </Trans>
-                  </Box>
+                  </BoxWarning>
                 )}
                 {user?.totalCollateralMarketReferenceCurrency === '0' && (
                   <Box

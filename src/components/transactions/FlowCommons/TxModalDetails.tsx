@@ -159,9 +159,18 @@ export const DetailsNumberLineWithSub = ({
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               {value && (
                 <>
-                  <FormattedNumber value={value} variant="secondary14" color={color} />
+                  <FormattedNumber
+                    value={value}
+                    variant="secondary14"
+                    color={color}
+                    sx={{ fontWeight: 400, fontFamily: 'Mulish' }}
+                  />
                   {!hideSymbolSuffix && (
-                    <Typography ml={1} variant="secondary14">
+                    <Typography
+                      ml={1}
+                      variant="secondary14"
+                      sx={{ fontWeight: 400, fontFamily: 'Mulish' }}
+                    >
                       {symbol}
                     </Typography>
                   )}
@@ -169,9 +178,18 @@ export const DetailsNumberLineWithSub = ({
                 </>
               )}
               {tokenIcon && <TokenIcon symbol={tokenIcon} sx={{ mr: 1, fontSize: '14px' }} />}
-              <FormattedNumber value={futureValue} variant="secondary14" color={color} />
+              <FormattedNumber
+                value={futureValue}
+                variant="secondary14"
+                color={color}
+                sx={{ fontWeight: 400, fontFamily: 'Mulish' }}
+              />
               {!hideSymbolSuffix && (
-                <Typography ml={1} variant="secondary14">
+                <Typography
+                  ml={1}
+                  variant="secondary14"
+                  sx={{ fontWeight: 400, fontFamily: 'Mulish' }}
+                >
                   {symbol}
                 </Typography>
               )}
@@ -179,11 +197,23 @@ export const DetailsNumberLineWithSub = ({
             <Box sx={{ display: 'flex', alignItems: 'center', mt: 1, mr: 1 }}>
               {valueUSD && (
                 <>
-                  <FormattedNumber value={valueUSD} variant="helperText" compact symbol="USD" />
+                  <FormattedNumber
+                    value={valueUSD}
+                    variant="helperText"
+                    compact
+                    symbol="USD"
+                    sx={{ fontWeight: 400, fontFamily: 'Mulish' }}
+                  />
                   {ArrowRightIcon}
                 </>
               )}
-              <FormattedNumber value={futureValueUSD} variant="helperText" compact symbol="USD" />
+              <FormattedNumber
+                value={futureValueUSD}
+                variant="helperText"
+                compact
+                symbol="USD"
+                sx={{ fontWeight: 400, fontFamily: 'Mulish' }}
+              />
             </Box>
           </>
         )}
@@ -323,7 +353,11 @@ export const DetailsHFLine = ({
             <Skeleton variant="rectangular" height={20} width={80} sx={{ borderRadius: '4px' }} />
           ) : (
             <>
-              <HealthFactorNumber value={healthFactor} variant="secondary14" />
+              <HealthFactorNumber
+                value={healthFactor}
+                variant="secondary14"
+                sx={{ fontWeight: '400', fontFamily: 'Mulish' }}
+              />
 
               {visibleHfChange && (
                 <>

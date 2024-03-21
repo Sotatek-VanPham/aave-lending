@@ -73,7 +73,7 @@ export const HFContent = ({ healthFactor }: HFContentProps) => {
               value={formattedHealthFactor}
               variant="main12"
               visibleDecimals={2}
-              sx={{ fontSize: '14px', color: '#fff' }}
+              sx={{ fontSize: '10px', color: '#A5A8B3' }}
             />
           </Box>
         </Box>
@@ -92,17 +92,18 @@ export const HFContent = ({ healthFactor }: HFContentProps) => {
             transform: 'translateX(-50%)',
             height: '10px',
             width: '2px',
-            bgcolor: 'error.main',
+            bgcolor: 'common.white',
           },
         }}
       >
-        <FormattedNumber value={1} visibleDecimals={2} color="error.main" variant="subheader2" />
-        <Typography
-          sx={{ display: 'flex' }}
-          variant="helperText"
-          lineHeight="12px"
-          color="error.main"
-        >
+        <FormattedNumber
+          value={1}
+          visibleDecimals={2}
+          color="#FD3B61"
+          variant="subheader2"
+          sx={{ fontSize: '10px' }}
+        />
+        <Typography sx={{ display: 'flex' }} variant="helperText" lineHeight="8px" color="#FD3B61">
           <Trans>Liquidation value</Trans>
         </Typography>
       </Box>

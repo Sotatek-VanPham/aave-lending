@@ -10,12 +10,14 @@ interface HealthFactorNumberProps extends TypographyProps {
   value: string;
   onInfoClick?: () => void;
   HALIntegrationComponent?: React.ReactNode;
+  isWhite?: boolean;
 }
 
 export const HealthFactorNumber = ({
   value,
   onInfoClick,
   HALIntegrationComponent,
+  isWhite,
   ...rest
 }: HealthFactorNumberProps) => {
   const { palette } = useTheme();
@@ -46,10 +48,10 @@ export const HealthFactorNumber = ({
       ) : (
         <FormattedNumber
           value={formattedHealthFactor}
-          sx={{ color: healthFactorColor, ...rest.sx }}
+          sx={{ color: isWhite ? '#fff' : healthFactorColor, ...rest.sx }}
           visibleDecimals={2}
-          color={healthFactorColor}
-          symbolsColor={healthFactorColor}
+          color={isWhite ? '#fff' : healthFactorColor}
+          symbolsColor={isWhite ? '#fff' : healthFactorColor}
           compact
           {...rest}
         />
