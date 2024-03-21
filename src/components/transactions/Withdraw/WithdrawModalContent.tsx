@@ -282,7 +282,7 @@ export const WithdrawModalContent = ({
               size="small"
               data-cy={`risk-checkbox`}
             />
-            <Typography variant="description">
+            <Typography variant="description" color="#fff">
               <Trans>I acknowledge the risks involved.</Trans>
             </Typography>
           </Box>
