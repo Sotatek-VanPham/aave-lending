@@ -41,6 +41,8 @@ export const ReserveTopDetails = ({ underlyingAsset }: ReserveTopDetailsProps) =
     cursor: 'pointer',
   };
 
+  console.log('poolReserve', poolReserve);
+  
   return (
     <>
       <TopInfoPanelItem title={<Trans>Reserve Size</Trans>} loading={loading} hideIcon>
