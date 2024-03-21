@@ -112,6 +112,8 @@ export const AppDataProvider: React.FC = ({ children }) => {
     state.displayGho,
   ]);
 
+  console.log('baseCurrencyData', baseCurrencyData);
+
   const formattedGhoReserveData: FormattedGhoReserveData = formatGhoReserveData({
     ghoReserveData,
   });

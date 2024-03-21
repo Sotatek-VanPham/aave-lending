@@ -149,12 +149,12 @@ export const LTVContent = ({
               value={loanToValue}
               percent
               visibleDecimals={2}
-              variant="main12"
               color="#A5A8B3"
               symbolsColor="#A5A8B3"
+              sx={{ fontSize: '10px' }}
             />
             <Box sx={{ display: 'inline-flex', alignItems: 'center' }}>
-              <Typography variant="helperText" color="#A5A8B3" mr={0.5}>
+              <Typography variant="helperText" color="#A5A8B3" mr={0.5} sx={{ fontSize: '8px' }}>
                 <Trans>MAX</Trans>
               </Typography>
               <FormattedNumber
@@ -164,6 +164,7 @@ export const LTVContent = ({
                 variant="helperText"
                 color="#A5A8B3"
                 symbolsColor="#A5A8B3"
+                sx={{ fontSize: '8px' }}
               />
             </Box>
           </Box>

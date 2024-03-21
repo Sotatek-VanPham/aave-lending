@@ -71,8 +71,9 @@ export const LiquidationRiskParametresInfoModal = ({
         topValue={
           <HealthFactorNumber
             value={healthFactor}
-            variant="main12"
-            sx={{ color: 'common.white' }}
+            variant="main14"
+            sx={{ color: '#fff', fontWeight: '400' }}
+            isWhite
           />
         }
         bottomText={
@@ -95,9 +96,10 @@ export const LiquidationRiskParametresInfoModal = ({
           <FormattedNumber
             value={loanToValue}
             percent
-            variant="main12"
+            variant="main14"
             color="common.white"
             symbolsColor="common.white"
+            sx={{ fontWeight: '400' }}
           />
         }
         bottomText={

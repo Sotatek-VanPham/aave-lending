@@ -51,7 +51,7 @@ export const BorrowInfo = ({
               tooltipContent={
                 <>
                   <Trans>
-                    Maximum amount available to supply is{' '}
+                    Maximum amount available to borrow is{' '}
                     <FormattedNumber
                       value={
                         valueToBigNumber(reserve.borrowCap).toNumber() -

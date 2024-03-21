@@ -252,7 +252,10 @@ export const AssetInput = <T extends Asset = Asset>({
                         aToken={asset.aToken}
                         sx={{ mr: 2, ml: 4 }}
                       />
-                      <Typography variant="main16" color="#fff">
+                      <Typography
+                        variant="h3"
+                        sx={{ lineHeight: '28px', color: '#fff', fontSize: '20px' }}
+                      >
                         {symbol}
                       </Typography>
                     </Box>

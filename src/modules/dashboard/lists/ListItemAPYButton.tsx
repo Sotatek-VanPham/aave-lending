@@ -59,6 +59,9 @@ export const ListItemAPYButton = ({
         sx={{
           color: 'text.links',
           borderRadius: '16px',
+          fontWeight: '700',
+          fontFamily: 'Mulish',
+          fontSize: '12px',
           border: '1px solid rgba(255, 255, 255, 0.20)',
           background: 'rgba(219, 72, 151, 0.42)',
           '&:hover': {

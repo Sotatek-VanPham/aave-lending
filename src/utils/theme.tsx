@@ -156,7 +156,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         dark: getColor('#B34356', '#AA647B'),
       },
       error: {
-        main: getColor('#BC0000B8', '#F44336'),
+        main: getColor('#FF4228', '#FF4228'),
         light: getColor('#D26666', '#E57373'),
         dark: getColor('#BC0000', '#D32F2F'),
         '100': getColor('#4F1919', '#FBB4AF'), // for alert text
