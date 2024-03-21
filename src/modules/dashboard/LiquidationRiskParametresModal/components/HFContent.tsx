@@ -103,7 +103,12 @@ export const HFContent = ({ healthFactor }: HFContentProps) => {
           variant="subheader2"
           sx={{ fontSize: '10px' }}
         />
-        <Typography sx={{ display: 'flex' }} variant="helperText" lineHeight="8px" color="#FD3B61">
+        <Typography
+          sx={{ display: 'flex', fontSize: '8px' }}
+          variant="helperText"
+          lineHeight="8px"
+          color="#FD3B61"
+        >
           <Trans>Liquidation value</Trans>
         </Typography>
       </Box>

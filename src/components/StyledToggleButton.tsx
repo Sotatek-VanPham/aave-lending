@@ -34,7 +34,7 @@ const CustomToggleButton = styled(ToggleButton)<ToggleButtonProps>(({ theme }) =
 const CustomTxModalToggleButton = styled(ToggleButton)<ToggleButtonProps>(({ theme }) => ({
   border: '0px',
   flex: 1,
-  color: theme.palette.text.muted,
+  color: '#fff',
   borderRadius: '4px',
 
   '&.Mui-selected, &.Mui-selected:hover': {
