@@ -103,6 +103,7 @@ export const BorrowInfo = ({
             >
               <Box>
                 <FormattedNumber
+                  compact
                   value={reserve.totalDebt}
                   sx={{ color: '#fff', fontWeight: 600, fontFamily: 'Work sans', fontSize: '16px' }}
                 />
