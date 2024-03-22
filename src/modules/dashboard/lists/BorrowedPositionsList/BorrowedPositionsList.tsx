@@ -226,7 +226,7 @@ export const BorrowedPositionsList = () => {
       {sortedReserves.length ? (
         <>
           {!downToXSM && <RenderHeader />}
-          {sortedReserves.map((item) => (
+          {(sortName === 'borrowAPY' ? sortedReserves.reverse() : sortedReserves).map((item) => (
             <BorrowedPositionsListItemWrapper
               item={item}
               key={item.underlyingAsset + item.borrowRateMode}
