@@ -325,7 +325,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               width={360}
               textAnchor="middle"
               verticalAnchor="middle"
-              fontSize="10px"
+              fontSize="11px"
               fill="#fff"
             >
               {`Current ${formattedCurrentUtilizationRate}%`}
@@ -346,7 +346,7 @@ export const InterestRateModelGraph = withTooltip<AreaProps, TooltipData>(
               width={360}
               textAnchor="middle"
               verticalAnchor="middle"
-              fontSize="10px"
+              fontSize="11px"
               fill="#fff"
             >
               {`Optimal ${formattedOptimalUtilizationRate}%`}
