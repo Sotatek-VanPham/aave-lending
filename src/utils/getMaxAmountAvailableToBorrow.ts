@@ -95,7 +95,7 @@ export function getMaxAmountAvailableToBorrow(
         .shiftedBy(-(user.isolatedReserve?.debtCeilingDecimals || 0))
         .multipliedBy('0.99')
         .lt(user.availableBorrowsUSD));
-
+  console.log('user', user);
   console.log('availableInPoolUSD', availableInPoolUSD.toString());
   console.log('availableForUserUSD', availableForUserUSD.toString());
   console.log('availableBorrowCap', availableBorrowCap.toString());
