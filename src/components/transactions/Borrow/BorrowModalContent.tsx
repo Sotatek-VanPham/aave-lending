@@ -274,7 +274,9 @@ export const BorrowModalContent = ({
           unwrapped={borrowUnWrapped}
           setUnWrapped={setBorrowUnWrapped}
           label={
-            <Typography>{`Unwrap ${poolReserve.symbol} (to borrow ${currentNetworkConfig.baseAssetSymbol})`}</Typography>
+            <Typography
+              sx={{ color: '#3692FF' }}
+            >{`Unwrap ${poolReserve.symbol} (to borrow ${currentNetworkConfig.baseAssetSymbol})`}</Typography>
           }
         />
       )}

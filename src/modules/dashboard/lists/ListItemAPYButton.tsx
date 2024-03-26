@@ -112,7 +112,12 @@ export const ListItemAPYButton = ({
           <ListItemText primaryTypographyProps={{ variant: 'description' }}>
             <Trans>APY, variable</Trans>
           </ListItemText>
-          <FormattedNumber value={Number(variableBorrowAPY)} percent variant="description" />
+          <FormattedNumber
+            value={Number(variableBorrowAPY)}
+            percent
+            variant="description"
+            symbolsColor="#00000"
+          />
         </MenuItem>
 
         <MenuItem
@@ -131,7 +136,12 @@ export const ListItemAPYButton = ({
           <ListItemText primaryTypographyProps={{ variant: 'description' }}>
             <Trans>APY, stable</Trans>
           </ListItemText>
-          <FormattedNumber value={Number(stableBorrowAPY)} percent variant="description" />
+          <FormattedNumber
+            value={Number(stableBorrowAPY)}
+            percent
+            variant="description"
+            symbolsColor="#00000"
+          />
         </MenuItem>
 
         <Divider />
