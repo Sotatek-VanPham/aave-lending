@@ -297,7 +297,7 @@ export const WalletSelector = () => {
         <Trans>
           Need help connecting a wallet?{' '}
           <Link
-            href="https://docs.seamlessprotocol.com/overview/faq"
+            href="https://docs.colend.xyz/overview/faq"
             target="_blank"
             rel="noopener"
             sx={{

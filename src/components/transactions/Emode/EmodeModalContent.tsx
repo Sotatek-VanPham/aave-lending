@@ -189,7 +189,7 @@ export const EmodeModalContent = ({ mode }: EmodeModalContentProps) => {
               Enabling E-Mode only allows you to borrow assets belonging to the selected category.
               Please visit our{' '}
               <Link
-                href="https://docs.seamlessprotocol.com/overview/faq"
+                href="https://docs.colend.xyz/overview/faq"
                 target="_blank"
                 rel="noopener"
               >

@@ -4,7 +4,7 @@
 
 import { Contract, Signer, utils } from 'ethers';
 import type { Provider } from '@ethersproject/providers';
-import type { SeamGovernor, SeamGovernorInterface } from '../SeamGovernor';
+import type { ColendGovernor, SeamGovernorInterface } from '../ColendGovernor';
 
 const _abi = [
   {
@@ -514,7 +514,7 @@ const _abi = [
       {
         name: 'params',
         type: 'tuple',
-        internalType: 'struct SeamGovernor.InitParams',
+        internalType: 'struct ColendGovernor.InitParams',
         components: [
           {
             name: 'name',
@@ -2086,12 +2086,12 @@ const _abi = [
   },
 ] as const;
 
-export class SeamGovernor__factory {
+export class COLENDGovernor__factory {
   static readonly abi = _abi;
   static createInterface(): SeamGovernorInterface {
     return new utils.Interface(_abi) as SeamGovernorInterface;
   }
-  static connect(address: string, signerOrProvider: Signer | Provider): SeamGovernor {
-    return new Contract(address, _abi, signerOrProvider) as SeamGovernor;
+  static connect(address: string, signerOrProvider: Signer | Provider): ColendGovernor {
+    return new Contract(address, _abi, signerOrProvider) as ColendGovernor;
   }
 }

@@ -28,12 +28,12 @@ export const navigation: Navigation[] = [
   },
   {
     link: ROUTES.dashboard,
-    title: t`Supply & Borrow Dashboard`,
+    title: t`Supply & Borrow`,
     dataCy: 'menuDashboard',
   },
   // {
   //   link: '',
-  //   title: t`Bridge to Base`,
+  //   title: t`Bridge to Core`,
   //   dataCy: 'swapBase',
   //   disabled: false,
   // },
@@ -94,12 +94,12 @@ const moreMenuItems: MoreMenuItem[] = [
   //   icon: <GiftIcon />,
   // },
   // {
-  //   link: 'https://docs.seamlessprotocol.com/overview/faq',
+  //   link: 'https://docs.colend.xyz/overview/faq',
   //   title: t`FAQ`,
   //   icon: <QuestionMarkCircleIcon />,
   // },
   // {
-  //   link: 'https://github.com/seamless-protocol',
+  //   link: 'https://github.com/colend-protocol',
   //   title: t`Github`,
   //   icon: <BookOpenIcon />,
   // },

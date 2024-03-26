@@ -125,6 +125,6 @@ export const ROUTES = {
   reserveOverview: (underlyingAsset: string, marketName: CustomMarket) =>
     `/reserve-overview/?underlyingAsset=${underlyingAsset}&marketName=${marketName}`,
   history: '/history',
-  farms: 'https://farms.seamlessprotocol.com',
-  airdrop: 'https://claim.seamlessprotocol.com',
+  farms: 'https://farms.colend.xyz',
+  airdrop: 'https://claim.colend.xyz',
 };

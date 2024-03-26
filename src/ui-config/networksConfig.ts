@@ -57,7 +57,7 @@ export enum CHAIN_SUPPORT {
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
   [CHAIN_SUPPORT.core_testnet]: {
-    name: 'Core Chain TestNet',
+    name: 'Core Chain Testnet',
     publicJsonRPCUrl: ['https://rpc.test.btcs.network'],
     publicJsonRPCWSUrl: '',
     // protocolDataUrl: '',
@@ -71,7 +71,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     networkLogoPath: '/icons/networks/core.png',
   },
   [CHAIN_SUPPORT.core_mainnet]: {
-    name: 'Core Chain MainNet',
+    name: 'Core Chain',
     publicJsonRPCUrl: ['https://rpc.coredao.org'],
     publicJsonRPCWSUrl: '',
     // protocolDataUrl: '',

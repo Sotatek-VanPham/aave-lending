@@ -4,7 +4,7 @@
 
 import { Contract, Signer, utils } from 'ethers';
 import type { Provider } from '@ethersproject/providers';
-import type { EscrowSEAM, EscrowSEAMInterface } from '../EscrowSEAM';
+import type { vCOLEND, EscrowSEAMInterface } from '../vCOLEND';
 
 const _abi = [
   {
@@ -1181,12 +1181,12 @@ const _abi = [
   },
 ] as const;
 
-export class EscrowSEAM__factory {
+export class vCOLEND__factory {
   static readonly abi = _abi;
   static createInterface(): EscrowSEAMInterface {
     return new utils.Interface(_abi) as EscrowSEAMInterface;
   }
-  static connect(address: string, signerOrProvider: Signer | Provider): EscrowSEAM {
-    return new Contract(address, _abi, signerOrProvider) as EscrowSEAM;
+  static connect(address: string, signerOrProvider: Signer | Provider): vCOLEND {
+    return new Contract(address, _abi, signerOrProvider) as vCOLEND;
   }
 }

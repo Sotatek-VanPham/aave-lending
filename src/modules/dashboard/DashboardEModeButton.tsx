@@ -75,7 +75,7 @@ export const DashboardEModeButton = ({ userEmodeCategoryId }: DashboardEModeButt
             right: -1,
             bottom: -1,
             top: -1,
-            background: isEModeDisabled ? 'transparent' : theme.palette.gradients.seamless,
+            background: isEModeDisabled ? 'transparent' : theme.palette.gradients.colend,
             borderRadius: '4px',
           },
         })}

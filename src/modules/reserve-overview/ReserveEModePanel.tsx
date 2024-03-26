@@ -102,7 +102,7 @@ export const ReserveEModePanel: React.FC<ReserverEModePanelProps> = ({ reserve }
             </Link>
             . To learn more about E-Mode and applied restrictions in{' '}
             <Link
-              href="https://docs.seamlessprotocol.com/overview/faq"
+              href="https://docs.colend.xyz/overview/faq"
               sx={{ textDecoration: 'underline' }}
               variant="caption"
               color="text.secondary"

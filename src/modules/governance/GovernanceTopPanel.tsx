@@ -8,7 +8,7 @@ import { useRootStore } from 'src/store/root';
 import { governanceConfig } from 'src/ui-config/governanceConfig';
 import { GENERAL } from 'src/utils/mixPanelEvents';
 
-import Logo from '/public/logo-seamless.svg';
+import Logo from '/public/logo.svg';
 
 import { TopInfoPanel } from '../../components/TopInfoPanel/TopInfoPanel';
 
