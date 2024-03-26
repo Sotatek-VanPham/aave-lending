@@ -102,6 +102,8 @@ export default function MarketAssetsList({ reserves, loading }: MarketAssetsList
   // Hide list when no results, via search term or if a market has all/no frozen/unfrozen assets
   if (reserves.length === 0) return null;
 
+  console.log('reserves_all', reserves);
+  
   return (
     <>
       {!isTableChangedToCards && (
