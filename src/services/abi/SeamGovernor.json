@@ -225,7 +225,7 @@
       {
         "name": "params",
         "type": "tuple",
-        "internalType": "struct SeamGovernor.InitParams",
+        "internalType": "struct ColendGovernor.InitParams",
         "components": [
           { "name": "name", "type": "string", "internalType": "string" },
           {

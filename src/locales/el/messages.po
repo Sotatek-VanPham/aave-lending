@@ -1306,7 +1306,7 @@ msgid "Links"
 msgstr "Σύνδεσμοι"
 
 #: src/modules/history/HistoryFilterMenu.tsx
-msgid "Liqudation"
+msgid "Liquidation"
 msgstr ""
 
 #: src/modules/history/actions/ActionDetails.tsx

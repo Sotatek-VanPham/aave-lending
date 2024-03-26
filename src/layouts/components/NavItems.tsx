@@ -99,7 +99,7 @@ export const NavItems = ({ setOpen }: NavItemsProps) => {
                     bottom: '-9px',
                     left: '0',
                     borderRadius: '16px',
-                    background: theme.palette.gradients.seamless,
+                    background: theme.palette.gradients.colend,
                     transformOrigin: 'bottom right',
                     transition: 'transform 0.25s ease-out',
                   },

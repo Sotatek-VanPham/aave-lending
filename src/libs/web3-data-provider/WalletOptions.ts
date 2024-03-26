@@ -25,7 +25,7 @@ export enum WalletType {
 }
 
 const APP_NAME = 'Colend';
-const APP_LOGO_URL = 'https://app.seamlessprotocol.com/favicon.ico';
+const APP_LOGO_URL = 'https://app.colend.xyz/favicon.ico';
 
 const mockProvider = {
   request: Promise.resolve(null),

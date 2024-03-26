@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
             title: 'Colend Protocol',
             description:
               'A decentralized, non-custodial liquidity market that creates a more seamless experience for Suppliers and Borrowers.',
-            imageUrl: '/seamless.png',
+            imageUrl: '/colend.png',
           })}
           {
             // Inject MUI styles first to match with the prepend: true configuration.

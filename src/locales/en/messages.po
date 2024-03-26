@@ -773,10 +773,6 @@ msgstr "Disabling this asset as collateral affects your borrowing power and Heal
 msgid "Disconnect Wallet"
 msgstr "Disconnect Wallet"
 
-#: pages/500.page.tsx
-msgid "Discord channel"
-msgstr "Discord channel"
-
 #: src/modules/reserve-overview/Gho/GhoDiscountCalculator.tsx
 msgid "Discount"
 msgstr "Discount"
@@ -1136,14 +1132,11 @@ msgstr "Learn more in our <0>FAQ guide</0>"
 msgid "Links"
 msgstr "Links"
 
-#: src/modules/history/HistoryFilterMenu.tsx
-msgid "Liqudation"
-msgstr "Liqudation"
-
 #: src/modules/history/actions/ActionDetails.tsx
 msgid "Liquidated collateral"
 msgstr "Liquidated collateral"
 
+#: src/modules/history/HistoryFilterMenu.tsx
 #: src/modules/history/actions/ActionDetails.tsx
 msgid "Liquidation"
 msgstr "Liquidation"
@@ -1850,8 +1843,8 @@ msgid "Supply"
 msgstr "Supply"
 
 #: src/ui-config/menu-items/index.tsx
-msgid "Supply & Borrow Dashboard"
-msgstr "Supply & Borrow Dashboard"
+msgid "Supply & Borrow"
+msgstr "Supply & Borrow"
 
 #: src/components/transactions/Supply/SupplyModalContent.tsx
 #: src/modules/dashboard/lists/SuppliedPositionsList/SuppliedPositionsListMobileItem.tsx
@@ -1962,6 +1955,10 @@ msgstr "Switching rate"
 #: src/modules/reserve-overview/Gho/GhoReserveConfiguration.tsx
 msgid "Techpaper"
 msgstr "Techpaper"
+
+#: pages/500.page.tsx
+msgid "Telegram group"
+msgstr "Telegram group"
 
 #: src/layouts/AppFooter.tsx
 msgid "Terms"
@@ -2097,8 +2094,8 @@ msgid "This action will reduce your health factor. Please be mindful of the incr
 msgstr "This action will reduce your health factor. Please be mindful of the increased risk of collateral liquidation."
 
 #: src/components/AddressBlockedModal.tsx
-msgid "This address is blocked on app.seamlessprotocol.com because it is associated with one or more blocked activities."
-msgstr "This address is blocked on app.seamlessprotocol.com because it is associated with one or more blocked activities."
+msgid "This address is blocked on app.colend.xyz because it is associated with one or more blocked activities."
+msgstr "This address is blocked on app.colend.xyz because it is associated with one or more blocked activities."
 
 #: src/components/caps/CapsTooltip.tsx
 msgid "This asset has almost reached its borrow cap. There is only {messageValue} available to be borrowed from this market."
@@ -2519,8 +2516,8 @@ msgid "You've successfully switched borrow position."
 msgstr "You've successfully switched borrow position."
 
 #: src/hooks/useReserveActionState.tsx
-msgid "Your Coredao wallet is empty. Purchase or transfer assets or use <0>Base Bridge</0> to transfer your Ethereum assets"
-msgstr "Your Coredao wallet is empty. Purchase or transfer assets or use <0>Base Bridge</0> to transfer your Ethereum assets"
+msgid "Your Coredao wallet is empty. Purchase or transfer assets or use <0>Core Bridge</0> to transfer your Ethereum assets"
+msgstr "Your Coredao wallet is empty. Purchase or transfer assets or use <0>Core Bridge</0> to transfer your Ethereum assets"
 
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsList.tsx
 #: src/modules/dashboard/lists/BorrowedPositionsList/BorrowedPositionsList.tsx

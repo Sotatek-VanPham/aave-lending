@@ -1306,8 +1306,8 @@ msgid "Links"
 msgstr "Enlaces"
 
 #: src/modules/history/HistoryFilterMenu.tsx
-msgid "Liqudation"
-msgstr "Liquidación"
+msgid "Liquidation"
+msgstr "Liquidation"
 
 #: src/modules/history/actions/ActionDetails.tsx
 msgid "Liquidated collateral"
