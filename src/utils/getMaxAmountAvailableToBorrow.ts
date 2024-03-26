@@ -96,6 +96,13 @@ export function getMaxAmountAvailableToBorrow(
         .multipliedBy('0.99')
         .lt(user.availableBorrowsUSD));
 
+  console.log('availableInPoolUSD', availableInPoolUSD);
+  console.log('availableForUserUSD', availableForUserUSD);
+  console.log('availableBorrowCap', availableBorrowCap);
+  console.log('availableLiquidity', availableLiquidity);
+  console.log('availableForUserMarketReferenceCurrency', availableForUserMarketReferenceCurrency);
+        
+
   const amountWithMargin = shouldAddMargin
     ? maxUserAmountToBorrow.multipliedBy('0.99')
     : maxUserAmountToBorrow;
