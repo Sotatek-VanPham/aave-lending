@@ -16,14 +16,14 @@ import {
 import { estimateGasByNetwork } from 'colend-contract-helpers/dist/cjs/commons/gasStation';
 import { BigNumber, PopulatedTransaction } from 'ethers';
 import {
-  EscrowSEAM,
-  EscrowSEAM__factory,
+  vCOLEND,
+  vCOLEND__factory,
   Multicall,
   Multicall__factory,
-  SEAM,
-  SEAM__factory,
-  SeamGovernor,
-  SeamGovernor__factory,
+  COLEND,
+  COLEND__factory,
+  ColendGovernor,
+  COLENDGovernor__factory,
 } from 'src/services/types';
 import { Multicall3 } from 'src/services/types/Multicall';
 import { governanceConfig } from 'src/ui-config/governanceConfig';
@@ -57,10 +57,10 @@ export enum ProposalState {
 export class GovernanceService implements Hashable {
   readonly provider: Provider;
   readonly multicall: Multicall;
-  readonly seam: SEAM;
-  readonly esSEAM: EscrowSEAM;
-  readonly governorLong: SeamGovernor;
-  readonly governorShort: SeamGovernor;
+  readonly seam: COLEND;
+  readonly esSEAM: vCOLEND;
+  readonly governorLong: ColendGovernor;
+  readonly governorShort: ColendGovernor;
 
   constructor(provider: Provider, public readonly chainId: number) {
     this.provider = provider;
@@ -68,13 +68,13 @@ export class GovernanceService implements Hashable {
       governanceConfig.addresses.MULTICALL_ADDRESS,
       this.provider
     );
-    this.seam = SEAM__factory.connect(governanceConfig.seamTokenAddress, this.provider);
-    this.esSEAM = EscrowSEAM__factory.connect(governanceConfig.esSEAMTokenAddress, this.provider);
-    this.governorLong = SeamGovernor__factory.connect(
+    this.seam = COLEND__factory.connect(governanceConfig.seamTokenAddress, this.provider);
+    this.esSEAM = vCOLEND__factory.connect(governanceConfig.esSEAMTokenAddress, this.provider);
+    this.governorLong = COLENDGovernor__factory.connect(
       governanceConfig.addresses.GOVERNOR_LONG_ADDRESS,
       this.provider
     );
-    this.governorShort = SeamGovernor__factory.connect(
+    this.governorShort = COLENDGovernor__factory.connect(
       governanceConfig.addresses.GOVERNOR_SHORT_ADDRESS,
       this.provider
     );

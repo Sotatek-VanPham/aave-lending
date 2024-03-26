@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro';
 import { GitHub, Telegram, Twitter } from '@mui/icons-material';
 import { Box, styled, SvgIcon, Typography } from '@mui/material';
-import Discord from 'public/icons/discord.svg';
+// import Discord from 'public/icons/discord.svg';
 import { Link } from 'src/components/primitives/Link';
 
 interface StyledLinkProps {
@@ -19,22 +19,17 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 
 const FOOTER_ICONS = [
   {
-    href: 'https://t.me/seamless_protocol',
+    href: 'https://t.me/colend_xyz',
     icon: <Telegram />,
     title: 'Telegram',
   },
   {
-    href: 'https://discord.com/invite/Uye9jCVgUp',
-    icon: <Discord fill="white" />,
-    title: 'Discord',
-  },
-  {
-    href: 'https://twitter.com/seamlessfi',
+    href: 'https://twitter.com/colend_xyz',
     icon: <Twitter />,
     title: 'Twitter',
   },
   {
-    href: 'https://github.com/seamless-protocol/',
+    href: 'https://github.com/Colend-protocol/',
     icon: <GitHub />,
     title: 'Github',
   },
@@ -44,28 +39,28 @@ export function AppFooter() {
   // const [setAnalyticsConfigOpen] = useRootStore((store) => [store.setAnalyticsConfigOpen]);
   const FOOTER_LINKS = [
     {
-      href: 'https://seamlessprotocol.medium.com/seamless-protocol-terms-of-use-f9d75a855fb3',
+      href: 'https://colend.medium.com/colend-protocol-terms-of-use',
       label: <Trans>Terms</Trans>,
       key: 'Terms',
     },
     {
-      href: 'https://seamlessprotocol.medium.com/seamless-privacy-policy-2ebfda169143',
+      href: 'https://colend.medium.com/colend-privacy-policy',
       label: <Trans>Privacy</Trans>,
       key: 'Privacy',
     },
     {
-      href: 'https://docs.seamlessprotocol.com',
+      href: 'https://docs.colend.xyz',
       label: <Trans>Docs</Trans>,
       key: 'Docs',
     },
     {
-      href: 'https://docs.seamlessprotocol.com/overview/faq',
+      href: 'https://docs.colend.xyz/overview/faq',
       label: <Trans>FAQ</Trans>,
       key: 'FAQ',
     },
     {
-      href: 'https://bridge.base.org/',
-      label: 'Base Bridge',
+      href: 'https://bridge.coredao.org/',
+      label: 'Core Bridge',
       key: 'Bridge',
     },
     // {

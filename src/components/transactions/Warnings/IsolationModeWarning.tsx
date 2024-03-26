@@ -21,7 +21,7 @@ export const IsolationModeWarning = ({ asset, severity }: IsolationModeWarningPr
           limits the borrowing power of the isolated asset. To exit isolation mode disable{' '}
           {asset ? asset : ''} as collateral before borrowing another asset.
           {/* Read more in our{' '}
-          <Link href="https://docs.seamlessprotocol.com/overview/faq">FAQ</Link> */}
+          <Link href="https://docs.colend.xyz/overview/faq">FAQ</Link> */}
         </Trans>
       </Typography>
     </Warning>

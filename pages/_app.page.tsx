@@ -73,9 +73,9 @@ export default function MyApp(props: MyAppProps) {
       <Meta
         title={'The First Native Core Lending & Borrowing Protocol'}
         description={
-          'Colend lays the foundation for modern DeFi, focusing on lower-collateral borrowing and a better user experience to inspire the masses.'
+          'Colend - Supply, Borrow, Leverage and get fairly rewarded.'
         }
-        imageUrl="/seamless.svg"
+        imageUrl="/colend.svg"
       />
       <LanguageProvider>
         <QueryClientProvider client={queryClient}>

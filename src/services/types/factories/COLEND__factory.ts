@@ -4,7 +4,7 @@
 
 import { Contract, Signer, utils } from 'ethers';
 import type { Provider } from '@ethersproject/providers';
-import type { SEAM, SEAMInterface } from '../SEAM';
+import type { COLEND, SEAMInterface } from '../COLEND';
 
 const _abi = [
   {
@@ -1237,12 +1237,12 @@ const _abi = [
   },
 ] as const;
 
-export class SEAM__factory {
+export class COLEND__factory {
   static readonly abi = _abi;
   static createInterface(): SEAMInterface {
     return new utils.Interface(_abi) as SEAMInterface;
   }
-  static connect(address: string, signerOrProvider: Signer | Provider): SEAM {
-    return new Contract(address, _abi, signerOrProvider) as SEAM;
+  static connect(address: string, signerOrProvider: Signer | Provider): COLEND {
+    return new Contract(address, _abi, signerOrProvider) as COLEND;
   }
 }

@@ -237,7 +237,7 @@ export const MarketSwitcher = () => {
                 sx={
                   selectedMarketVersion === SelectedMarketVersion.V3
                     ? {
-                        backgroundImage: (theme) => theme.palette.gradients.seamless,
+                        backgroundImage: (theme) => theme.palette.gradients.colend,
                         backgroundClip: 'text',
                         color: 'transparent',
                       }

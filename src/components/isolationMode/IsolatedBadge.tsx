@@ -104,7 +104,7 @@ const IsolationModeTooltipTemplate = ({ content }: { content: ReactNode }) => {
       <Typography variant="subheader2" color="#A5A8B3">
         <Trans>
           Learn more in our{' '}
-          <Link href="https://docs.seamlessprotocol.com/overview/faq" fontWeight={500}>
+          <Link href="https://docs.colend.xyz/overview/faq" fontWeight={500}>
             FAQ guide
           </Link>
         </Trans>

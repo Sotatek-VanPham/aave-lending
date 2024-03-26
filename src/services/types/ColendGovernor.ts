@@ -18,7 +18,7 @@ import type { FunctionFragment, Result, EventFragment } from '@ethersproject/abi
 import type { Listener, Provider } from '@ethersproject/providers';
 import type { TypedEventFilter, TypedEvent, TypedListener, OnEvent } from './common';
 
-export declare namespace SeamGovernor {
+export declare namespace ColendGovernor {
   export type InitParamsStruct = {
     name: string;
     initialVotingDelay: BigNumberish;
@@ -241,7 +241,7 @@ export interface SeamGovernorInterface extends utils.Interface {
   ): string;
   encodeFunctionData(
     functionFragment: 'initialize',
-    values: [SeamGovernor.InitParamsStruct]
+    values: [ColendGovernor.InitParamsStruct]
   ): string;
   encodeFunctionData(functionFragment: 'name', values?: undefined): string;
   encodeFunctionData(functionFragment: 'nonces', values: [string]): string;
@@ -577,7 +577,7 @@ export type VotingPeriodSetEvent = TypedEvent<[BigNumber, BigNumber], VotingPeri
 
 export type VotingPeriodSetEventFilter = TypedEventFilter<VotingPeriodSetEvent>;
 
-export interface SeamGovernor extends BaseContract {
+export interface ColendGovernor extends BaseContract {
   connect(signerOrProvider: Signer | Provider | string): this;
   attach(addressOrName: string): this;
   deployed(): Promise<this>;
@@ -719,7 +719,7 @@ export interface SeamGovernor extends BaseContract {
     ): Promise<[BigNumber]>;
 
     initialize(
-      params: SeamGovernor.InitParamsStruct,
+      params: ColendGovernor.InitParamsStruct,
       overrides?: Overrides & { from?: string }
     ): Promise<ContractTransaction>;
 
@@ -1007,7 +1007,7 @@ export interface SeamGovernor extends BaseContract {
   ): Promise<BigNumber>;
 
   initialize(
-    params: SeamGovernor.InitParamsStruct,
+    params: ColendGovernor.InitParamsStruct,
     overrides?: Overrides & { from?: string }
   ): Promise<ContractTransaction>;
 
@@ -1296,7 +1296,7 @@ export interface SeamGovernor extends BaseContract {
       overrides?: CallOverrides
     ): Promise<BigNumber>;
 
-    initialize(params: SeamGovernor.InitParamsStruct, overrides?: CallOverrides): Promise<void>;
+    initialize(params: ColendGovernor.InitParamsStruct, overrides?: CallOverrides): Promise<void>;
 
     name(overrides?: CallOverrides): Promise<string>;
 
@@ -1698,7 +1698,7 @@ export interface SeamGovernor extends BaseContract {
     ): Promise<BigNumber>;
 
     initialize(
-      params: SeamGovernor.InitParamsStruct,
+      params: ColendGovernor.InitParamsStruct,
       overrides?: Overrides & { from?: string }
     ): Promise<BigNumber>;
 
@@ -1970,7 +1970,7 @@ export interface SeamGovernor extends BaseContract {
     ): Promise<PopulatedTransaction>;
 
     initialize(
-      params: SeamGovernor.InitParamsStruct,
+      params: ColendGovernor.InitParamsStruct,
       overrides?: Overrides & { from?: string }
     ): Promise<PopulatedTransaction>;
 

@@ -69,7 +69,7 @@ export const useReserveActionState = ({
                     href="https://bridge.coredao.org/"
                     sx={{ '&:hover': { textDecoration: 'underline !important', opacity: '0.6' } }}
                   >
-                    Base Bridge
+                    Core Bridge
                   </Link>{' '}
                   to transfer your Ethereum assets
                 </Trans>

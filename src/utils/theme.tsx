@@ -45,8 +45,8 @@ declare module '@mui/material/styles/createPalette' {
 
   interface Palette {
     gradients: {
-      seamless: string;
-      seamlessFooter: string;
+      colend: string;
+      colendFooter: string;
     };
     other: {
       standardInputLine: string;
@@ -55,8 +55,8 @@ declare module '@mui/material/styles/createPalette' {
 
   interface PaletteOptions {
     gradients: {
-      seamless: string;
-      seamlessFooter: string;
+      colend: string;
+      colendFooter: string;
     };
   }
 }
@@ -219,8 +219,8 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         standardInputLine: getColor('#383D511F', '#EBEBEF6B'),
       },
       gradients: {
-        seamless: '#FF4228',
-        seamlessFooter:
+        colend: '#FF4228',
+        colendFooter:
           'linear-gradient(248.86deg, #506FF3 1%, #CDF3A2 15%, #21E1E1 30%, #D69BDF 50%, #506FF3 81%)',
       },
     },
@@ -473,10 +473,10 @@ export function getThemedComponents(theme: Theme) {
             props: { variant: 'gradient' },
             style: {
               color: theme.palette.common.white,
-              background: theme.palette.gradients.seamless,
+              background: theme.palette.gradients.colend,
               transition: 'all 0.2s ease',
               '&:hover, &.Mui-focusVisible': {
-                background: theme.palette.gradients.seamless,
+                background: theme.palette.gradients.colend,
                 opacity: '0.9',
               },
             },
@@ -863,10 +863,10 @@ export function getThemedComponents(theme: Theme) {
       MuiLinearProgress: {
         styleOverrides: {
           bar1Indeterminate: {
-            background: theme.palette.gradients.seamless,
+            background: theme.palette.gradients.colend,
           },
           bar2Indeterminate: {
-            background: theme.palette.gradients.seamless,
+            background: theme.palette.gradients.colend,
           },
         },
       },

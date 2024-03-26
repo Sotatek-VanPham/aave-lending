@@ -29,7 +29,7 @@ export const StakingHeader: React.FC<StakingHeaderProps> = ({ tvl, stkEmission, 
           <ChainAvailabilityText wrapperSx={{ mb: 4 }} chainId={ChainId.mainnet} />
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 4 }}>
             <img
-              src={`/logo_seamless.svg`}
+              src={`/logo.svg`}
               width="32px"
               height="32px"
               alt=""
