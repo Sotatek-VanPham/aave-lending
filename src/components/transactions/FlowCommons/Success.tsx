@@ -173,7 +173,7 @@ export const TxSuccessView = ({
                   />
                 )}
                 <WalletIcon sx={{ width: '20px', height: '20px' }} />
-                <Typography variant="buttonM" color="#0B0B0B" ml="4px">
+                <Typography variant="buttonM" color="#0B0B0B" ml="4px" sx={{ fontSize: '15px'}}>
                   <Trans>Add to wallet</Trans>
                 </Typography>
               </Button>
