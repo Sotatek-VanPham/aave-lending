@@ -22,7 +22,7 @@ export const ButtonWithdrawCustom = styled(Button)(() => ({
   border: 'none',
   width: '87px',
   height: '32px',
-  fontSize: '12px',
+  fontSize: '15px',
   color: '#C4C8E2',
   fontWeight: 700,
   fontFamily: 'Mulish',
@@ -146,7 +146,7 @@ export const SuppliedPositionsListItem = ({
             sx={(theme) => ({
               backgroundColor: '#DA3E3E',
               color: '#1A1A1C',
-              fontSize: '12px',
+              fontSize: '15px',
               width: '65.229px',
               height: '32px',
               '&:hover': { backgroundColor: theme.palette.background.surface, opacity: 0.7 },

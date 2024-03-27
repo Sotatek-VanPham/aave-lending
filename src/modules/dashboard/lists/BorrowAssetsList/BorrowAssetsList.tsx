@@ -95,11 +95,11 @@ const head = [
           eventParams: { tooltip: 'Stable Borrow APY' },
         }}
         text={<Trans>APY, stable</Trans>}
-        key="stableBorrowAPY"
+        key="stableBorrowRate"
         variant="subheader2"
       />
     ),
-    sortKey: 'stableBorrowAPY',
+    sortKey: 'stableBorrowRate',
   },
 ];
 
