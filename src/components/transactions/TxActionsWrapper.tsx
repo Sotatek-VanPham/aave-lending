@@ -144,6 +144,7 @@ export const TxActionsWrapper = ({
           iconSize={20}
           iconMargin={2}
           color="white"
+          sx={{ fontSize: '15px'}}
           text={<Trans>Approve {symbol} to continue</Trans>}
         />
       ),
