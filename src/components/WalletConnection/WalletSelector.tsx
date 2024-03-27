@@ -90,6 +90,7 @@ const WalletRow = ({ walletName, walletType }: WalletRowProps) => {
         mb: '8px',
         bgcolor: theme.palette.background.surface,
         color: '#1A1A1C',
+        fontSize: '15px',
         '&:hover': {
           bgcolor: theme.palette.background.surface,
           color: '#1A1A1C',
